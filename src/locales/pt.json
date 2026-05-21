@@ -1,0 +1,203 @@
+{
+  "nav": {
+    "services": "Serviços",
+    "process": "Processo",
+    "work": "Cases",
+    "pricing": "Planos",
+    "contact": "Agendar conversa"
+  },
+  "hero": {
+    "badge": "Agência de Automação com IA",
+    "title1": "Agentes de IA que tocam seu negócio",
+    "title2": "enquanto você dorme",
+    "subtitle": "A Arkai Solutions cria e implanta sistemas autônomos de IA para vendas, atendimento e operação — para você crescer o faturamento sem aumentar a equipe.",
+    "ctaPrimary": "Agende um diagnóstico gratuito",
+    "ctaSecondary": "Veja o que construímos",
+    "stat1Value": "24/7",
+    "stat1Label": "Agentes que nunca dormem",
+    "stat2Value": "No ar",
+    "stat2Label": "Sistemas em produção",
+    "stat3Value": "USD / EUR",
+    "stat3Label": "Entrega global"
+  },
+  "trust": {
+    "label": "A confiança de empresas em diversos setores"
+  },
+  "services": {
+    "eyebrow": "O que construímos",
+    "title": "Automação que se paga sozinha",
+    "subtitle": "Cada sistema que entregamos é feito para eliminar trabalho manual, capturar mais receita e rodar sozinho.",
+    "items": [
+      {
+        "icon": "agent",
+        "title": "Agentes de Vendas IA (SDR)",
+        "desc": "Agentes autônomos que qualificam leads, fazem follow-up e agendam reuniões 24/7 no WhatsApp, e-mail e site."
+      },
+      {
+        "icon": "support",
+        "title": "Agentes de Atendimento IA",
+        "desc": "Agentes conversacionais que respondem o cliente na hora, resolvem chamados e encaminham só o que importa."
+      },
+      {
+        "icon": "workflow",
+        "title": "Automação de Processos",
+        "desc": "Fluxos ponta a ponta que conectam seu CRM, planilhas, pagamentos e ferramentas — nunca mais copiar e colar."
+      },
+      {
+        "icon": "saas",
+        "title": "SaaS de IA Sob Medida",
+        "desc": "Produtos de software para o seu nicho: imobiliário, hotelaria, agronegócio, automotivo e muito mais."
+      },
+      {
+        "icon": "traffic",
+        "title": "Geração de Leads & Tráfego",
+        "desc": "Tráfego pago integrado a captura, qualificação e nutrição automáticas — um fluxo previsível de compradores."
+      },
+      {
+        "icon": "data",
+        "title": "Dashboards & Relatórios",
+        "desc": "Painéis ao vivo e relatórios automáticos para você saber o que funciona — sem montar uma única planilha."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Como trabalhamos",
+    "title": "Do gargalo ao piloto automático em 4 passos",
+    "subtitle": "Um caminho claro e de baixo risco. Você sempre sabe o que recebe pelo que investe.",
+    "steps": [
+      {
+        "n": "01",
+        "title": "Diagnóstico",
+        "desc": "Mapeamos seus gargalos e achamos onde a IA traz o retorno mais rápido. Gratuito, sem compromisso."
+      },
+      {
+        "n": "02",
+        "title": "Blueprint",
+        "desc": "Você recebe um escopo claro: o que será automatizado, o prazo e o investimento exato."
+      },
+      {
+        "n": "03",
+        "title": "Construção & Deploy",
+        "desc": "Construímos, testamos e colocamos seus sistemas de IA no ar — integrados às ferramentas que você já usa."
+      },
+      {
+        "n": "04",
+        "title": "Escala & Otimização",
+        "desc": "Monitoramos, refinamos e expandimos. Sua automação fica mais inteligente e seu custo se mantém estável."
+      }
+    ]
+  },
+  "work": {
+    "eyebrow": "Trabalhos selecionados",
+    "title": "Sistemas reais, em produção",
+    "subtitle": "Não vendemos slides. Estas são automações no ar, gerando resultado agora.",
+    "items": [
+      {
+        "tag": "Automotivo",
+        "title": "Motor de leads com IA para concessionária",
+        "desc": "Tráfego pago + agente de IA que capta, qualifica e direciona compradores — transformando verba em test drives agendados."
+      },
+      {
+        "tag": "Energia Solar",
+        "title": "Qualificação de leads para empresa solar",
+        "desc": "Um funil automatizado que pontua e nutre leads solares, liberando o time de vendas para fechar em vez de correr atrás."
+      },
+      {
+        "tag": "Agronegócio",
+        "title": "SaaS de IA para extensão rural",
+        "desc": "Uma plataforma sob medida levando automação com IA ao agro — feita para escalar entre operações rurais."
+      },
+      {
+        "tag": "Autopeças",
+        "title": "Cobrança e recuperação de clientes automatizadas",
+        "desc": "Lembretes inteligentes e fluxos de recuperação que reativam clientes inativos e protegem a receita recorrente."
+      }
+    ]
+  },
+  "stack": {
+    "eyebrow": "Nossa tecnologia",
+    "title": "Ferramentas de nível enterprise, velocidade de agência",
+    "subtitle": "Construímos com a mesma tecnologia que move os melhores produtos de IA do mundo."
+  },
+  "pricing": {
+    "eyebrow": "Investimento",
+    "title": "Comece pequeno. Escale quando se pagar.",
+    "subtitle": "Todo plano começa com um investimento de entrada baixo. Você só escala quando a automação prova o retorno. Preços em USD — EUR sob consulta.",
+    "perMonth": "/mês",
+    "from": "a partir de",
+    "popular": "Mais escolhido",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "$390",
+        "desc": "Um agente ou automação de IA, implantado e rodando.",
+        "features": [
+          "1 agente de IA (vendas OU atendimento)",
+          "Integração com 1 canal",
+          "Setup, treinamento e lançamento",
+          "Suporte por e-mail"
+        ],
+        "cta": "Começar aqui"
+      },
+      {
+        "name": "Growth",
+        "price": "$890",
+        "desc": "Um sistema completo de automação na sua operação.",
+        "features": [
+          "Até 3 agentes de IA",
+          "Multicanal (WhatsApp, e-mail, site)",
+          "Automação de processos + dashboard",
+          "Suporte prioritário e otimização mensal"
+        ],
+        "cta": "Escalar com a gente"
+      },
+      {
+        "name": "SaaS Sob Medida",
+        "price": "Vamos conversar",
+        "desc": "Um produto de IA ou SaaS sob medida para o seu mercado.",
+        "features": [
+          "Desenvolvimento de software / SaaS sob medida",
+          "Agentes e integrações ilimitados",
+          "Roadmap dedicado e SLA",
+          "Parceria contínua"
+        ],
+        "cta": "Pedir orçamento"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Pronto para colocar a IA para trabalhar?",
+    "subtitle": "Agende um diagnóstico gratuito de 30 minutos. Mostramos exatamente onde a IA economiza tempo e gera receita no seu negócio — sem pitch, só um plano.",
+    "button": "Agendar diagnóstico gratuito",
+    "note": "Sem compromisso. Disponível em português e inglês."
+  },
+  "faq": {
+    "eyebrow": "Dúvidas",
+    "title": "Perguntas respondidas",
+    "items": [
+      {
+        "q": "Vocês atendem clientes internacionais?",
+        "a": "Sim. Entregamos globalmente e faturamos em USD ou EUR. Reuniões e documentação disponíveis em português e inglês."
+      },
+      {
+        "q": "Quanto tempo leva para colocar no ar?",
+        "a": "Uma automação Starter costuma entrar no ar em 1 a 2 semanas. Sistemas completos e SaaS sob medida dependem do escopo, definido na etapa de blueprint."
+      },
+      {
+        "q": "E se eu não entendo de tecnologia?",
+        "a": "Esse é o ponto. Cuidamos da tecnologia de ponta a ponta. Você recebe um sistema funcionando e uma explicação clara de como ele gera dinheiro."
+      },
+      {
+        "q": "Preciso trocar minhas ferramentas atuais?",
+        "a": "Não. Integramos com o que você já usa — CRM, planilhas, WhatsApp, ferramentas de pagamento e mais."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Sistemas autônomos de IA para empresas que querem escalar.",
+    "navTitle": "Navegar",
+    "contactTitle": "Fale conosco",
+    "rights": "Todos os direitos reservados.",
+    "built": "Construindo o futuro autônomo, um negócio de cada vez."
+  }
+}

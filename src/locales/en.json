@@ -1,0 +1,203 @@
+{
+  "nav": {
+    "services": "Services",
+    "process": "Process",
+    "work": "Work",
+    "pricing": "Pricing",
+    "contact": "Book a call"
+  },
+  "hero": {
+    "badge": "AI Automation Agency",
+    "title1": "AI agents that run your business",
+    "title2": "while you sleep",
+    "subtitle": "Arkai Solutions designs and deploys autonomous AI systems for sales, support and operations — so you grow revenue without growing headcount.",
+    "ctaPrimary": "Book a free automation audit",
+    "ctaSecondary": "See what we build",
+    "stat1Value": "24/7",
+    "stat1Label": "Agents that never sleep",
+    "stat2Value": "Live",
+    "stat2Label": "Systems in production",
+    "stat3Value": "USD / EUR",
+    "stat3Label": "Global delivery"
+  },
+  "trust": {
+    "label": "Trusted by companies across industries"
+  },
+  "services": {
+    "eyebrow": "What we build",
+    "title": "Automation that pays for itself",
+    "subtitle": "Every system we ship is built to remove manual work, capture more revenue and run on its own.",
+    "items": [
+      {
+        "icon": "agent",
+        "title": "AI Sales Agents (SDR)",
+        "desc": "Autonomous agents that qualify leads, follow up, and book meetings 24/7 across WhatsApp, email and web."
+      },
+      {
+        "icon": "support",
+        "title": "AI Support Agents",
+        "desc": "Conversational agents that answer customers instantly, resolve tickets and escalate only what matters."
+      },
+      {
+        "icon": "workflow",
+        "title": "Workflow Automation",
+        "desc": "End-to-end pipelines that connect your CRM, spreadsheets, payments and tools — no copy-paste ever again."
+      },
+      {
+        "icon": "saas",
+        "title": "Custom AI SaaS",
+        "desc": "Niche software products built for your market: real estate, hospitality, agribusiness, automotive and more."
+      },
+      {
+        "icon": "traffic",
+        "title": "Lead Generation & Traffic",
+        "desc": "Paid traffic engines wired to automated capture, scoring and nurturing — a predictable pipeline of buyers."
+      },
+      {
+        "icon": "data",
+        "title": "Dashboards & Reporting",
+        "desc": "Live dashboards and automated reports so you always know what's working — without building a single sheet."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "How we work",
+    "title": "From bottleneck to autopilot in four steps",
+    "subtitle": "A clear, low-risk path. You always know what you're getting for what you invest.",
+    "steps": [
+      {
+        "n": "01",
+        "title": "Diagnosis",
+        "desc": "We map your bottlenecks and find where AI delivers the fastest return. Free, no commitment."
+      },
+      {
+        "n": "02",
+        "title": "Blueprint",
+        "desc": "You receive a clear scope: what gets automated, the timeline and the exact investment."
+      },
+      {
+        "n": "03",
+        "title": "Build & Deploy",
+        "desc": "We build, test and launch your AI systems — integrated with the tools you already use."
+      },
+      {
+        "n": "04",
+        "title": "Scale & Optimize",
+        "desc": "We monitor, refine and expand. Your automation gets smarter and your costs stay flat."
+      }
+    ]
+  },
+  "work": {
+    "eyebrow": "Selected work",
+    "title": "Real systems, in production",
+    "subtitle": "We don't sell slides. These are live automations generating results right now.",
+    "items": [
+      {
+        "tag": "Automotive",
+        "title": "AI lead engine for a car dealership",
+        "desc": "Paid traffic plus an AI agent that captures, qualifies and routes buyers — turning ad spend into booked test drives."
+      },
+      {
+        "tag": "Solar Energy",
+        "title": "Lead qualification for a solar company",
+        "desc": "An automated funnel that scores and nurtures solar leads, freeing the sales team to close instead of chase."
+      },
+      {
+        "tag": "Agribusiness",
+        "title": "AI SaaS for agricultural extension",
+        "desc": "A custom platform bringing AI automation to the agro sector — built for scale across rural operations."
+      },
+      {
+        "tag": "Auto Parts",
+        "title": "Automated billing & customer recovery",
+        "desc": "Smart reminders and recovery flows that bring back inactive customers and protect recurring revenue."
+      }
+    ]
+  },
+  "stack": {
+    "eyebrow": "Our stack",
+    "title": "Enterprise-grade tools, agency speed",
+    "subtitle": "We build on the same technology powering the world's best AI products."
+  },
+  "pricing": {
+    "eyebrow": "Investment",
+    "title": "Start small. Scale when it pays off.",
+    "subtitle": "Every plan starts with a low entry investment. You only scale once the automation proves its return. Prices in USD — EUR on request.",
+    "perMonth": "/mo",
+    "from": "from",
+    "popular": "Most popular",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "$390",
+        "desc": "One AI agent or automation, deployed and running.",
+        "features": [
+          "1 AI agent (sales OR support)",
+          "Integration with 1 channel",
+          "Setup, training & launch",
+          "Email support"
+        ],
+        "cta": "Start here"
+      },
+      {
+        "name": "Growth",
+        "price": "$890",
+        "desc": "A full automation system across your operation.",
+        "features": [
+          "Up to 3 AI agents",
+          "Multi-channel (WhatsApp, email, web)",
+          "Workflow automation + dashboard",
+          "Priority support & monthly optimization"
+        ],
+        "cta": "Scale with us"
+      },
+      {
+        "name": "Custom SaaS",
+        "price": "Let's talk",
+        "desc": "A tailored AI product or SaaS for your market.",
+        "features": [
+          "Custom software / SaaS build",
+          "Unlimited agents & integrations",
+          "Dedicated roadmap & SLA",
+          "Ongoing partnership"
+        ],
+        "cta": "Request a quote"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to put AI to work?",
+    "subtitle": "Book a free 30-minute automation audit. We'll show you exactly where AI can save time and generate revenue in your business — no pitch, just a plan.",
+    "button": "Book your free audit",
+    "note": "No commitment. Available in English & Portuguese."
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Questions, answered",
+    "items": [
+      {
+        "q": "Do you work with international clients?",
+        "a": "Yes. We deliver globally and invoice in USD or EUR. All meetings and documentation are available in English and Portuguese."
+      },
+      {
+        "q": "How long does it take to launch?",
+        "a": "A Starter automation typically goes live in 1–2 weeks. Full systems and custom SaaS depend on scope, defined in the blueprint stage."
+      },
+      {
+        "q": "What if I'm not technical?",
+        "a": "That's the point. We handle the technology end-to-end. You get a working system and a clear explanation of how it makes you money."
+      },
+      {
+        "q": "Do I need to replace my current tools?",
+        "a": "No. We integrate with what you already use — CRM, spreadsheets, WhatsApp, payment tools and more."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Autonomous AI systems for companies that want to scale.",
+    "navTitle": "Navigate",
+    "contactTitle": "Get in touch",
+    "rights": "All rights reserved.",
+    "built": "Building the autonomous future, one business at a time."
+  }
+}
