@@ -6,6 +6,7 @@ import Reveal from './Reveal'
 interface Plan {
   name: string
   price: string
+  setup: string
   desc: string
   features: string[]
   cta: string
@@ -27,13 +28,12 @@ export default function Pricing() {
         <div className="mt-14 grid items-start gap-5 lg:grid-cols-3">
           {plans.map((plan, i) => {
             const featured = i === 1
-            const isQuote = !plan.price.startsWith('$')
             return (
               <Reveal key={plan.name} delay={i * 90}>
                 <article
                   className={`relative flex h-full flex-col rounded-2xl border p-7 transition-all duration-300 ${
                     featured
-                      ? 'border-accent/60 bg-surface-2 shadow-[0_24px_60px_-30px_var(--accent)] lg:-mt-4 lg:pb-11'
+                      ? 'border-accent/60 bg-surface-2 shadow-[0_24px_60px_-30px_rgb(var(--accent))] lg:-mt-4 lg:pb-11'
                       : 'border-line bg-surface hover:border-accent/40'
                   }`}
                 >
@@ -43,18 +43,16 @@ export default function Pricing() {
                     </span>
                   )}
                   <h3 className="text-lg font-bold">{plan.name}</h3>
+
                   <div className="mt-4 flex items-end gap-1.5">
-                    {!isQuote && (
-                      <span className="mb-1.5 text-xs font-medium text-muted">
-                        {t('pricing.from')}
-                      </span>
-                    )}
                     <span className="text-4xl font-black tracking-tight">{plan.price}</span>
-                    {!isQuote && (
-                      <span className="mb-1.5 text-sm text-muted">{t('pricing.perMonth')}</span>
-                    )}
+                    <span className="mb-1.5 text-sm text-muted">{t('pricing.perMonth')}</span>
                   </div>
-                  <p className="mt-3 text-sm text-muted">{plan.desc}</p>
+                  <p className="mt-1.5 text-xs font-medium text-muted">
+                    + {plan.setup} {t('pricing.setupSuffix')}
+                  </p>
+
+                  <p className="mt-4 text-sm text-muted">{plan.desc}</p>
 
                   <ul className="mt-6 flex flex-1 flex-col gap-3">
                     {plan.features.map((f) => (

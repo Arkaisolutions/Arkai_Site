@@ -21,9 +21,9 @@ export default function Work() {
           <p className="mt-4 text-muted">{t('work.subtitle')}</p>
         </Reveal>
 
-        <div className="mt-14 grid gap-5 md:grid-cols-2">
+        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => (
-            <Reveal key={item.title} delay={i * 80}>
+            <Reveal key={item.title} delay={i * 70}>
               <article className="card group relative h-full overflow-hidden">
                 <div className="absolute right-0 top-0 h-32 w-32 translate-x-10 -translate-y-10 rounded-full bg-accent/10 blur-2xl transition-opacity duration-300 group-hover:opacity-100" />
                 <span className="relative inline-flex rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-semibold text-accent-2">

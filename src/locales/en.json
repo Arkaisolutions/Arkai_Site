@@ -93,24 +93,34 @@
     "subtitle": "We don't sell slides. These are live automations generating results right now.",
     "items": [
       {
-        "tag": "Automotive",
-        "title": "AI lead engine for a car dealership",
-        "desc": "Paid traffic plus an AI agent that captures, qualifies and routes buyers — turning ad spend into booked test drives."
+        "tag": "Auto Parts",
+        "title": "ClickParts Brasil",
+        "desc": "Automated billing reminders and customer recovery flows for an auto parts platform — protecting recurring revenue and bringing back inactive buyers."
       },
       {
         "tag": "Solar Energy",
-        "title": "Lead qualification for a solar company",
-        "desc": "An automated funnel that scores and nurtures solar leads, freeing the sales team to close instead of chase."
+        "title": "Futuro Solar",
+        "desc": "AI agents and paid traffic powering lead qualification for solar panels and hydroelectric generation — sales focus on closing, not chasing."
       },
       {
-        "tag": "Agribusiness",
-        "title": "AI SaaS for agricultural extension",
-        "desc": "A custom platform bringing AI automation to the agro sector — built for scale across rural operations."
+        "tag": "Automotive",
+        "title": "Principal Automóveis",
+        "desc": "Paid traffic plus AI agents capturing and qualifying buyers for a car and motorcycle dealership — turning ad spend into booked visits."
       },
       {
-        "tag": "Auto Parts",
-        "title": "Automated billing & customer recovery",
-        "desc": "Smart reminders and recovery flows that bring back inactive customers and protect recurring revenue."
+        "tag": "Real Estate",
+        "title": "Casae Temporada",
+        "desc": "Smart guest communication and reservation automation for a vacation rental operator — scaling bookings without scaling staff."
+      },
+      {
+        "tag": "Hospitality",
+        "title": "Hotel Palace",
+        "desc": "AI concierge and marketing automation for a heritage hotel — lifting direct bookings and freeing the front desk from repetitive questions."
+      },
+      {
+        "tag": "Short Stay",
+        "title": "Casa Reserva Tucano",
+        "desc": "End-to-end automation for a premium short-stay rental: AI guest support, automated booking flow and brand assets."
       }
     ]
   },
@@ -122,14 +132,15 @@
   "pricing": {
     "eyebrow": "Investment",
     "title": "Start small. Scale when it pays off.",
-    "subtitle": "Every plan starts with a low entry investment. You only scale once the automation proves its return. Prices in USD — EUR on request.",
+    "subtitle": "Each plan combines a one-time setup with a monthly retainer. You only scale once the automation proves its return. Prices in USD — EUR on request.",
     "perMonth": "/mo",
-    "from": "from",
+    "setupSuffix": "setup fee",
     "popular": "Most popular",
     "plans": [
       {
         "name": "Starter",
-        "price": "$390",
+        "price": "$497",
+        "setup": "$497",
         "desc": "One AI agent or automation, deployed and running.",
         "features": [
           "1 AI agent (sales OR support)",
@@ -141,19 +152,21 @@
       },
       {
         "name": "Growth",
-        "price": "$890",
+        "price": "$997",
+        "setup": "$997",
         "desc": "A full automation system across your operation.",
         "features": [
           "Up to 3 AI agents",
           "Multi-channel (WhatsApp, email, web)",
-          "Workflow automation + dashboard",
+          "Paid traffic + dashboard",
           "Priority support & monthly optimization"
         ],
         "cta": "Scale with us"
       },
       {
-        "name": "Custom SaaS",
-        "price": "Let's talk",
+        "name": "Scale",
+        "price": "from $2,997",
+        "setup": "from $2,997",
         "desc": "A tailored AI product or SaaS for your market.",
         "features": [
           "Custom software / SaaS build",

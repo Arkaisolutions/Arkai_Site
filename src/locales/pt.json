@@ -93,24 +93,34 @@
     "subtitle": "Não vendemos slides. Estas são automações no ar, gerando resultado agora.",
     "items": [
       {
-        "tag": "Automotivo",
-        "title": "Motor de leads com IA para concessionária",
-        "desc": "Tráfego pago + agente de IA que capta, qualifica e direciona compradores — transformando verba em test drives agendados."
+        "tag": "Autopeças",
+        "title": "ClickParts Brasil",
+        "desc": "Cobrança automatizada e recuperação de clientes para uma plataforma de autopeças — protegendo a receita recorrente e reativando compradores inativos."
       },
       {
         "tag": "Energia Solar",
-        "title": "Qualificação de leads para empresa solar",
-        "desc": "Um funil automatizado que pontua e nutre leads solares, liberando o time de vendas para fechar em vez de correr atrás."
+        "title": "Futuro Solar",
+        "desc": "Agentes de IA e tráfego pago turbinando a qualificação de leads para painéis solares e geração hídrica — vendas focam em fechar, não em correr atrás."
       },
       {
-        "tag": "Agronegócio",
-        "title": "SaaS de IA para extensão rural",
-        "desc": "Uma plataforma sob medida levando automação com IA ao agro — feita para escalar entre operações rurais."
+        "tag": "Automotivo",
+        "title": "Principal Automóveis",
+        "desc": "Tráfego pago + agentes de IA captando e qualificando compradores para uma concessionária de carros e motos — verba em mídia vira visita agendada."
       },
       {
-        "tag": "Autopeças",
-        "title": "Cobrança e recuperação de clientes automatizadas",
-        "desc": "Lembretes inteligentes e fluxos de recuperação que reativam clientes inativos e protegem a receita recorrente."
+        "tag": "Imobiliário",
+        "title": "Casae Temporada",
+        "desc": "Comunicação inteligente com hóspedes e automação de reservas para uma operadora de temporada — escalando reservas sem aumentar equipe."
+      },
+      {
+        "tag": "Hotelaria",
+        "title": "Hotel Palace",
+        "desc": "Concierge de IA e automação de marketing para um hotel histórico — ampliando reservas diretas e liberando a recepção das perguntas repetitivas."
+      },
+      {
+        "tag": "Short Stay",
+        "title": "Casa Reserva Tucano",
+        "desc": "Automação ponta a ponta para um aluguel premium de temporada: atendimento por IA, fluxo de reserva automatizado e identidade visual."
       }
     ]
   },
@@ -122,14 +132,15 @@
   "pricing": {
     "eyebrow": "Investimento",
     "title": "Comece pequeno. Escale quando se pagar.",
-    "subtitle": "Todo plano começa com um investimento de entrada baixo. Você só escala quando a automação prova o retorno. Preços em USD — EUR sob consulta.",
+    "subtitle": "Cada plano combina um setup único com mensalidade recorrente. Você só escala quando a automação prova o retorno. Preços em USD — EUR sob consulta.",
     "perMonth": "/mês",
-    "from": "a partir de",
+    "setupSuffix": "de setup",
     "popular": "Mais escolhido",
     "plans": [
       {
         "name": "Starter",
-        "price": "$390",
+        "price": "$497",
+        "setup": "$497",
         "desc": "Um agente ou automação de IA, implantado e rodando.",
         "features": [
           "1 agente de IA (vendas OU atendimento)",
@@ -141,19 +152,21 @@
       },
       {
         "name": "Growth",
-        "price": "$890",
+        "price": "$997",
+        "setup": "$997",
         "desc": "Um sistema completo de automação na sua operação.",
         "features": [
           "Até 3 agentes de IA",
           "Multicanal (WhatsApp, e-mail, site)",
-          "Automação de processos + dashboard",
+          "Tráfego pago + dashboard",
           "Suporte prioritário e otimização mensal"
         ],
         "cta": "Escalar com a gente"
       },
       {
-        "name": "SaaS Sob Medida",
-        "price": "Vamos conversar",
+        "name": "Scale",
+        "price": "a partir de $2.997",
+        "setup": "a partir de $2.997",
         "desc": "Um produto de IA ou SaaS sob medida para o seu mercado.",
         "features": [
           "Desenvolvimento de software / SaaS sob medida",
