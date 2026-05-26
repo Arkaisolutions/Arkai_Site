@@ -8,11 +8,11 @@
   },
   "hero": {
     "badge": "AI Automation Agency",
-    "title1": "AI agents that run your business",
-    "title2": "while you sleep",
-    "subtitle": "Arkai Solutions designs and deploys autonomous AI systems for sales, support and operations — so you grow revenue without growing headcount.",
-    "ctaPrimary": "Book a free automation audit",
-    "ctaSecondary": "See what we build",
+    "title1": "More revenue.",
+    "title2": "Zero extra headcount.",
+    "subtitle": "Arkai Solutions builds autonomous AI systems that capture leads, close deals and run operations 24/7 — so your business scales without your team growing.",
+    "ctaPrimary": "Get my free audit",
+    "ctaSecondary": "See real systems",
     "stat1Value": "24/7",
     "stat1Label": "Agents that never sleep",
     "stat2Value": "Live",
@@ -21,7 +21,53 @@
     "stat3Label": "Global delivery"
   },
   "trust": {
-    "label": "Trusted by companies across industries"
+    "label": "Live in production for"
+  },
+  "terminal": {
+    "lines": [
+      "→ New lead from Meta Ad campaign",
+      "  AI Agent · qualifying intent...",
+      "  Lead score: 92/100 · hot",
+      "→ Booking call for tomorrow, 14:00",
+      "  WhatsApp confirmation sent ✓",
+      "→ Lead pushed to CRM · pipeline updated",
+      "→ Daily report sent to founder ✓",
+      "  Idle · listening for the next lead..."
+    ],
+    "label": "AI Agent · Live"
+  },
+  "modal": {
+    "step": "Step {{n}} of {{total}}",
+    "next": "Next",
+    "back": "Back",
+    "submit": "Send & get my audit",
+    "sending": "Sending...",
+    "q1Title": "What's your industry?",
+    "q1Subtitle": "We'll match you to the right AI playbook.",
+    "q1Options": ["Automotive", "Solar Energy", "Real Estate", "Hospitality / Travel", "Auto Parts / E-commerce", "Other"],
+    "q2Title": "Where do you lose the most time today?",
+    "q2Subtitle": "Pick the biggest bottleneck.",
+    "q2Options": ["Generating leads", "Customer support", "Sales follow-up", "Billing / recovery", "Operations / reports", "Other"],
+    "q3Title": "What's your monthly revenue range?",
+    "q3Subtitle": "Helps us recommend the right plan.",
+    "q3Options": ["Under $10k", "$10k – $50k", "$50k – $200k", "$200k+", "Prefer not to say"],
+    "q4Title": "Where do we send your audit?",
+    "q4Subtitle": "Free, no commitment. You get it in 24h.",
+    "nameLabel": "Your name",
+    "namePh": "John Doe",
+    "emailLabel": "Email",
+    "emailPh": "you@company.com",
+    "whatsappLabel": "WhatsApp (with country code)",
+    "whatsappPh": "+1 555 123 4567",
+    "companyLabel": "Company (optional)",
+    "companyPh": "Acme Inc.",
+    "successTitle": "You're in.",
+    "successBody": "Your custom AI audit is on its way. Expect a WhatsApp from us within 24h with concrete next steps for your business.",
+    "successBookTitle": "Want to go faster?",
+    "successBookCta": "Book a call now",
+    "close": "Close",
+    "errorTitle": "Something went wrong",
+    "errorBody": "We couldn't submit your info. Please try again, or message us on WhatsApp."
   },
   "services": {
     "eyebrow": "What we build",

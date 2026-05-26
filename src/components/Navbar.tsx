@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { config } from '../config'
+import { useLeadModal } from '../lead/LeadModalContext'
 import { IconClose, IconGlobe, IconMenu } from './icons'
 
 const links = [
@@ -12,6 +12,7 @@ const links = [
 
 export default function Navbar() {
   const { t, i18n } = useTranslation()
+  const { open: openLead } = useLeadModal()
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
 
@@ -62,9 +63,9 @@ export default function Navbar() {
             <IconGlobe width={15} height={15} />
             {lang}
           </button>
-          <a href={config.bookingUrl} target="_blank" rel="noreferrer" className="btn-primary hidden sm:inline-flex">
+          <button onClick={openLead} className="btn-primary hidden sm:inline-flex">
             {t('nav.contact')}
-          </a>
+          </button>
           <button
             className="grid h-10 w-10 place-items-center rounded-full border border-line text-ink md:hidden"
             onClick={() => setOpen((v) => !v)}
@@ -88,15 +89,15 @@ export default function Navbar() {
                 {t(l.key)}
               </a>
             ))}
-            <a
-              href={config.bookingUrl}
-              target="_blank"
-              rel="noreferrer"
+            <button
               className="btn-primary mt-2"
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                setOpen(false)
+                openLead()
+              }}
             >
               {t('nav.contact')}
-            </a>
+            </button>
           </div>
         </div>
       )}

@@ -8,11 +8,11 @@
   },
   "hero": {
     "badge": "Agência de Automação com IA",
-    "title1": "Agentes de IA que tocam seu negócio",
-    "title2": "enquanto você dorme",
-    "subtitle": "A Arkai Solutions cria e implanta sistemas autônomos de IA para vendas, atendimento e operação — para você crescer o faturamento sem aumentar a equipe.",
-    "ctaPrimary": "Agende um diagnóstico gratuito",
-    "ctaSecondary": "Veja o que construímos",
+    "title1": "Mais receita.",
+    "title2": "Sem contratar mais ninguém.",
+    "subtitle": "A Arkai Solutions constrói sistemas autônomos de IA que captam leads, fecham vendas e tocam a operação 24/7 — pra sua empresa escalar sem aumentar a equipe.",
+    "ctaPrimary": "Quero meu diagnóstico grátis",
+    "ctaSecondary": "Ver sistemas reais",
     "stat1Value": "24/7",
     "stat1Label": "Agentes que nunca dormem",
     "stat2Value": "No ar",
@@ -21,7 +21,53 @@
     "stat3Label": "Entrega global"
   },
   "trust": {
-    "label": "A confiança de empresas em diversos setores"
+    "label": "Em produção para"
+  },
+  "terminal": {
+    "lines": [
+      "→ Novo lead de campanha no Meta Ads",
+      "  Agente IA · qualificando intenção...",
+      "  Lead score: 92/100 · quente",
+      "→ Agendando reunião amanhã, 14:00",
+      "  Confirmação enviada via WhatsApp ✓",
+      "→ Lead salvo no CRM · pipeline atualizado",
+      "→ Relatório diário enviado ao founder ✓",
+      "  Ocioso · aguardando o próximo lead..."
+    ],
+    "label": "Agente IA · Ao vivo"
+  },
+  "modal": {
+    "step": "Passo {{n}} de {{total}}",
+    "next": "Próximo",
+    "back": "Voltar",
+    "submit": "Enviar e receber diagnóstico",
+    "sending": "Enviando...",
+    "q1Title": "Qual o seu setor?",
+    "q1Subtitle": "Vamos te encaixar no playbook de IA certo.",
+    "q1Options": ["Automotivo", "Energia Solar", "Imobiliário", "Hotelaria / Turismo", "Autopeças / E-commerce", "Outro"],
+    "q2Title": "Onde você perde mais tempo hoje?",
+    "q2Subtitle": "Escolha o maior gargalo.",
+    "q2Options": ["Gerar leads", "Atendimento ao cliente", "Follow-up de vendas", "Cobrança / recuperação", "Operação / relatórios", "Outro"],
+    "q3Title": "Qual o faturamento mensal?",
+    "q3Subtitle": "Ajuda a recomendar o plano certo.",
+    "q3Options": ["Até R$50k", "R$50k – R$200k", "R$200k – R$1M", "R$1M+", "Prefiro não dizer"],
+    "q4Title": "Pra onde enviamos seu diagnóstico?",
+    "q4Subtitle": "Grátis, sem compromisso. Você recebe em 24h.",
+    "nameLabel": "Seu nome",
+    "namePh": "João da Silva",
+    "emailLabel": "E-mail",
+    "emailPh": "voce@empresa.com",
+    "whatsappLabel": "WhatsApp (com DDD/DDI)",
+    "whatsappPh": "+55 11 99999 9999",
+    "companyLabel": "Empresa (opcional)",
+    "companyPh": "Arkai Ltda.",
+    "successTitle": "Pronto!",
+    "successBody": "Seu diagnóstico personalizado já está a caminho. Em até 24h você recebe um WhatsApp nosso com os próximos passos concretos pro seu negócio.",
+    "successBookTitle": "Quer agilizar?",
+    "successBookCta": "Agende uma call agora",
+    "close": "Fechar",
+    "errorTitle": "Algo deu errado",
+    "errorBody": "Não conseguimos enviar suas informações. Tente novamente, ou nos chame no WhatsApp."
   },
   "services": {
     "eyebrow": "O que construímos",

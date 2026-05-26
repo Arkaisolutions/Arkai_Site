@@ -6,8 +6,12 @@ export const config = {
   brand: 'Arkai Solutions',
   domain: 'arkaisolutions.com.br',
 
-  // Link de agendamento (Calendly, Cal.com, etc.) — troque pelo seu.
+  // Link de agendamento (Calendly, Cal.com, etc.) — usado no fallback do final do modal.
   bookingUrl: 'https://calendly.com/arkaisolutions',
+
+  // Webhook que recebe os leads do funil (n8n / Make / Airtable Automations).
+  // Deixe vazio em dev — leads cairão no console. Veja docs/lead-webhook.md.
+  leadWebhookUrl: '',
 
   email: 'contato@arkaisolutions.com.br',
 

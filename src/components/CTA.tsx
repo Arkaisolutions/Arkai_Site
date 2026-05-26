@@ -1,10 +1,11 @@
 import { useTranslation } from 'react-i18next'
-import { config } from '../config'
+import { useLeadModal } from '../lead/LeadModalContext'
 import { IconArrow } from './icons'
 import Reveal from './Reveal'
 
 export default function CTA() {
   const { t } = useTranslation()
+  const { open } = useLeadModal()
 
   return (
     <section id="contact" className="relative py-24">
@@ -17,15 +18,10 @@ export default function CTA() {
               <h2 className="section-title mx-auto max-w-2xl">{t('cta.title')}</h2>
               <p className="mx-auto mt-5 max-w-xl text-muted">{t('cta.subtitle')}</p>
               <div className="mt-9">
-                <a
-                  href={config.bookingUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn-primary text-base"
-                >
+                <button onClick={open} className="btn-primary text-base">
                   {t('cta.button')}
                   <IconArrow width={17} height={17} />
-                </a>
+                </button>
               </div>
               <p className="mt-4 text-xs text-muted">{t('cta.note')}</p>
             </div>

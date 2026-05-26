@@ -10,6 +10,8 @@ import Pricing from './components/Pricing'
 import FAQ from './components/FAQ'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
+import LeadModal from './lead/LeadModal'
+import { LeadModalProvider } from './lead/LeadModalContext'
 
 export default function App() {
   const { i18n } = useTranslation()
@@ -19,7 +21,7 @@ export default function App() {
   }, [i18n.language])
 
   return (
-    <>
+    <LeadModalProvider>
       <Navbar />
       <main>
         <Hero />
@@ -32,6 +34,7 @@ export default function App() {
         <CTA />
       </main>
       <Footer />
-    </>
+      <LeadModal />
+    </LeadModalProvider>
   )
 }
