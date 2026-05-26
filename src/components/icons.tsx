@@ -109,3 +109,58 @@ export const serviceIcons: Record<string, (p: IconProps) => ReactElement> = {
   traffic: IconTraffic,
   data: IconData,
 }
+
+/* ====================== Industry icons ====================== */
+export const IconSolar = (p: IconProps) => (
+  <svg {...base(p)}>
+    <circle cx="12" cy="12" r="4" />
+    <path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4" />
+  </svg>
+)
+
+export const IconCar = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M3 13l2-5h14l2 5M3 13v5h3v-2h12v2h3v-5M3 13h18" />
+    <circle cx="7" cy="16" r="1" />
+    <circle cx="17" cy="16" r="1" />
+  </svg>
+)
+
+export const IconHotel = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M3 21V7l9-4 9 4v14" />
+    <path d="M3 21h18M9 12h.01M15 12h.01M9 16h.01M15 16h.01M11 21v-4h2v4" />
+  </svg>
+)
+
+export const IconBuilding = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M4 21V5l8-2 8 2v16" />
+    <path d="M4 21h16M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01" />
+  </svg>
+)
+
+export const IconShop = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M3 8h18l-1 4H4L3 8Z" />
+    <path d="M5 12v8h14v-8M9 20v-4h6v4" />
+  </svg>
+)
+
+export const IconAgro = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M12 22V8" />
+    <path d="M12 12c-3 0-6-1-6-5 4 0 6 2 6 5Z" />
+    <path d="M12 12c3 0 6-1 6-5-4 0-6 2-6 5Z" />
+    <path d="M4 22h16" />
+  </svg>
+)
+
+export const industryIcons: Record<string, (p: IconProps) => ReactElement> = {
+  solar: IconSolar,
+  automotive: IconCar,
+  hospitality: IconHotel,
+  realestate: IconBuilding,
+  ecommerce: IconShop,
+  agro: IconAgro,
+}

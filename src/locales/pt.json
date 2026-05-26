@@ -134,39 +134,79 @@
     ]
   },
   "work": {
-    "eyebrow": "Trabalhos selecionados",
-    "title": "Sistemas reais, em produção",
-    "subtitle": "Não vendemos slides. Estas são automações no ar, gerando resultado agora.",
+    "eyebrow": "Setores que atendemos",
+    "title": "Feito pros setores que mais investem em IA",
+    "subtitle": "Aplicamos o mesmo playbook — do solar à hotelaria — adaptado às métricas, canais e gargalos que movem cada setor.",
+    "moreTag": "Em alta em 2026",
+    "ctaLabel": "Não viu seu setor?",
+    "ctaSub": "Atendemos negócios focados em crescimento em diversos setores. Conta o seu pra gente.",
+    "ctaButton": "Quero meu diagnóstico grátis",
     "items": [
       {
-        "tag": "Autopeças",
-        "title": "ClickParts Brasil",
-        "desc": "Cobrança automatizada e recuperação de clientes para uma plataforma de autopeças — protegendo a receita recorrente e reativando compradores inativos."
+        "icon": "solar",
+        "tag": "Energia Solar & Renovável",
+        "title": "Energia Solar",
+        "desc": "Transforme tráfego pago em leads qualificados — e encurte o ciclo do primeiro clique ao contrato assinado.",
+        "bullets": [
+          "Lead scoring com IA (filtra curioso de comprador real)",
+          "Proposta e cálculo de ROI automatizados por endereço",
+          "Sequência de follow-up no WhatsApp até o fechamento"
+        ]
       },
       {
-        "tag": "Energia Solar",
-        "title": "Futuro Solar",
-        "desc": "Agentes de IA e tráfego pago turbinando a qualificação de leads para painéis solares e geração hídrica — vendas focam em fechar, não em correr atrás."
+        "icon": "automotive",
+        "tag": "Automotivo · Concessionárias",
+        "title": "Carros & Motos",
+        "desc": "Mais test drives e visitas — sem aumentar o time de vendas.",
+        "bullets": [
+          "Captura de leads do Meta e Google Ads 24/7",
+          "Qualificação automática por modelo, orçamento e troca",
+          "Agendamento direto na agenda da loja"
+        ]
       },
       {
-        "tag": "Automotivo",
-        "title": "Principal Automóveis",
-        "desc": "Tráfego pago + agentes de IA captando e qualificando compradores para uma concessionária de carros e motos — verba em mídia vira visita agendada."
+        "icon": "hospitality",
+        "tag": "Hotelaria · Turismo",
+        "title": "Hotéis, Pousadas & Temporada",
+        "desc": "Concierge de IA que aumenta reservas diretas — e para de queimar margem com OTAs.",
+        "bullets": [
+          "Concierge IA 24/7 no WhatsApp e site",
+          "Jornadas pré-chegada, durante e pós-estadia",
+          "Fluxo de reserva direta otimizado pra conversão"
+        ]
       },
       {
+        "icon": "realestate",
         "tag": "Imobiliário",
-        "title": "Casae Temporada",
-        "desc": "Comunicação inteligente com hóspedes e automação de reservas para uma operadora de temporada — escalando reservas sem aumentar equipe."
+        "title": "Imóveis & Locação",
+        "desc": "Casa o perfil do comprador/inquilino com os imóveis em segundos — e nunca mais perca lead na caixa de entrada.",
+        "bullets": [
+          "Agente IA que casa perfil com imóveis disponíveis",
+          "Agendamento automático com o corretor certo",
+          "Contratos e documentos gerados automaticamente"
+        ]
       },
       {
-        "tag": "Hotelaria",
-        "title": "Hotel Palace",
-        "desc": "Concierge de IA e automação de marketing para um hotel histórico — ampliando reservas diretas e liberando a recepção das perguntas repetitivas."
+        "icon": "ecommerce",
+        "tag": "Autopeças · E-commerce",
+        "title": "E-commerce & Autopeças",
+        "desc": "Recupere receita perdida de clientes inativos e carrinhos abandonados — no automático.",
+        "bullets": [
+          "Recuperação de carrinho + cobrança inteligente",
+          "Fluxos de reativação pra clientes inativos",
+          "Atendimento IA respondendo dúvidas de produto na hora"
+        ]
       },
       {
-        "tag": "Short Stay",
-        "title": "Casa Reserva Tucano",
-        "desc": "Automação ponta a ponta para um aluguel premium de temporada: atendimento por IA, fluxo de reserva automatizado e identidade visual."
+        "icon": "agro",
+        "tag": "Agronegócio",
+        "title": "Agronegócio",
+        "desc": "Modernize operações rurais com IA que cuida da burocracia, dos alertas e do cliente.",
+        "bullets": [
+          "Relatórios e captura de dados de campo automatizados",
+          "Alertas de clima e mercado para produtores",
+          "Onboarding de produtores rurais e parceiros"
+        ]
       }
     ]
   },

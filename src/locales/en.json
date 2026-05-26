@@ -134,39 +134,79 @@
     ]
   },
   "work": {
-    "eyebrow": "Selected work",
-    "title": "Real systems, in production",
-    "subtitle": "We don't sell slides. These are live automations generating results right now.",
+    "eyebrow": "Industries we serve",
+    "title": "Built for the sectors investing the most in AI",
+    "subtitle": "We bring the same playbook from solar to hospitality — adapted to the metrics, channels and bottlenecks that move each industry.",
+    "moreTag": "Hot in 2026",
+    "ctaLabel": "Don't see your industry?",
+    "ctaSub": "We work with growth-focused businesses across sectors. Tell us about yours.",
+    "ctaButton": "Get my free audit",
     "items": [
       {
-        "tag": "Auto Parts",
-        "title": "ClickParts Brasil",
-        "desc": "Automated billing reminders and customer recovery flows for an auto parts platform — protecting recurring revenue and bringing back inactive buyers."
+        "icon": "solar",
+        "tag": "Solar & Renewable",
+        "title": "Solar Energy",
+        "desc": "Turn paid traffic into qualified solar leads — and shorten the cycle from first click to signed contract.",
+        "bullets": [
+          "AI lead scoring (filter tire-kickers from real buyers)",
+          "Automated proposal & ROI calc per address",
+          "WhatsApp follow-up sequence until the close"
+        ]
       },
       {
-        "tag": "Solar Energy",
-        "title": "Futuro Solar",
-        "desc": "AI agents and paid traffic powering lead qualification for solar panels and hydroelectric generation — sales focus on closing, not chasing."
+        "icon": "automotive",
+        "tag": "Automotive · Dealerships",
+        "title": "Cars & Motorcycles",
+        "desc": "More test drives and visits — without growing your sales team.",
+        "bullets": [
+          "Capture leads from Meta & Google Ads 24/7",
+          "Auto-qualify by model, budget and trade-in",
+          "Book visits straight into the showroom calendar"
+        ]
       },
       {
-        "tag": "Automotive",
-        "title": "Principal Automóveis",
-        "desc": "Paid traffic plus AI agents capturing and qualifying buyers for a car and motorcycle dealership — turning ad spend into booked visits."
+        "icon": "hospitality",
+        "tag": "Hospitality · Tourism",
+        "title": "Hotels, Inns & Short Stay",
+        "desc": "AI concierge that lifts direct bookings — and stops draining margin to OTAs.",
+        "bullets": [
+          "24/7 AI concierge across WhatsApp and site",
+          "Pre-arrival, in-stay and post-stay journeys",
+          "Direct booking flow optimized for conversion"
+        ]
       },
       {
+        "icon": "realestate",
         "tag": "Real Estate",
-        "title": "Casae Temporada",
-        "desc": "Smart guest communication and reservation automation for a vacation rental operator — scaling bookings without scaling staff."
+        "title": "Real Estate & Rentals",
+        "desc": "Match buyers and tenants to listings in seconds — and never lose a lead in the inbox.",
+        "bullets": [
+          "AI agent that matches profile to listings",
+          "Automated visit scheduling with the right agent",
+          "Contracts and documents generated automatically"
+        ]
       },
       {
-        "tag": "Hospitality",
-        "title": "Hotel Palace",
-        "desc": "AI concierge and marketing automation for a heritage hotel — lifting direct bookings and freeing the front desk from repetitive questions."
+        "icon": "ecommerce",
+        "tag": "Auto Parts · E-commerce",
+        "title": "E-commerce & Auto Parts",
+        "desc": "Recover lost revenue from inactive customers and abandoned carts — automatically.",
+        "bullets": [
+          "Cart recovery + smart billing reminders",
+          "Reactivation flows for inactive buyers",
+          "AI support that answers product questions instantly"
+        ]
       },
       {
-        "tag": "Short Stay",
-        "title": "Casa Reserva Tucano",
-        "desc": "End-to-end automation for a premium short-stay rental: AI guest support, automated booking flow and brand assets."
+        "icon": "agro",
+        "tag": "Agribusiness",
+        "title": "Agribusiness",
+        "desc": "Modernize rural operations with AI that handles the paperwork, the alerts and the customer side.",
+        "bullets": [
+          "Automated reporting and field data capture",
+          "Weather & market alerts to producers",
+          "Onboarding flow for rural customers and partners"
+        ]
       }
     ]
   },
