@@ -4,27 +4,32 @@ import { useTranslation } from 'react-i18next'
 /**
  * "AI Agent · Live" terminal. Cycles through fake but plausible agent
  * activity lines with a typewriter effect. Show-don't-tell for the product.
+ *
+ * NOTE: We intentionally depend on `i18n.language` (NOT on the lines array),
+ * because `t(..., { returnObjects: true })` returns a NEW array reference on
+ * every render, which would reset the animation every render and the terminal
+ * would never finish typing the first line.
  */
 export default function AgentTerminal() {
   const { t, i18n } = useTranslation()
-  const lines = t('terminal.lines', { returnObjects: true }) as string[]
 
   const [printed, setPrinted] = useState<string[]>([])
   const [currentLine, setCurrentLine] = useState('')
-  const indexRef = useRef(0)
   const scrollerRef = useRef<HTMLDivElement>(null)
 
-  // Reset on language change
   useEffect(() => {
+    // Snapshot the lines once for this language pass.
+    const lines = t('terminal.lines', { returnObjects: true }) as string[]
+    if (!Array.isArray(lines) || lines.length === 0) return
+
+    // Reset visual state for this run.
     setPrinted([])
     setCurrentLine('')
-    indexRef.current = 0
-  }, [i18n.language])
 
-  useEffect(() => {
     let mounted = true
     let typeTimer: number | undefined
     let nextLineTimer: number | undefined
+    let index = 0
 
     const typeLine = (line: string, onDone: () => void) => {
       let i = 0
@@ -43,7 +48,7 @@ export default function AgentTerminal() {
 
     const advance = () => {
       if (!mounted) return
-      const line = lines[indexRef.current % lines.length]
+      const line = lines[index % lines.length]
       typeLine(line, () => {
         if (!mounted) return
         setPrinted((prev) => {
@@ -52,7 +57,7 @@ export default function AgentTerminal() {
           return next.length > 7 ? next.slice(next.length - 7) : next
         })
         setCurrentLine('')
-        indexRef.current += 1
+        index += 1
         nextLineTimer = window.setTimeout(advance, 250)
       })
     }
@@ -64,7 +69,8 @@ export default function AgentTerminal() {
       if (typeTimer) clearTimeout(typeTimer)
       if (nextLineTimer) clearTimeout(nextLineTimer)
     }
-  }, [lines])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [i18n.language])
 
   useEffect(() => {
     if (scrollerRef.current) {
