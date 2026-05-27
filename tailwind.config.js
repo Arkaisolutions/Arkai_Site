@@ -49,6 +49,10 @@ export default {
           '0%, 49%': { opacity: '1' },
           '50%, 100%': { opacity: '0' },
         },
+        'pulse-ring': {
+          '0%': { transform: 'scale(0.85)', opacity: '0.7' },
+          '100%': { transform: 'scale(1.7)', opacity: '0' },
+        },
       },
       animation: {
         'fade-up': 'fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both',
@@ -58,6 +62,7 @@ export default {
         'aurora-3': 'aurora-3 25s ease-in-out infinite',
         marquee: 'marquee 35s linear infinite',
         blink: 'blink 1.1s steps(1, end) infinite',
+        'pulse-ring': 'pulse-ring 2.4s cubic-bezier(0.66, 0, 0, 1) infinite',
       },
     },
   },

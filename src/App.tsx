@@ -10,6 +10,7 @@ import Pricing from './components/Pricing'
 import FAQ from './components/FAQ'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
+import FloatingWhatsApp from './components/FloatingWhatsApp'
 import LeadModal from './lead/LeadModal'
 import { LeadModalProvider } from './lead/LeadModalContext'
 
@@ -35,6 +36,7 @@ export default function App() {
       </main>
       <Footer />
       <LeadModal />
+      <FloatingWhatsApp />
     </LeadModalProvider>
   )
 }

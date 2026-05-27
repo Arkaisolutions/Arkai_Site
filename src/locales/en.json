@@ -136,21 +136,45 @@
   "work": {
     "eyebrow": "Industries we serve",
     "title": "Built for the sectors investing the most in AI",
-    "subtitle": "We bring the same playbook from solar to hospitality — adapted to the metrics, channels and bottlenecks that move each industry.",
+    "subtitle": "We bring the same playbook — adapted to the metrics, channels and bottlenecks that move each industry.",
     "moreTag": "Hot in 2026",
+    "alsoLabel": "Also serving",
+    "alsoList": "Agribusiness · Restaurants & Food · Legal · Marketing Agencies",
     "ctaLabel": "Don't see your industry?",
     "ctaSub": "We work with growth-focused businesses across sectors. Tell us about yours.",
     "ctaButton": "Get my free audit",
     "items": [
       {
-        "icon": "solar",
-        "tag": "Solar & Renewable",
-        "title": "Solar Energy",
-        "desc": "Turn paid traffic into qualified solar leads — and shorten the cycle from first click to signed contract.",
+        "icon": "realestate",
+        "tag": "Real Estate",
+        "title": "Real Estate & Rentals",
+        "desc": "Match buyers and tenants to listings in seconds — and never lose a lead in the inbox.",
         "bullets": [
-          "AI lead scoring (filter tire-kickers from real buyers)",
-          "Automated proposal & ROI calc per address",
-          "WhatsApp follow-up sequence until the close"
+          "AI agent that matches profile to listings",
+          "Automated visit scheduling with the right agent",
+          "Contracts and documents generated automatically"
+        ]
+      },
+      {
+        "icon": "health",
+        "tag": "Health · Aesthetics · Dental",
+        "title": "Clinics & Aesthetics",
+        "desc": "Fill the agenda with the right patients — without paying for tire-kickers on Meta Ads.",
+        "bullets": [
+          "AI lead qualifier before booking the first consultation",
+          "Reminders that cut no-shows by half",
+          "Reactivation flows for patients who didn't return"
+        ]
+      },
+      {
+        "icon": "finance",
+        "tag": "Financial · Credit",
+        "title": "Credit & Financial",
+        "desc": "Score and route financial leads instantly — at a fraction of the cost per qualified lead.",
+        "bullets": [
+          "Lead scoring by profile, ticket and intent",
+          "Automated document collection by WhatsApp",
+          "24/7 first contact and routing to the right broker"
         ]
       },
       {
@@ -165,6 +189,17 @@
         ]
       },
       {
+        "icon": "solar",
+        "tag": "Solar & Renewable",
+        "title": "Solar Energy",
+        "desc": "Turn paid traffic into qualified solar leads — shortening the cycle from first click to signed contract.",
+        "bullets": [
+          "AI lead scoring (filter tire-kickers from real buyers)",
+          "Automated proposal & ROI calc per address",
+          "WhatsApp follow-up sequence until the close"
+        ]
+      },
+      {
         "icon": "hospitality",
         "tag": "Hospitality · Tourism",
         "title": "Hotels, Inns & Short Stay",
@@ -176,36 +211,36 @@
         ]
       },
       {
-        "icon": "realestate",
-        "tag": "Real Estate",
-        "title": "Real Estate & Rentals",
-        "desc": "Match buyers and tenants to listings in seconds — and never lose a lead in the inbox.",
+        "icon": "education",
+        "tag": "Education · Courses",
+        "title": "Schools & EdTech",
+        "desc": "Capture and nurture enrollments with AI that talks to parents and students 24/7.",
         "bullets": [
-          "AI agent that matches profile to listings",
-          "Automated visit scheduling with the right agent",
-          "Contracts and documents generated automatically"
+          "AI agent for enrollments and visits",
+          "Drip nurturing for undecided families",
+          "Reactivation of past leads before enrollment season"
         ]
       },
       {
         "icon": "ecommerce",
-        "tag": "Auto Parts · E-commerce",
-        "title": "E-commerce & Auto Parts",
+        "tag": "E-commerce · Retail",
+        "title": "E-commerce & Retail",
         "desc": "Recover lost revenue from inactive customers and abandoned carts — automatically.",
         "bullets": [
           "Cart recovery + smart billing reminders",
           "Reactivation flows for inactive buyers",
-          "AI support that answers product questions instantly"
+          "AI support answering product questions instantly"
         ]
       },
       {
-        "icon": "agro",
-        "tag": "Agribusiness",
-        "title": "Agribusiness",
-        "desc": "Modernize rural operations with AI that handles the paperwork, the alerts and the customer side.",
+        "icon": "construction",
+        "tag": "Engineering · Construction",
+        "title": "Engineering & Construction",
+        "desc": "An underserved sector — automate quoting, proposals and client communication to win bids faster.",
         "bullets": [
-          "Automated reporting and field data capture",
-          "Weather & market alerts to producers",
-          "Onboarding flow for rural customers and partners"
+          "Automated proposal & budget generation",
+          "AI-assisted scope and bidding workflow",
+          "Client portal with status updates and documents"
         ]
       }
     ]
@@ -291,6 +326,12 @@
         "a": "No. We integrate with what you already use — CRM, spreadsheets, WhatsApp, payment tools and more."
       }
     ]
+  },
+  "wa": {
+    "tooltipTitle": "Talk to our AI agent",
+    "tooltipSub": "Online · replies in seconds",
+    "prefill": "Hi! I'm coming from the Arkai Solutions website and I'd like to know more about your AI automation.",
+    "ariaLabel": "Open WhatsApp chat"
   },
   "footer": {
     "tagline": "Autonomous AI systems for companies that want to scale.",

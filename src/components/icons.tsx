@@ -156,11 +156,58 @@ export const IconAgro = (p: IconProps) => (
   </svg>
 )
 
+export const IconHealth = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78Z" />
+    <path d="M9 12h6M12 9v6" />
+  </svg>
+)
+
+export const IconFinance = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M3 17l5-5 4 4 8-8" />
+    <path d="M14 8h6v6" />
+    <path d="M3 21h18" />
+  </svg>
+)
+
+export const IconEducation = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M2 9l10-5 10 5-10 5L2 9Z" />
+    <path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5" />
+    <path d="M22 9v6" />
+  </svg>
+)
+
+export const IconConstruction = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M3 18h18M4 18V8h16v10" />
+    <path d="M8 18v-6h8v6M10 12v-2h4v2" />
+    <path d="M12 4v4" />
+  </svg>
+)
+
+export const IconWhatsApp = (p: IconProps) => (
+  <svg
+    width={p.width || 24}
+    height={p.height || 24}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    {...p}
+  >
+    <path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.01ZM12.04 20.15h-.01a8.23 8.23 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.21 8.21 0 0 1-1.26-4.37c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.69 8.23-8.21 8.23Zm4.52-6.16c-.25-.12-1.46-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22a7.5 7.5 0 0 1-1.37-1.7c-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.49-.41-.42-.56-.42-.14-.01-.31-.01-.48-.01-.16 0-.43.06-.66.31-.23.25-.86.84-.86 2.06s.88 2.39 1 2.56c.12.17 1.73 2.64 4.2 3.7.59.26 1.05.41 1.4.52.59.19 1.13.16 1.55.1.47-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z" />
+  </svg>
+)
+
 export const industryIcons: Record<string, (p: IconProps) => ReactElement> = {
-  solar: IconSolar,
-  automotive: IconCar,
-  hospitality: IconHotel,
   realestate: IconBuilding,
+  health: IconHealth,
+  finance: IconFinance,
+  automotive: IconCar,
+  solar: IconSolar,
+  hospitality: IconHotel,
+  education: IconEducation,
   ecommerce: IconShop,
+  construction: IconConstruction,
   agro: IconAgro,
 }

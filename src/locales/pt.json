@@ -136,21 +136,45 @@
   "work": {
     "eyebrow": "Setores que atendemos",
     "title": "Feito pros setores que mais investem em IA",
-    "subtitle": "Aplicamos o mesmo playbook — do solar à hotelaria — adaptado às métricas, canais e gargalos que movem cada setor.",
+    "subtitle": "Aplicamos o mesmo playbook — adaptado às métricas, canais e gargalos que movem cada setor.",
     "moreTag": "Em alta em 2026",
+    "alsoLabel": "Também atendemos",
+    "alsoList": "Agronegócio · Restaurantes & Food · Jurídico · Agências de Marketing",
     "ctaLabel": "Não viu seu setor?",
     "ctaSub": "Atendemos negócios focados em crescimento em diversos setores. Conta o seu pra gente.",
     "ctaButton": "Quero meu diagnóstico grátis",
     "items": [
       {
-        "icon": "solar",
-        "tag": "Energia Solar & Renovável",
-        "title": "Energia Solar",
-        "desc": "Transforme tráfego pago em leads qualificados — e encurte o ciclo do primeiro clique ao contrato assinado.",
+        "icon": "realestate",
+        "tag": "Imobiliário",
+        "title": "Imóveis & Locação",
+        "desc": "Casa o perfil do comprador/inquilino com imóveis em segundos — e nunca mais perca lead na caixa de entrada.",
         "bullets": [
-          "Lead scoring com IA (filtra curioso de comprador real)",
-          "Proposta e cálculo de ROI automatizados por endereço",
-          "Sequência de follow-up no WhatsApp até o fechamento"
+          "Agente IA casando perfil com imóveis disponíveis",
+          "Agendamento automático com o corretor certo",
+          "Contratos e documentos gerados automaticamente"
+        ]
+      },
+      {
+        "icon": "health",
+        "tag": "Saúde · Estética · Odonto",
+        "title": "Clínicas & Estética",
+        "desc": "Lota a agenda com os pacientes certos — sem queimar verba em curioso no Meta Ads.",
+        "bullets": [
+          "Qualificador IA antes de agendar a primeira consulta",
+          "Lembretes que cortam o no-show pela metade",
+          "Reativação dos pacientes que não voltaram"
+        ]
+      },
+      {
+        "icon": "finance",
+        "tag": "Financeiro · Crédito",
+        "title": "Crédito & Financeiro",
+        "desc": "Pontua e roteia leads financeiros na hora — a uma fração do custo por lead qualificado.",
+        "bullets": [
+          "Lead scoring por perfil, ticket e intenção",
+          "Coleta automatizada de documentos no WhatsApp",
+          "Primeiro contato 24/7 e roteamento pro broker certo"
         ]
       },
       {
@@ -165,6 +189,17 @@
         ]
       },
       {
+        "icon": "solar",
+        "tag": "Energia Solar & Renovável",
+        "title": "Energia Solar",
+        "desc": "Transforme tráfego pago em leads qualificados — encurtando o ciclo do clique ao contrato assinado.",
+        "bullets": [
+          "Lead scoring com IA (filtra curioso de comprador real)",
+          "Proposta e cálculo de ROI automatizados por endereço",
+          "Sequência de follow-up no WhatsApp até o fechamento"
+        ]
+      },
+      {
         "icon": "hospitality",
         "tag": "Hotelaria · Turismo",
         "title": "Hotéis, Pousadas & Temporada",
@@ -176,20 +211,20 @@
         ]
       },
       {
-        "icon": "realestate",
-        "tag": "Imobiliário",
-        "title": "Imóveis & Locação",
-        "desc": "Casa o perfil do comprador/inquilino com os imóveis em segundos — e nunca mais perca lead na caixa de entrada.",
+        "icon": "education",
+        "tag": "Educação · Cursos",
+        "title": "Escolas & EdTech",
+        "desc": "Capte e nutra matrículas com IA que conversa com pais e alunos 24/7.",
         "bullets": [
-          "Agente IA que casa perfil com imóveis disponíveis",
-          "Agendamento automático com o corretor certo",
-          "Contratos e documentos gerados automaticamente"
+          "Agente IA pra matrículas e visitas",
+          "Nutrição em série pra famílias indecisas",
+          "Reativação de leads antigos antes do período de matrícula"
         ]
       },
       {
         "icon": "ecommerce",
-        "tag": "Autopeças · E-commerce",
-        "title": "E-commerce & Autopeças",
+        "tag": "E-commerce · Varejo",
+        "title": "E-commerce & Varejo",
         "desc": "Recupere receita perdida de clientes inativos e carrinhos abandonados — no automático.",
         "bullets": [
           "Recuperação de carrinho + cobrança inteligente",
@@ -198,14 +233,14 @@
         ]
       },
       {
-        "icon": "agro",
-        "tag": "Agronegócio",
-        "title": "Agronegócio",
-        "desc": "Modernize operações rurais com IA que cuida da burocracia, dos alertas e do cliente.",
+        "icon": "construction",
+        "tag": "Engenharia · Construção",
+        "title": "Engenharia & Construção",
+        "desc": "Setor pouco automatizado — automatize orçamentos, propostas e comunicação pra ganhar mais licitações.",
         "bullets": [
-          "Relatórios e captura de dados de campo automatizados",
-          "Alertas de clima e mercado para produtores",
-          "Onboarding de produtores rurais e parceiros"
+          "Geração automática de propostas e orçamentos",
+          "Fluxo de escopo e licitação assistido por IA",
+          "Portal do cliente com status e documentos"
         ]
       }
     ]
@@ -291,6 +326,12 @@
         "a": "Não. Integramos com o que você já usa — CRM, planilhas, WhatsApp, ferramentas de pagamento e mais."
       }
     ]
+  },
+  "wa": {
+    "tooltipTitle": "Fale com nosso agente IA",
+    "tooltipSub": "Online · responde em segundos",
+    "prefill": "Olá! Vim do site da Arkai Solutions e quero saber mais sobre as automações com IA.",
+    "ariaLabel": "Abrir WhatsApp"
   },
   "footer": {
     "tagline": "Sistemas autônomos de IA para empresas que querem escalar.",

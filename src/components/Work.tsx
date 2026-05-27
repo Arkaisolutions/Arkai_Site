@@ -70,9 +70,17 @@ export default function Work() {
           })}
         </div>
 
+        {/* Also serving */}
+        <Reveal delay={460}>
+          <p className="mt-10 text-center text-sm text-muted">
+            <span className="font-semibold text-ink/80">{t('work.alsoLabel')}:</span>{' '}
+            {t('work.alsoList')}
+          </p>
+        </Reveal>
+
         {/* Closer CTA */}
-        <Reveal delay={500}>
-          <div className="mt-12 flex flex-col items-center justify-between gap-5 rounded-2xl border border-line bg-surface px-7 py-6 sm:flex-row sm:gap-8 sm:px-9">
+        <Reveal delay={520}>
+          <div className="mt-8 flex flex-col items-center justify-between gap-5 rounded-2xl border border-line bg-surface px-7 py-6 sm:flex-row sm:gap-8 sm:px-9">
             <div>
               <h4 className="text-lg font-bold">{t('work.ctaLabel')}</h4>
               <p className="mt-1 text-sm text-muted">{t('work.ctaSub')}</p>
