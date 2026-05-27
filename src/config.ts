@@ -16,7 +16,7 @@ export const config = {
   email: 'contato@arkaisolutions.com.br',
 
   // WhatsApp em formato internacional, só números (ex.: 5521999999999).
-  whatsapp: '5500000000000',
+  whatsapp: '5521979610875',
 
   social: {
     instagram: 'https://www.instagram.com/arkai_solutions/',
