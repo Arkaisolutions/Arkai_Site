@@ -1,0 +1,419 @@
+{
+  "nav": {
+    "services": "Servicios",
+    "process": "Proceso",
+    "work": "Casos",
+    "pricing": "Planes",
+    "contact": "Agendar llamada"
+  },
+  "hero": {
+    "badge": "Agencia de Automatización con IA",
+    "title1": "Más ingresos.",
+    "title2": "Sin contratar a nadie más.",
+    "subtitle": "Arkai Solutions construye sistemas autónomos de IA que capturan leads, cierran ventas y operan 24/7 — para que tu empresa escale sin que tu equipo crezca.",
+    "ctaPrimary": "Quiero mi diagnóstico gratis",
+    "ctaSecondary": "Ver sistemas reales",
+    "stat1Value": "24/7",
+    "stat1Label": "Agentes que nunca duermen",
+    "stat2Value": "En vivo",
+    "stat2Label": "Sistemas en producción",
+    "stat3Value": "USD / EUR",
+    "stat3Label": "Entrega global"
+  },
+  "trust": {
+    "label": "En producción en",
+    "items": [
+      "Inmobiliario",
+      "Salud & Estética",
+      "Energía Solar",
+      "Automotriz",
+      "Servicios Residenciales",
+      "Seguros",
+      "Legal",
+      "Servicios Financieros",
+      "E-commerce",
+      "SaaS",
+      "Hotelería",
+      "Fitness"
+    ]
+  },
+  "command": {
+    "eyebrow": "Centro de comando en vivo",
+    "title1": "Tu operación,",
+    "title2": "corriendo con IA."
+  },
+  "diagPage": {
+    "badge": "Diagnóstico Gratuito de IA",
+    "title1": "Descubre las automatizaciones de IA",
+    "title2": "que se pagan solas",
+    "subtitle": "Responde 4 preguntas rápidas y te enviamos un diagnóstico personalizado donde la IA ahorra tiempo y genera ingresos en tu negocio — en menos de 24h.",
+    "trust1": "100% gratis",
+    "trust2": "Respuesta en 24h",
+    "trust3": "Sin compromiso",
+    "metaTitle": "Diagnóstico Gratuito de IA · Arkai Solutions"
+  },
+  "thanksPage": {
+    "title": "¡Listo!",
+    "subtitle": "Tu diagnóstico personalizado está en camino. En menos de 24h recibirás un WhatsApp nuestro con los próximos pasos concretos para tu negocio.",
+    "stepsTitle": "Qué sucede ahora",
+    "step1Title": "1 · Diagnóstico recibido",
+    "step1Desc": "Nuestro equipo está revisando tus respuestas ahora.",
+    "step2Title": "2 · Diagnóstico personalizado (24h)",
+    "step2Desc": "Recibirás un mapa personalizado de oportunidades de IA por WhatsApp.",
+    "step3Title": "3 · Llamada estratégica gratis",
+    "step3Desc": "Agendamos una llamada de 30 min para presentarte el plan.",
+    "backHome": "Volver al inicio",
+    "wa": "Hablar por WhatsApp",
+    "metaTitle": "Gracias · Arkai Solutions"
+  },
+  "terminal": {
+    "lines": [
+      "→ Nuevo lead de campaña en Meta Ads",
+      "  Agente IA · calificando intención...",
+      "  Lead score: 92/100 · caliente",
+      "→ Agendando reunión mañana, 14:00",
+      "  Confirmación enviada por WhatsApp ✓",
+      "→ Lead guardado en CRM · pipeline actualizado",
+      "→ Reporte diario enviado al founder ✓",
+      "  Inactivo · esperando el próximo lead..."
+    ],
+    "label": "Agente IA · En vivo"
+  },
+  "modal": {
+    "step": "Paso {{n}} de {{total}}",
+    "next": "Siguiente",
+    "back": "Atrás",
+    "submit": "Enviar y recibir diagnóstico",
+    "sending": "Enviando...",
+    "q1Title": "¿Cuál es tu industria?",
+    "q1Subtitle": "Te conectamos con el playbook de IA correcto.",
+    "q1Options": ["Inmobiliario", "Salud, Estética & Odonto", "Energía Solar", "Automotriz", "Servicios Residenciales (HVAC, Plomería)", "Seguros", "Legal", "Servicios Financieros", "E-commerce & Retail", "SaaS", "Hotelería & Turismo", "Fitness & Gimnasios", "Otro"],
+    "q2Title": "¿Dónde pierdes más tiempo hoy?",
+    "q2Subtitle": "Elige el mayor cuello de botella.",
+    "q2Options": ["Generar leads", "Atención al cliente", "Seguimiento de ventas", "Cobranza / recuperación", "Operación / reportes", "Otro"],
+    "q3Title": "¿Cuál es tu rango de ingresos mensuales?",
+    "q3Subtitle": "Nos ayuda a recomendar el plan adecuado.",
+    "q3Options": ["Hasta $10k", "$10k – $50k", "$50k – $200k", "$200k+", "Prefiero no decirlo"],
+    "q4Title": "¿A dónde enviamos tu diagnóstico?",
+    "q4Subtitle": "Gratis, sin compromiso. Lo recibes en 24h.",
+    "nameLabel": "Tu nombre",
+    "namePh": "Juan Pérez",
+    "emailLabel": "Email",
+    "emailPh": "tu@empresa.com",
+    "whatsappLabel": "WhatsApp (con código de país)",
+    "whatsappPh": "+52 55 1234 5678",
+    "companyLabel": "Empresa (opcional)",
+    "companyPh": "Acme S.A.",
+    "successTitle": "¡Listo!",
+    "successBody": "Tu diagnóstico personalizado está en camino. Espera un WhatsApp nuestro en 24h con los próximos pasos concretos para tu negocio.",
+    "successBookTitle": "¿Quieres ir más rápido?",
+    "successBookCta": "Agendar llamada ahora",
+    "close": "Cerrar",
+    "errorTitle": "Algo salió mal",
+    "errorBody": "No pudimos enviar tu información. Inténtalo otra vez, o escríbenos por WhatsApp."
+  },
+  "services": {
+    "eyebrow": "Lo que construimos",
+    "title": "Automatización que se paga sola",
+    "subtitle": "Cada sistema que entregamos está hecho para eliminar trabajo manual, capturar más ingresos y operar solo.",
+    "items": [
+      {
+        "icon": "agent",
+        "title": "Agentes de Ventas IA (SDR)",
+        "desc": "Agentes autónomos que califican leads, hacen seguimiento y agendan reuniones 24/7 en WhatsApp, email y web."
+      },
+      {
+        "icon": "support",
+        "title": "Agentes de Atención IA",
+        "desc": "Agentes conversacionales que responden al cliente al instante, resuelven tickets y escalan solo lo importante."
+      },
+      {
+        "icon": "workflow",
+        "title": "Automatización de Procesos",
+        "desc": "Flujos de punta a punta que conectan tu CRM, planillas, pagos y herramientas — nunca más copiar y pegar."
+      },
+      {
+        "icon": "saas",
+        "title": "SaaS de IA a Medida",
+        "desc": "Productos de software para tu nicho: inmobiliario, hotelería, agro, automotriz y más."
+      },
+      {
+        "icon": "traffic",
+        "title": "Generación de Leads & Tráfico",
+        "desc": "Tráfico pago integrado a captura, calificación y nutrición automáticas — un flujo predecible de compradores."
+      },
+      {
+        "icon": "data",
+        "title": "Dashboards & Reportes",
+        "desc": "Paneles en vivo y reportes automáticos para que siempre sepas qué funciona — sin armar una sola planilla."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Cómo trabajamos",
+    "title": "Del cuello de botella al piloto automático en 4 pasos",
+    "subtitle": "Un camino claro y de bajo riesgo. Siempre sabes qué recibes por lo que inviertes.",
+    "steps": [
+      {
+        "n": "01",
+        "title": "Diagnóstico",
+        "desc": "Mapeamos tus cuellos de botella y encontramos dónde la IA trae el retorno más rápido. Gratis, sin compromiso."
+      },
+      {
+        "n": "02",
+        "title": "Blueprint",
+        "desc": "Recibes un alcance claro: qué se automatiza, el plazo y la inversión exacta."
+      },
+      {
+        "n": "03",
+        "title": "Construcción & Deploy",
+        "desc": "Construimos, probamos y lanzamos tus sistemas de IA — integrados a las herramientas que ya usas."
+      },
+      {
+        "n": "04",
+        "title": "Escala & Optimización",
+        "desc": "Monitoreamos, refinamos y expandimos. Tu automatización se vuelve más inteligente y tus costos se mantienen estables."
+      }
+    ]
+  },
+  "work": {
+    "eyebrow": "Sectores que atendemos",
+    "title": "Hecho para los sectores que más invierten en IA",
+    "subtitle": "Aplicamos el mismo playbook — adaptado a las métricas, canales y cuellos de botella de cada sector.",
+    "moreTag": "En auge en 2026",
+    "alsoLabel": "También atendemos",
+    "alsoList": "Educación · Construcción · Agro · Restaurantes · Agencias de Marketing",
+    "ctaLabel": "¿No ves tu sector?",
+    "ctaSub": "Trabajamos con negocios enfocados en crecimiento en diversos sectores. Cuéntanos el tuyo.",
+    "ctaButton": "Quiero mi diagnóstico gratis",
+    "items": [
+      {
+        "icon": "realestate",
+        "tag": "Inmobiliario",
+        "title": "Inmuebles & Renta",
+        "desc": "Conecta el perfil del comprador/inquilino con propiedades en segundos — y nunca pierdas un lead en la bandeja de entrada.",
+        "bullets": [
+          "Agente IA que conecta perfil con propiedades disponibles",
+          "Agendamiento automático con el agente correcto",
+          "Contratos y documentos generados automáticamente"
+        ]
+      },
+      {
+        "icon": "health",
+        "tag": "Salud · Estética · Odonto",
+        "title": "Clínicas, Med Spas & Odonto",
+        "desc": "Llena la agenda con los pacientes correctos — sin quemar presupuesto con curiosos en Meta Ads.",
+        "bullets": [
+          "Calificador IA antes de agendar la primera consulta",
+          "Recordatorios que reducen el ausentismo a la mitad",
+          "Reactivación de pacientes que no volvieron"
+        ]
+      },
+      {
+        "icon": "solar",
+        "tag": "Solar & Renovable",
+        "title": "Energía Solar",
+        "desc": "Convierte tráfico pago en leads calificados — acortando el ciclo del primer clic al contrato firmado.",
+        "bullets": [
+          "Lead scoring con IA (filtra curiosos de compradores reales)",
+          "Propuesta y cálculo de ROI automatizados por dirección",
+          "Secuencia de seguimiento en WhatsApp hasta el cierre"
+        ]
+      },
+      {
+        "icon": "automotive",
+        "tag": "Automotriz · Concesionarias",
+        "title": "Autos & Motos",
+        "desc": "Más pruebas de manejo y visitas — sin aumentar el equipo de ventas.",
+        "bullets": [
+          "Captura de leads en Meta y Google Ads 24/7",
+          "Calificación automática por modelo, presupuesto y trade-in",
+          "Agendamiento directo en la agenda del showroom"
+        ]
+      },
+      {
+        "icon": "homeservices",
+        "tag": "Servicios Residenciales",
+        "title": "HVAC, Plomería & Reparaciones",
+        "desc": "Sé el primero en responder cuando un cliente tiene una fuga — y gana el trabajo antes que la competencia.",
+        "bullets": [
+          "Agente IA 24/7 atendiendo emergencias en WhatsApp",
+          "Cotización al instante según problema, dirección y urgencia",
+          "Despacho automático al técnico más cercano disponible"
+        ]
+      },
+      {
+        "icon": "insurance",
+        "tag": "Seguros",
+        "title": "Corredores de Seguros",
+        "desc": "Pre-califica y cotiza leads de seguros a escala — incluso fuera del horario comercial.",
+        "bullets": [
+          "Agente IA cotizando auto, hogar y vida",
+          "Recolección de documentos y recordatorios de renovación",
+          "Entrega al corredor correcto con contexto completo"
+        ]
+      },
+      {
+        "icon": "legal",
+        "tag": "Legal",
+        "title": "Estudios Jurídicos & Servicios Legales",
+        "desc": "Leads de alto valor (US$ 200–800 c/u) merecen respuesta inmediata — la IA hace la triage para que los abogados se enfoquen en los casos.",
+        "bullets": [
+          "Verificación de conflictos y intake de casos automatizados",
+          "Primer contacto 24/7 con clientes potenciales",
+          "Recolección de documentos y portal del cliente"
+        ]
+      },
+      {
+        "icon": "finance",
+        "tag": "Financiero · Crédito · Asesoría",
+        "title": "Servicios Financieros",
+        "desc": "Califica y rutea leads financieros al instante — a una fracción del costo por lead calificado.",
+        "bullets": [
+          "Lead scoring por perfil, ticket e intención",
+          "Recolección automatizada de documentos por WhatsApp",
+          "Ruteo al corredor o asesor correcto 24/7"
+        ]
+      },
+      {
+        "icon": "ecommerce",
+        "tag": "E-commerce · Retail",
+        "title": "E-commerce & Retail",
+        "desc": "Recupera ingresos perdidos de clientes inactivos y carritos abandonados — automáticamente.",
+        "bullets": [
+          "Recuperación de carrito + recordatorios inteligentes de cobro",
+          "Flujos de reactivación para compradores inactivos",
+          "Soporte IA respondiendo dudas de producto al instante"
+        ]
+      },
+      {
+        "icon": "saas",
+        "tag": "SaaS",
+        "title": "Empresas SaaS",
+        "desc": "SDR IA inbound para product-led growth — califica usuarios free, agenda demos, expande cuentas.",
+        "bullets": [
+          "SDR IA calificando registros del free-tier",
+          "Agendamiento automático de demos para leads calificados",
+          "Detección de riesgo de churn y plays de expansión"
+        ]
+      },
+      {
+        "icon": "hospitality",
+        "tag": "Hotelería · Turismo",
+        "title": "Hoteles, Posadas & Temporada",
+        "desc": "Concierge IA que aumenta reservas directas — y deja de quemar margen con OTAs.",
+        "bullets": [
+          "Concierge IA 24/7 en WhatsApp y sitio",
+          "Jornadas pre-llegada, estadía y post-estadía",
+          "Flujo de reserva directa optimizado para conversión"
+        ]
+      },
+      {
+        "icon": "fitness",
+        "tag": "Fitness · Gimnasios",
+        "title": "Gimnasios & Estudios",
+        "desc": "Llena horarios y captura clases de prueba — incluso cuando recepción está ocupada.",
+        "bullets": [
+          "Agente IA para clases de prueba y tours",
+          "Renovación de membresía y win-back de ex-alumnos",
+          "Agendamiento y recordatorio de clases automatizados"
+        ]
+      }
+    ]
+  },
+  "stack": {
+    "eyebrow": "Nuestra tecnología",
+    "title": "Herramientas enterprise, velocidad de agencia",
+    "subtitle": "Construimos sobre la misma tecnología que mueve los mejores productos de IA del mundo."
+  },
+  "pricing": {
+    "eyebrow": "Inversión",
+    "title": "Empieza pequeño. Escala cuando se pague solo.",
+    "subtitle": "Cada plan combina un setup único con una mensualidad recurrente. Solo escalas cuando la automatización prueba el retorno. Precios en USD — EUR a pedido.",
+    "perMonth": "/mes",
+    "setupSuffix": "de setup",
+    "popular": "Más elegido",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "$497",
+        "setup": "$497",
+        "desc": "Un agente o automatización de IA, implementado y corriendo.",
+        "features": [
+          "1 agente de IA (ventas O atención)",
+          "Integración con 1 canal",
+          "Setup, capacitación y lanzamiento",
+          "Soporte por email"
+        ],
+        "cta": "Empezar aquí"
+      },
+      {
+        "name": "Growth",
+        "price": "$997",
+        "setup": "$997",
+        "desc": "Un sistema completo de automatización en tu operación.",
+        "features": [
+          "Hasta 5 agentes de IA",
+          "Multi-canal (WhatsApp, email, web)",
+          "Tráfico pago + dashboard",
+          "Soporte prioritario y optimización mensual"
+        ],
+        "cta": "Escalar con nosotros"
+      },
+      {
+        "name": "Scale",
+        "price": "desde $2.997",
+        "setup": "desde $2.997",
+        "desc": "Un producto de IA o SaaS a medida para tu mercado.",
+        "features": [
+          "Desarrollo de software / SaaS a medida",
+          "Agentes e integraciones ilimitados",
+          "Roadmap dedicado y SLA",
+          "Sociedad continua"
+        ],
+        "cta": "Pedir cotización"
+      }
+    ]
+  },
+  "cta": {
+    "title": "¿Listo para poner la IA a trabajar?",
+    "subtitle": "Agenda un diagnóstico gratuito de 30 minutos. Te mostramos exactamente dónde la IA puede ahorrar tiempo y generar ingresos en tu negocio — sin pitch, solo un plan.",
+    "button": "Agendar diagnóstico gratis",
+    "note": "Sin compromiso. Disponible en español, portugués e inglés."
+  },
+  "faq": {
+    "eyebrow": "Dudas",
+    "title": "Preguntas, respondidas",
+    "items": [
+      {
+        "q": "¿Trabajan con clientes internacionales?",
+        "a": "Sí. Entregamos globalmente y facturamos en USD o EUR. Reuniones y documentación disponibles en español, portugués e inglés."
+      },
+      {
+        "q": "¿Cuánto tarda en estar en producción?",
+        "a": "Una automatización Starter normalmente entra en producción en 1 a 2 semanas. Sistemas completos y SaaS a medida dependen del alcance, definido en la etapa de blueprint."
+      },
+      {
+        "q": "¿Y si no soy técnico?",
+        "a": "Ese es justamente el punto. Manejamos la tecnología de punta a punta. Recibes un sistema funcionando y una explicación clara de cómo te genera dinero."
+      },
+      {
+        "q": "¿Tengo que cambiar mis herramientas actuales?",
+        "a": "No. Nos integramos con lo que ya usas — CRM, planillas, WhatsApp, herramientas de pago y más."
+      }
+    ]
+  },
+  "wa": {
+    "tooltipTitle": "Habla con nuestro agente IA",
+    "tooltipSub": "En línea · responde en segundos",
+    "prefill": "¡Hola! Vengo del sitio de Arkai Solutions y quiero saber más sobre las automatizaciones con IA.",
+    "ariaLabel": "Abrir WhatsApp"
+  },
+  "footer": {
+    "tagline": "Sistemas autónomos de IA para empresas que quieren escalar.",
+    "navTitle": "Navegar",
+    "contactTitle": "Contacto",
+    "rights": "Todos los derechos reservados.",
+    "built": "Construyendo el futuro autónomo, un negocio a la vez."
+  }
+}

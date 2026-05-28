@@ -21,8 +21,17 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const toggleLang = () => i18n.changeLanguage(i18n.language.startsWith('pt') ? 'en' : 'pt')
-  const lang = i18n.language.startsWith('pt') ? 'PT' : 'EN'
+  const toggleLang = () => {
+    const cur = i18n.language
+    if (cur.startsWith('pt')) i18n.changeLanguage('en')
+    else if (cur.startsWith('en')) i18n.changeLanguage('es')
+    else i18n.changeLanguage('pt')
+  }
+  const lang = i18n.language.startsWith('pt')
+    ? 'PT'
+    : i18n.language.startsWith('es')
+      ? 'ES'
+      : 'EN'
 
   return (
     <header

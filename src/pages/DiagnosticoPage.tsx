@@ -82,7 +82,11 @@ export default function DiagnosticoPage() {
       sector,
       bottleneck,
       revenue,
-      language: i18n.language.startsWith('pt') ? 'pt' : 'en',
+      language: i18n.language.startsWith('pt')
+        ? 'pt'
+        : i18n.language.startsWith('es')
+          ? 'es'
+          : 'en',
       source: 'arkaisolutions.com.br',
       pageUrl: window.location.href,
       referrer: document.referrer,

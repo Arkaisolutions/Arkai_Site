@@ -1,28 +1,37 @@
 import { useTranslation } from 'react-i18next'
 
+type Lang = 'pt' | 'en' | 'es'
+
 /**
  * Fake "Arkai Command Center" dashboard, designed to live inside ContainerScroll.
- * Pure HTML/CSS — no external images. Bilingual via i18n.
+ * Pure HTML/CSS — no external images. Trilingual (PT / EN / ES) via i18n.
  */
 export default function CommandCenterMockup() {
   const { i18n } = useTranslation()
-  const isPt = i18n.language.startsWith('pt')
+  const lang: Lang = i18n.language.startsWith('pt')
+    ? 'pt'
+    : i18n.language.startsWith('es')
+      ? 'es'
+      : 'en'
+
+  const tr = (pt: string, en: string, es: string) =>
+    lang === 'pt' ? pt : lang === 'es' ? es : en
 
   const leads = [
-    { name: 'João Silva',  city: isPt ? 'São Paulo'      : 'São Paulo',  status: 'hot',    score: 94, time: '2m'  },
-    { name: 'Maria Costa', city: isPt ? 'Rio de Janeiro' : 'Rio',        status: 'qual',   score: 81, time: '7m'  },
-    { name: 'Carlos R.',   city: isPt ? 'Belo Horizonte' : 'Belo H.',    status: 'booked', score: 88, time: '14m' },
-    { name: 'Ana Pereira', city: isPt ? 'Curitiba'       : 'Curitiba',   status: 'hot',    score: 91, time: '21m' },
-    { name: 'Diego Lima',  city: isPt ? 'Porto Alegre'   : 'P. Alegre',  status: 'qual',   score: 76, time: '38m' },
+    { name: 'João Silva',  city: 'São Paulo',     status: 'hot',    score: 94, time: '2m'  },
+    { name: 'Maria Costa', city: tr('Rio de Janeiro', 'Rio', 'Río'),  status: 'qual',   score: 81, time: '7m'  },
+    { name: 'Carlos R.',   city: tr('Belo Horizonte', 'Belo H.', 'Belo H.'), status: 'booked', score: 88, time: '14m' },
+    { name: 'Ana Pereira', city: 'Curitiba',      status: 'hot',    score: 91, time: '21m' },
+    { name: 'Diego Lima',  city: tr('Porto Alegre', 'P. Alegre', 'P. Alegre'),  status: 'qual',   score: 76, time: '38m' },
   ]
 
   const activity = [
-    { kind: 'in',   text: isPt ? 'Quero saber sobre energia solar pra minha casa' : 'I want to know about solar for my home' },
-    { kind: 'bot',  text: isPt ? 'Claro! Você está pesquisando pra qual cidade?'  : 'Sure! Which city are you looking for?'  },
-    { kind: 'in',   text: isPt ? 'Campinas, conta de luz uns R$ 480'              : 'Campinas, energy bill around R$ 480'    },
-    { kind: 'bot',  text: isPt ? 'Posso te chamar amanhã às 14h pra apresentar o projeto?' : 'Can I call you tomorrow at 2 PM with the plan?' },
-    { kind: 'in',   text: isPt ? 'Pode sim!'                                       : 'Sounds good!'                            },
-    { kind: 'sys',  text: isPt ? '✓ Reunião agendada · CRM atualizado'             : '✓ Meeting booked · CRM updated'          },
+    { kind: 'in',   text: tr('Quero saber sobre energia solar pra minha casa', 'I want to know about solar for my home', 'Quiero saber sobre energía solar para mi casa') },
+    { kind: 'bot',  text: tr('Claro! Você está pesquisando pra qual cidade?',  'Sure! Which city are you looking for?', '¡Claro! ¿Para qué ciudad estás buscando?') },
+    { kind: 'in',   text: tr('Campinas, conta de luz uns R$ 480', 'Campinas, energy bill around R$ 480', 'Campinas, factura de luz unos R$ 480') },
+    { kind: 'bot',  text: tr('Posso te chamar amanhã às 14h pra apresentar o projeto?', 'Can I call you tomorrow at 2 PM with the plan?', '¿Puedo llamarte mañana a las 14h con el plan?') },
+    { kind: 'in',   text: tr('Pode sim!', 'Sounds good!', '¡Sí, perfecto!') },
+    { kind: 'sys',  text: tr('✓ Reunião agendada · CRM atualizado', '✓ Meeting booked · CRM updated', '✓ Reunión agendada · CRM actualizado') },
   ]
 
   return (
@@ -43,8 +52,8 @@ export default function CommandCenterMockup() {
           </span>
         </div>
         <div className="hidden items-center gap-2 text-[11px] text-muted sm:flex">
-          <span className="rounded-md border border-line bg-surface px-2 py-1">{isPt ? 'Hoje' : 'Today'}</span>
-          <span className="rounded-md border border-line bg-surface px-2 py-1">3 {isPt ? 'agentes' : 'agents'} on</span>
+          <span className="rounded-md border border-line bg-surface px-2 py-1">{tr('Hoje', 'Today', 'Hoy')}</span>
+          <span className="rounded-md border border-line bg-surface px-2 py-1">3 {tr('agentes', 'agents', 'agentes')} on</span>
         </div>
       </header>
 
@@ -54,10 +63,10 @@ export default function CommandCenterMockup() {
         <section className="hidden flex-col bg-surface p-4 md:flex">
           <div className="mb-3 flex items-center justify-between">
             <h4 className="text-[11px] font-bold uppercase tracking-wider text-muted">
-              {isPt ? 'Leads ao vivo' : 'Live leads'}
+              {tr('Leads ao vivo', 'Live leads', 'Leads en vivo')}
             </h4>
             <span className="rounded-full bg-accent/15 px-2 py-0.5 text-[10px] font-bold text-accent-2">
-              +24 {isPt ? 'hoje' : 'today'}
+              +24 {tr('hoje', 'today', 'hoy')}
             </span>
           </div>
           <ul className="flex flex-col gap-2">
@@ -71,7 +80,7 @@ export default function CommandCenterMockup() {
                     <p className="truncate text-xs font-semibold text-ink">{l.name}</p>
                     <p className="text-[10px] text-muted">{l.city} · {l.time}</p>
                   </div>
-                  <StatusPill status={l.status} isPt={isPt} />
+                  <StatusPill status={l.status} lang={lang} />
                 </div>
                 <div className="mt-2 flex items-center gap-2">
                   <div className="h-1 flex-1 overflow-hidden rounded-full bg-line">
@@ -90,29 +99,29 @@ export default function CommandCenterMockup() {
         {/* CENTER: pipeline + chart */}
         <section className="flex flex-col bg-surface p-4">
           <h4 className="mb-3 text-[11px] font-bold uppercase tracking-wider text-muted">
-            {isPt ? 'Pipeline · hoje' : 'Pipeline · today'}
+            {tr('Pipeline · hoje', 'Pipeline · today', 'Pipeline · hoy')}
           </h4>
 
           {/* KPI row */}
           <div className="grid grid-cols-2 gap-2 md:grid-cols-4">
-            <KpiCard label={isPt ? 'Novos' : 'New'} value="24" delta="+8" />
-            <KpiCard label={isPt ? 'Qualif.' : 'Qual.'} value="12" delta="+3" />
-            <KpiCard label={isPt ? 'Agendados' : 'Booked'} value="6" delta="+2" />
-            <KpiCard label={isPt ? 'Fechados' : 'Won'} value="3" delta="+1" />
+            <KpiCard label={tr('Novos', 'New', 'Nuevos')}       value="24" delta="+8" />
+            <KpiCard label={tr('Qualif.', 'Qual.', 'Calif.')}   value="12" delta="+3" />
+            <KpiCard label={tr('Agendados', 'Booked', 'Agendados')} value="6"  delta="+2" />
+            <KpiCard label={tr('Fechados', 'Won', 'Cerrados')}  value="3"  delta="+1" />
           </div>
 
           {/* Funnel bars */}
           <div className="mt-4 flex flex-1 flex-col justify-end gap-2">
-            <FunnelRow label={isPt ? 'Novos' : 'New'}      pct={100} value="24" />
-            <FunnelRow label={isPt ? 'Qualif.' : 'Qual.'}  pct={50}  value="12" />
-            <FunnelRow label={isPt ? 'Agendados' : 'Booked'} pct={25} value="6"  />
-            <FunnelRow label={isPt ? 'Fechados' : 'Won'}   pct={12}  value="3"  />
+            <FunnelRow label={tr('Novos', 'New', 'Nuevos')}        pct={100} value="24" />
+            <FunnelRow label={tr('Qualif.', 'Qual.', 'Calif.')}    pct={50}  value="12" />
+            <FunnelRow label={tr('Agendados', 'Booked', 'Agendados')} pct={25} value="6"  />
+            <FunnelRow label={tr('Fechados', 'Won', 'Cerrados')}   pct={12}  value="3"  />
           </div>
 
           {/* Revenue */}
           <div className="mt-4 rounded-lg border border-line bg-surface-2/60 p-3">
             <p className="text-[10px] font-semibold uppercase tracking-wider text-muted">
-              {isPt ? 'Receita gerada hoje' : 'Revenue captured today'}
+              {tr('Receita gerada hoje', 'Revenue captured today', 'Ingresos generados hoy')}
             </p>
             <p className="mt-1 flex items-baseline gap-2">
               <span className="gradient-text text-2xl font-black">$ 4,720</span>
@@ -125,7 +134,7 @@ export default function CommandCenterMockup() {
         <section className="flex flex-col bg-surface p-4">
           <div className="mb-3 flex items-center justify-between">
             <h4 className="text-[11px] font-bold uppercase tracking-wider text-muted">
-              {isPt ? 'Agente IA · ao vivo' : 'AI Agent · live'}
+              {tr('Agente IA · ao vivo', 'AI Agent · live', 'Agente IA · en vivo')}
             </h4>
             <span className="text-[10px] font-medium text-muted">WhatsApp</span>
           </div>
@@ -143,11 +152,13 @@ export default function CommandCenterMockup() {
 
 /* ---------------- helpers ---------------- */
 
-function StatusPill({ status, isPt }: { status: string; isPt: boolean }) {
+function StatusPill({ status, lang }: { status: string; lang: Lang }) {
+  const tr = (pt: string, en: string, es: string) =>
+    lang === 'pt' ? pt : lang === 'es' ? es : en
   const map = {
-    hot:    { label: isPt ? 'Quente'    : 'Hot',     cls: 'bg-orange-400/15 text-orange-300 border-orange-400/30' },
-    qual:   { label: isPt ? 'Qualific.' : 'Qual.',   cls: 'bg-accent/15 text-accent-2 border-accent/30' },
-    booked: { label: isPt ? 'Agendado'  : 'Booked',  cls: 'bg-green-400/15 text-green-400 border-green-400/30' },
+    hot:    { label: tr('Quente',    'Hot',    'Caliente'), cls: 'bg-orange-400/15 text-orange-300 border-orange-400/30' },
+    qual:   { label: tr('Qualific.', 'Qual.',  'Calif.'),   cls: 'bg-accent/15 text-accent-2 border-accent/30' },
+    booked: { label: tr('Agendado',  'Booked', 'Agendado'), cls: 'bg-green-400/15 text-green-400 border-green-400/30' },
   } as const
   const cfg = map[status as keyof typeof map] ?? map.qual
   return (

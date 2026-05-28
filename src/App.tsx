@@ -17,7 +17,11 @@ export default function App() {
   const { i18n } = useTranslation()
 
   useEffect(() => {
-    document.documentElement.lang = i18n.language.startsWith('pt') ? 'pt-BR' : 'en'
+    document.documentElement.lang = i18n.language.startsWith('pt')
+      ? 'pt-BR'
+      : i18n.language.startsWith('es')
+        ? 'es'
+        : 'en'
   }, [i18n.language])
 
   return (
