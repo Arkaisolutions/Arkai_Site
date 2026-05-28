@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next'
-import { useLeadModal } from '../lead/LeadModalContext'
 import { IconArrow, IconCheck, industryIcons } from './icons'
 import Reveal from './Reveal'
 
@@ -13,7 +12,6 @@ interface IndustryItem {
 
 export default function Work() {
   const { t } = useTranslation()
-  const { open } = useLeadModal()
   const items = t('work.items', { returnObjects: true }) as IndustryItem[]
 
   return (
@@ -85,10 +83,10 @@ export default function Work() {
               <h4 className="text-lg font-bold">{t('work.ctaLabel')}</h4>
               <p className="mt-1 text-sm text-muted">{t('work.ctaSub')}</p>
             </div>
-            <button onClick={open} className="btn-primary shrink-0">
+            <a href="/diagnostico" className="btn-primary shrink-0">
               {t('work.ctaButton')}
               <IconArrow width={15} height={15} />
-            </button>
+            </a>
           </div>
         </Reveal>
       </div>

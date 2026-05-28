@@ -71,9 +71,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href={config.bookingUrl}
-                  target="_blank"
-                  rel="noreferrer"
+                  href="/diagnostico"
                   className="text-sm text-muted transition-colors hover:text-ink"
                 >
                   {t('nav.contact')}

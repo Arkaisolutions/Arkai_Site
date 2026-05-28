@@ -6,7 +6,6 @@ import Navbar from '../components/Navbar'
 import Reveal from '../components/Reveal'
 import { IconArrow, IconBolt, IconCheck } from '../components/icons'
 import { config } from '../config'
-import { LeadModalProvider } from '../lead/LeadModalContext'
 import { captureAttribution, readAttribution, trackLeadSubmit, trackPageView } from '../lib/track'
 
 type Step = 0 | 1 | 2 | 3
@@ -35,14 +34,6 @@ interface LeadPayload {
  * num LeadModalProvider próprio (modal nunca abre aqui, mas evita o throw do hook).
  */
 export default function DiagnosticoPage() {
-  return (
-    <LeadModalProvider>
-      <DiagnosticoInner />
-    </LeadModalProvider>
-  )
-}
-
-function DiagnosticoInner() {
   const { t, i18n } = useTranslation()
 
   useEffect(() => {

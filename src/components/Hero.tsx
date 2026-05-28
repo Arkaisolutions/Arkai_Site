@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next'
-import { useLeadModal } from '../lead/LeadModalContext'
 import AgentTerminal from './AgentTerminal'
 import AuroraBg from './AuroraBg'
 import { IconArrow, IconBolt } from './icons'
@@ -8,7 +7,6 @@ import Reveal from './Reveal'
 
 export default function Hero() {
   const { t } = useTranslation()
-  const { open } = useLeadModal()
 
   const stats = [
     { v: t('hero.stat1Value'), l: t('hero.stat1Label') },
@@ -48,10 +46,10 @@ export default function Hero() {
 
             <Reveal delay={240}>
               <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
-                <button onClick={open} className="btn-primary">
+                <a href="/diagnostico" className="btn-primary">
                   {t('hero.ctaPrimary')}
                   <IconArrow width={16} height={16} />
-                </button>
+                </a>
                 <a href="#work" className="btn-ghost">
                   {t('hero.ctaSecondary')}
                 </a>

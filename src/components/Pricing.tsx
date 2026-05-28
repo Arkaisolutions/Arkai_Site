@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next'
-import { useLeadModal } from '../lead/LeadModalContext'
 import { IconArrow, IconCheck } from './icons'
 import Reveal from './Reveal'
 
@@ -25,7 +24,6 @@ function splitPrice(raw: string): { label: string; amount: string } {
 
 export default function Pricing() {
   const { t } = useTranslation()
-  const { open } = useLeadModal()
   const plans = t('pricing.plans', { returnObjects: true }) as Plan[]
 
   return (
@@ -81,13 +79,13 @@ export default function Pricing() {
                     ))}
                   </ul>
 
-                  <button
-                    onClick={open}
+                  <a
+                    href="/diagnostico"
                     className={`mt-7 ${featured ? 'btn-primary' : 'btn-ghost'}`}
                   >
                     {plan.cta}
                     <IconArrow width={15} height={15} />
-                  </button>
+                  </a>
                 </article>
               </Reveal>
             )

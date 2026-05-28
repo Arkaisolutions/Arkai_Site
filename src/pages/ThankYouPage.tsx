@@ -6,18 +6,9 @@ import Navbar from '../components/Navbar'
 import Reveal from '../components/Reveal'
 import { IconArrow, IconCheck, IconWhatsApp } from '../components/icons'
 import { whatsappLink } from '../config'
-import { LeadModalProvider } from '../lead/LeadModalContext'
 import { trackEvent, trackPageView } from '../lib/track'
 
 export default function ThankYouPage() {
-  return (
-    <LeadModalProvider>
-      <ThankYouInner />
-    </LeadModalProvider>
-  )
-}
-
-function ThankYouInner() {
   const { t } = useTranslation()
 
   useEffect(() => {
