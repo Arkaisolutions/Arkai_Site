@@ -12,6 +12,17 @@ interface Plan {
   cta: string
 }
 
+/**
+ * Split prices like "from $2,997" / "a partir de $2.997" into:
+ *   { label: 'from' | 'a partir de', amount: '$2,997' }
+ * for prices like "$497" returns { label: '', amount: '$497' }.
+ */
+function splitPrice(raw: string): { label: string; amount: string } {
+  const dollarIdx = raw.indexOf('$')
+  if (dollarIdx <= 0) return { label: '', amount: raw }
+  return { label: raw.slice(0, dollarIdx).trim(), amount: raw.slice(dollarIdx).trim() }
+}
+
 export default function Pricing() {
   const { t } = useTranslation()
   const { open } = useLeadModal()
@@ -26,9 +37,11 @@ export default function Pricing() {
           <p className="mt-4 text-muted">{t('pricing.subtitle')}</p>
         </Reveal>
 
-        <div className="mt-14 grid items-start gap-5 lg:grid-cols-3">
+        <div className="mt-14 grid gap-5 lg:grid-cols-3">
           {plans.map((plan, i) => {
             const featured = i === 1
+            const price = splitPrice(plan.price)
+            const setup = splitPrice(plan.setup)
             return (
               <Reveal key={plan.name} delay={i * 90}>
                 <article
@@ -45,12 +58,16 @@ export default function Pricing() {
                   )}
                   <h3 className="text-lg font-bold">{plan.name}</h3>
 
-                  <div className="mt-4 flex items-end gap-1.5">
-                    <span className="text-4xl font-black tracking-tight">{plan.price}</span>
+                  {/* Reserves space (nbsp) when no "from" label, keeping all 3 cards visually aligned */}
+                  <p className="mt-4 min-h-[1.1rem] text-xs font-medium text-muted">
+                    {price.label || ' '}
+                  </p>
+                  <div className="flex items-end gap-1.5">
+                    <span className="text-4xl font-black tracking-tight">{price.amount}</span>
                     <span className="mb-1.5 text-sm text-muted">{t('pricing.perMonth')}</span>
                   </div>
                   <p className="mt-1.5 text-xs font-medium text-muted">
-                    + {plan.setup} {t('pricing.setupSuffix')}
+                    + {setup.label ? `${setup.label} ` : ''}{setup.amount} {t('pricing.setupSuffix')}
                   </p>
 
                   <p className="mt-4 text-sm text-muted">{plan.desc}</p>
