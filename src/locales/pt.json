@@ -23,6 +23,11 @@
   "trust": {
     "label": "Em produção para"
   },
+  "command": {
+    "eyebrow": "Central de comando ao vivo",
+    "title1": "Sua operação,",
+    "title2": "rodando com IA."
+  },
   "terminal": {
     "lines": [
       "→ Novo lead de campanha no Meta Ads",

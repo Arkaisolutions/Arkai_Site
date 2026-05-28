@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import CommandCenter from './components/CommandCenter'
 import Services from './components/Services'
 import Process from './components/Process'
 import Work from './components/Work'
@@ -26,6 +27,7 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        <CommandCenter />
         <Services />
         <Process />
         <Work />

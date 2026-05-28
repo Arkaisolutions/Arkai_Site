@@ -23,6 +23,11 @@
   "trust": {
     "label": "Live in production for"
   },
+  "command": {
+    "eyebrow": "Live Command Center",
+    "title1": "Your operation,",
+    "title2": "running on AI."
+  },
   "terminal": {
     "lines": [
       "→ New lead from Meta Ad campaign",
