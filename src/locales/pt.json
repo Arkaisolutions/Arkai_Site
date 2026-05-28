@@ -28,6 +28,32 @@
     "title1": "Sua operação,",
     "title2": "rodando com IA."
   },
+  "diagPage": {
+    "badge": "Diagnóstico Gratuito de IA",
+    "title1": "Descubra as automações de IA",
+    "title2": "que se pagam sozinhas",
+    "subtitle": "Responda 4 perguntas rápidas e te enviamos um diagnóstico personalizado onde a IA economiza tempo e gera receita no seu negócio — em até 24h.",
+    "trust1": "100% gratuito",
+    "trust2": "Resposta em 24h",
+    "trust3": "Sem compromisso",
+    "metaTitle": "Diagnóstico Gratuito de IA · Arkai Solutions",
+    "metaDesc": "Receba um diagnóstico personalizado onde a IA pode gerar receita no seu negócio — 100% gratuito, resposta em 24h."
+  },
+  "thanksPage": {
+    "title": "Pronto!",
+    "subtitle": "Seu diagnóstico personalizado já está a caminho. Em até 24h você recebe um WhatsApp nosso com os próximos passos concretos pro seu negócio.",
+    "stepsTitle": "O que acontece agora",
+    "step1Title": "1 · Diagnóstico recebido",
+    "step1Desc": "Nosso time está revisando suas respostas agora.",
+    "step2Title": "2 · Diagnóstico personalizado (24h)",
+    "step2Desc": "Você recebe um mapa de oportunidades de IA via WhatsApp.",
+    "step3Title": "3 · Conversa estratégica grátis",
+    "step3Desc": "Marcamos uma call de 30 min pra te apresentar o plano.",
+    "backHome": "Voltar pra home",
+    "wa": "Falar no WhatsApp",
+    "metaTitle": "Obrigado · Arkai Solutions",
+    "metaDesc": "Sua solicitação de diagnóstico está sendo processada."
+  },
   "terminal": {
     "lines": [
       "→ Novo lead de campanha no Meta Ads",
