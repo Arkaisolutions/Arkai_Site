@@ -249,7 +249,7 @@ function QuestionStep({
     <div>
       <h3 className="mt-4 text-2xl font-extrabold tracking-tight">{title}</h3>
       <p className="mt-1.5 text-sm text-muted">{subtitle}</p>
-      <div className="mt-6 grid gap-2.5">
+      <div className="mt-6 grid gap-2.5 sm:grid-cols-2">
         {options.map((opt) => {
           const selected = value === opt
           return (

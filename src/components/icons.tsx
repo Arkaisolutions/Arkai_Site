@@ -199,15 +199,57 @@ export const IconWhatsApp = (p: IconProps) => (
   </svg>
 )
 
+export const IconHomeServices = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M3 12 12 4l9 8" />
+    <path d="M5 10v10h14V10" />
+    <path d="M14 14l4 4M18 14l-4 4" />
+  </svg>
+)
+
+export const IconInsurance = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M12 2 4 5v7c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V5l-8-3Z" />
+    <path d="M9 12l2 2 4-4" />
+  </svg>
+)
+
+export const IconLegal = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M12 3v18M5 21h14M7 8h10" />
+    <path d="M7 8l-3 6c0 1.5 1.5 2.5 3 2.5s3-1 3-2.5L7 8Z" />
+    <path d="M17 8l-3 6c0 1.5 1.5 2.5 3 2.5s3-1 3-2.5L17 8Z" />
+  </svg>
+)
+
+export const IconCloud = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M7 18a5 5 0 1 1 1-9.9 6 6 0 0 1 11.4 2A4 4 0 0 1 18 18H7Z" />
+    <path d="M10 13l2 2 4-4" />
+  </svg>
+)
+
+export const IconFitness = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M6 8v8M18 8v8M3 10v4M21 10v4M6 12h12" />
+  </svg>
+)
+
 export const industryIcons: Record<string, (p: IconProps) => ReactElement> = {
   realestate: IconBuilding,
   health: IconHealth,
-  finance: IconFinance,
-  automotive: IconCar,
   solar: IconSolar,
-  hospitality: IconHotel,
-  education: IconEducation,
+  automotive: IconCar,
+  homeservices: IconHomeServices,
+  insurance: IconInsurance,
+  legal: IconLegal,
+  finance: IconFinance,
   ecommerce: IconShop,
+  saas: IconCloud,
+  hospitality: IconHotel,
+  fitness: IconFitness,
+  // legacy (Also serving)
+  education: IconEducation,
   construction: IconConstruction,
   agro: IconAgro,
 }

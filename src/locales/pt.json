@@ -73,7 +73,7 @@
     "sending": "Enviando...",
     "q1Title": "Qual o seu setor?",
     "q1Subtitle": "Vamos te encaixar no playbook de IA certo.",
-    "q1Options": ["Automotivo", "Energia Solar", "Imobiliário", "Hotelaria / Turismo", "Autopeças / E-commerce", "Outro"],
+    "q1Options": ["Imobiliário", "Saúde, Estética & Odonto", "Energia Solar", "Automotivo", "Serviços Residenciais (HVAC, Encanamento)", "Seguros", "Jurídico", "Serviços Financeiros", "E-commerce & Varejo", "SaaS", "Hotelaria & Turismo", "Fitness & Academias", "Outro"],
     "q2Title": "Onde você perde mais tempo hoje?",
     "q2Subtitle": "Escolha o maior gargalo.",
     "q2Options": ["Gerar leads", "Atendimento ao cliente", "Follow-up de vendas", "Cobrança / recuperação", "Operação / relatórios", "Outro"],
@@ -168,7 +168,7 @@
     "subtitle": "Aplicamos o mesmo playbook — adaptado às métricas, canais e gargalos que movem cada setor.",
     "moreTag": "Em alta em 2026",
     "alsoLabel": "Também atendemos",
-    "alsoList": "Agronegócio · Restaurantes & Food · Jurídico · Agências de Marketing",
+    "alsoList": "Educação · Engenharia & Construção · Agronegócio · Restaurantes · Agências de Marketing",
     "ctaLabel": "Não viu seu setor?",
     "ctaSub": "Atendemos negócios focados em crescimento em diversos setores. Conta o seu pra gente.",
     "ctaButton": "Quero meu diagnóstico grátis",
@@ -187,34 +187,12 @@
       {
         "icon": "health",
         "tag": "Saúde · Estética · Odonto",
-        "title": "Clínicas & Estética",
+        "title": "Clínicas, Med Spas & Odonto",
         "desc": "Lota a agenda com os pacientes certos — sem queimar verba em curioso no Meta Ads.",
         "bullets": [
           "Qualificador IA antes de agendar a primeira consulta",
           "Lembretes que cortam o no-show pela metade",
           "Reativação dos pacientes que não voltaram"
-        ]
-      },
-      {
-        "icon": "finance",
-        "tag": "Financeiro · Crédito",
-        "title": "Crédito & Financeiro",
-        "desc": "Pontua e roteia leads financeiros na hora — a uma fração do custo por lead qualificado.",
-        "bullets": [
-          "Lead scoring por perfil, ticket e intenção",
-          "Coleta automatizada de documentos no WhatsApp",
-          "Primeiro contato 24/7 e roteamento pro broker certo"
-        ]
-      },
-      {
-        "icon": "automotive",
-        "tag": "Automotivo · Concessionárias",
-        "title": "Carros & Motos",
-        "desc": "Mais test drives e visitas — sem aumentar o time de vendas.",
-        "bullets": [
-          "Captura de leads do Meta e Google Ads 24/7",
-          "Qualificação automática por modelo, orçamento e troca",
-          "Agendamento direto na agenda da loja"
         ]
       },
       {
@@ -229,25 +207,58 @@
         ]
       },
       {
-        "icon": "hospitality",
-        "tag": "Hotelaria · Turismo",
-        "title": "Hotéis, Pousadas & Temporada",
-        "desc": "Concierge de IA que aumenta reservas diretas — e para de queimar margem com OTAs.",
+        "icon": "automotive",
+        "tag": "Automotivo · Concessionárias",
+        "title": "Carros & Motos",
+        "desc": "Mais test drives e visitas — sem aumentar o time de vendas.",
         "bullets": [
-          "Concierge IA 24/7 no WhatsApp e site",
-          "Jornadas pré-chegada, durante e pós-estadia",
-          "Fluxo de reserva direta otimizado pra conversão"
+          "Captura de leads do Meta e Google Ads 24/7",
+          "Qualificação automática por modelo, orçamento e troca",
+          "Agendamento direto na agenda da loja"
         ]
       },
       {
-        "icon": "education",
-        "tag": "Educação · Cursos",
-        "title": "Escolas & EdTech",
-        "desc": "Capte e nutra matrículas com IA que conversa com pais e alunos 24/7.",
+        "icon": "homeservices",
+        "tag": "Serviços Residenciais",
+        "title": "HVAC, Encanamento & Reparos",
+        "desc": "Seja o primeiro a responder quando o cliente tem um vazamento — e feche o serviço antes da concorrência.",
         "bullets": [
-          "Agente IA pra matrículas e visitas",
-          "Nutrição em série pra famílias indecisas",
-          "Reativação de leads antigos antes do período de matrícula"
+          "Agente IA 24/7 atendendo emergências no WhatsApp",
+          "Orçamento na hora baseado em problema, endereço e urgência",
+          "Despacho automático pro técnico mais próximo"
+        ]
+      },
+      {
+        "icon": "insurance",
+        "tag": "Seguros",
+        "title": "Corretoras de Seguros",
+        "desc": "Pré-qualifique e cote leads de seguros em escala — inclusive fora do horário comercial.",
+        "bullets": [
+          "Agente IA cotando auto, residencial e vida",
+          "Coleta de documentos e lembretes de renovação",
+          "Entrega ao corretor certo com contexto completo"
+        ]
+      },
+      {
+        "icon": "legal",
+        "tag": "Jurídico",
+        "title": "Escritórios de Advocacia",
+        "desc": "Lead de alto valor (US$ 200–800 cada) merece resposta imediata — IA cuida da triagem pra advogados focarem nos casos.",
+        "bullets": [
+          "Triagem e intake de casos automatizados",
+          "Primeiro contato 24/7 com cliente em potencial",
+          "Coleta de documentos e portal do cliente"
+        ]
+      },
+      {
+        "icon": "finance",
+        "tag": "Financeiro · Crédito · Consultoria",
+        "title": "Serviços Financeiros",
+        "desc": "Pontua e roteia leads financeiros na hora — a uma fração do custo por lead qualificado.",
+        "bullets": [
+          "Lead scoring por perfil, ticket e intenção",
+          "Coleta automatizada de documentos no WhatsApp",
+          "Roteamento pro broker ou consultor certo 24/7"
         ]
       },
       {
@@ -262,14 +273,36 @@
         ]
       },
       {
-        "icon": "construction",
-        "tag": "Engenharia · Construção",
-        "title": "Engenharia & Construção",
-        "desc": "Setor pouco automatizado — automatize orçamentos, propostas e comunicação pra ganhar mais licitações.",
+        "icon": "saas",
+        "tag": "SaaS",
+        "title": "Empresas SaaS",
+        "desc": "SDR IA inbound pra product-led growth — qualifica trial free, agenda demos, expande contas.",
         "bullets": [
-          "Geração automática de propostas e orçamentos",
-          "Fluxo de escopo e licitação assistido por IA",
-          "Portal do cliente com status e documentos"
+          "SDR IA qualificando cadastros do free-tier",
+          "Agendamento automático de demos pra leads qualificados",
+          "Detecção de risco de churn e plays de expansão"
+        ]
+      },
+      {
+        "icon": "hospitality",
+        "tag": "Hotelaria · Turismo",
+        "title": "Hotéis, Pousadas & Temporada",
+        "desc": "Concierge de IA que aumenta reservas diretas — e para de queimar margem com OTAs.",
+        "bullets": [
+          "Concierge IA 24/7 no WhatsApp e site",
+          "Jornadas pré-chegada, durante e pós-estadia",
+          "Fluxo de reserva direta otimizado pra conversão"
+        ]
+      },
+      {
+        "icon": "fitness",
+        "tag": "Fitness · Academias",
+        "title": "Academias & Estúdios",
+        "desc": "Lota turmas e captura aulas experimentais — mesmo quando a recepção tá ocupada.",
+        "bullets": [
+          "Agente IA pra aula experimental e tour pela academia",
+          "Renovação de matrícula e win-back de ex-alunos",
+          "Agendamento e lembrete de aulas automatizados"
         ]
       }
     ]

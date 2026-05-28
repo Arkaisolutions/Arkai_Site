@@ -73,7 +73,7 @@
     "sending": "Sending...",
     "q1Title": "What's your industry?",
     "q1Subtitle": "We'll match you to the right AI playbook.",
-    "q1Options": ["Automotive", "Solar Energy", "Real Estate", "Hospitality / Travel", "Auto Parts / E-commerce", "Other"],
+    "q1Options": ["Real Estate", "Health, Aesthetics & Dental", "Solar Energy", "Automotive", "Home Services (HVAC, Plumbing)", "Insurance", "Legal", "Financial Services", "E-commerce & Retail", "SaaS", "Hospitality & Tourism", "Fitness & Gyms", "Other"],
     "q2Title": "Where do you lose the most time today?",
     "q2Subtitle": "Pick the biggest bottleneck.",
     "q2Options": ["Generating leads", "Customer support", "Sales follow-up", "Billing / recovery", "Operations / reports", "Other"],
@@ -168,7 +168,7 @@
     "subtitle": "We bring the same playbook — adapted to the metrics, channels and bottlenecks that move each industry.",
     "moreTag": "Hot in 2026",
     "alsoLabel": "Also serving",
-    "alsoList": "Agribusiness · Restaurants & Food · Legal · Marketing Agencies",
+    "alsoList": "Education · Construction · Agribusiness · Restaurants · Marketing Agencies",
     "ctaLabel": "Don't see your industry?",
     "ctaSub": "We work with growth-focused businesses across sectors. Tell us about yours.",
     "ctaButton": "Get my free audit",
@@ -187,34 +187,12 @@
       {
         "icon": "health",
         "tag": "Health · Aesthetics · Dental",
-        "title": "Clinics & Aesthetics",
+        "title": "Clinics, Med Spas & Dental",
         "desc": "Fill the agenda with the right patients — without paying for tire-kickers on Meta Ads.",
         "bullets": [
           "AI lead qualifier before booking the first consultation",
           "Reminders that cut no-shows by half",
           "Reactivation flows for patients who didn't return"
-        ]
-      },
-      {
-        "icon": "finance",
-        "tag": "Financial · Credit",
-        "title": "Credit & Financial",
-        "desc": "Score and route financial leads instantly — at a fraction of the cost per qualified lead.",
-        "bullets": [
-          "Lead scoring by profile, ticket and intent",
-          "Automated document collection by WhatsApp",
-          "24/7 first contact and routing to the right broker"
-        ]
-      },
-      {
-        "icon": "automotive",
-        "tag": "Automotive · Dealerships",
-        "title": "Cars & Motorcycles",
-        "desc": "More test drives and visits — without growing your sales team.",
-        "bullets": [
-          "Capture leads from Meta & Google Ads 24/7",
-          "Auto-qualify by model, budget and trade-in",
-          "Book visits straight into the showroom calendar"
         ]
       },
       {
@@ -229,25 +207,58 @@
         ]
       },
       {
-        "icon": "hospitality",
-        "tag": "Hospitality · Tourism",
-        "title": "Hotels, Inns & Short Stay",
-        "desc": "AI concierge that lifts direct bookings — and stops draining margin to OTAs.",
+        "icon": "automotive",
+        "tag": "Automotive · Dealerships",
+        "title": "Cars & Motorcycles",
+        "desc": "More test drives and visits — without growing your sales team.",
         "bullets": [
-          "24/7 AI concierge across WhatsApp and site",
-          "Pre-arrival, in-stay and post-stay journeys",
-          "Direct booking flow optimized for conversion"
+          "Capture leads from Meta & Google Ads 24/7",
+          "Auto-qualify by model, budget and trade-in",
+          "Book visits straight into the showroom calendar"
         ]
       },
       {
-        "icon": "education",
-        "tag": "Education · Courses",
-        "title": "Schools & EdTech",
-        "desc": "Capture and nurture enrollments with AI that talks to parents and students 24/7.",
+        "icon": "homeservices",
+        "tag": "Home Services",
+        "title": "HVAC, Plumbing & Repairs",
+        "desc": "Be the first to answer when a homeowner has a leak — and win the job before competitors.",
         "bullets": [
-          "AI agent for enrollments and visits",
-          "Drip nurturing for undecided families",
-          "Reactivation of past leads before enrollment season"
+          "24/7 AI agent answering emergencies on WhatsApp",
+          "Instant quote based on issue, address and urgency",
+          "Auto-dispatch to the closest available technician"
+        ]
+      },
+      {
+        "icon": "insurance",
+        "tag": "Insurance",
+        "title": "Insurance Brokers",
+        "desc": "Pre-qualify and quote insurance leads at scale — even outside business hours.",
+        "bullets": [
+          "AI quoting agent across auto, home and life",
+          "Document collection and renewal reminders",
+          "Hand-off to the right broker with full context"
+        ]
+      },
+      {
+        "icon": "legal",
+        "tag": "Legal",
+        "title": "Law Firms & Legal Services",
+        "desc": "High-value leads ($200–$800 each) deserve instant response — let AI handle intake so attorneys focus on cases.",
+        "bullets": [
+          "Conflict-check and case intake automation",
+          "24/7 first-touch with prospective clients",
+          "Document gathering and client portal updates"
+        ]
+      },
+      {
+        "icon": "finance",
+        "tag": "Financial · Credit · Advisory",
+        "title": "Financial Services",
+        "desc": "Score and route financial leads instantly — at a fraction of the cost per qualified lead.",
+        "bullets": [
+          "Lead scoring by profile, ticket and intent",
+          "Automated document collection by WhatsApp",
+          "Routing to the right broker or advisor 24/7"
         ]
       },
       {
@@ -262,14 +273,36 @@
         ]
       },
       {
-        "icon": "construction",
-        "tag": "Engineering · Construction",
-        "title": "Engineering & Construction",
-        "desc": "An underserved sector — automate quoting, proposals and client communication to win bids faster.",
+        "icon": "saas",
+        "tag": "SaaS",
+        "title": "SaaS Companies",
+        "desc": "Inbound AI SDR for product-led growth — qualify free users, route demos, expand accounts.",
         "bullets": [
-          "Automated proposal & budget generation",
-          "AI-assisted scope and bidding workflow",
-          "Client portal with status updates and documents"
+          "AI SDR that qualifies free-tier signups",
+          "Auto-book demos for product-qualified leads",
+          "Churn-risk detection and expansion plays"
+        ]
+      },
+      {
+        "icon": "hospitality",
+        "tag": "Hospitality · Tourism",
+        "title": "Hotels, Inns & Short Stay",
+        "desc": "AI concierge that lifts direct bookings — and stops draining margin to OTAs.",
+        "bullets": [
+          "24/7 AI concierge across WhatsApp and site",
+          "Pre-arrival, in-stay and post-stay journeys",
+          "Direct booking flow optimized for conversion"
+        ]
+      },
+      {
+        "icon": "fitness",
+        "tag": "Fitness · Gyms",
+        "title": "Gyms & Fitness Studios",
+        "desc": "Fill class slots and capture trial sign-ups — even when reception is busy.",
+        "bullets": [
+          "AI agent for trial sign-ups and tours",
+          "Membership renewal and win-back flows",
+          "Class booking and reminder automation"
         ]
       }
     ]
