@@ -21,7 +21,21 @@
     "stat3Label": "Global delivery"
   },
   "trust": {
-    "label": "Live in production for"
+    "label": "Live in production across",
+    "items": [
+      "Real Estate",
+      "Health & Aesthetics",
+      "Solar Energy",
+      "Automotive",
+      "Home Services",
+      "Insurance",
+      "Legal",
+      "Financial Services",
+      "E-commerce",
+      "SaaS",
+      "Hospitality",
+      "Fitness"
+    ]
   },
   "command": {
     "eyebrow": "Live Command Center",

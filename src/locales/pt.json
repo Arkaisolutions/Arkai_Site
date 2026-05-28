@@ -21,7 +21,21 @@
     "stat3Label": "Entrega global"
   },
   "trust": {
-    "label": "Em produção para"
+    "label": "Em produção em",
+    "items": [
+      "Imobiliário",
+      "Saúde & Estética",
+      "Energia Solar",
+      "Automotivo",
+      "Serviços Residenciais",
+      "Seguros",
+      "Jurídico",
+      "Financeiro",
+      "E-commerce",
+      "SaaS",
+      "Hotelaria",
+      "Fitness"
+    ]
   },
   "command": {
     "eyebrow": "Central de comando ao vivo",
