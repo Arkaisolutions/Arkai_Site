@@ -34,7 +34,7 @@ export default function Pricing() {
                 <article
                   className={`relative flex h-full flex-col rounded-2xl border p-7 transition-all duration-300 ${
                     featured
-                      ? 'border-accent/60 bg-surface-2 shadow-[0_24px_60px_-30px_rgb(var(--accent))] lg:-mt-4 lg:pb-11'
+                      ? 'border-accent/60 bg-surface-2 shadow-[0_24px_60px_-30px_rgb(var(--accent))]'
                       : 'border-line bg-surface hover:border-accent/40'
                   }`}
                 >
