@@ -28,32 +28,6 @@
     "title1": "Your operation,",
     "title2": "running on AI."
   },
-  "diagPage": {
-    "badge": "Free AI Audit",
-    "title1": "Find the AI automations",
-    "title2": "that pay for themselves",
-    "subtitle": "Answer 4 quick questions and we'll send you a custom diagnosis of where AI can save time and generate revenue in your business — within 24h.",
-    "trust1": "100% free",
-    "trust2": "Answer in 24h",
-    "trust3": "No commitment",
-    "metaTitle": "Free AI Audit · Arkai Solutions",
-    "metaDesc": "Get a custom diagnosis of where AI can generate revenue in your business — 100% free, 24h response."
-  },
-  "thanksPage": {
-    "title": "You're in.",
-    "subtitle": "Your custom AI audit is on its way. We'll reach out via WhatsApp within 24h with concrete next steps for your business.",
-    "stepsTitle": "What happens next",
-    "step1Title": "1 · Audit received",
-    "step1Desc": "Our team is reviewing your answers right now.",
-    "step2Title": "2 · Custom diagnosis (24h)",
-    "step2Desc": "You'll receive a personalized AI opportunity map via WhatsApp.",
-    "step3Title": "3 · Free strategy call",
-    "step3Desc": "We jump on a 30-min call to walk you through the plan.",
-    "backHome": "Back to home",
-    "wa": "Talk to us on WhatsApp",
-    "metaTitle": "Thank you · Arkai Solutions",
-    "metaDesc": "Your AI audit request is being processed."
-  },
   "terminal": {
     "lines": [
       "→ New lead from Meta Ad campaign",
