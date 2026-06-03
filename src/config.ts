@@ -11,7 +11,8 @@ export const config = {
 
   // Webhook que recebe os leads do funil (n8n / Make / Airtable Automations).
   // Deixe vazio em dev — leads cairão no console. Veja docs/lead-webhook.md.
-  leadWebhookUrl: '',
+  // URL-encoded porque o path tem espaços ("Arkai - Leads - Site").
+  leadWebhookUrl: 'https://nwook.futurosolaroficial.cloud/webhook/Arkai%20-%20Leads%20-%20Site',
 
   email: 'contato@arkaisolutions.com.br',
 
