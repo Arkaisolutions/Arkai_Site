@@ -326,6 +326,28 @@
     "title": "Ferramentas de nível enterprise, velocidade de agência",
     "subtitle": "Construímos com a mesma tecnologia que move os melhores produtos de IA do mundo."
   },
+  "agents": {
+    "eyebrow": "Sua equipe IA",
+    "title1": "10 agentes. 10 especialistas.",
+    "title2": "24/7. Sem férias.",
+    "subtitle": "Cada agente é especialista em uma função — e cumpre sem dormir, faltar, ou pedir aumento.",
+    "anchorTitle": "O custo real de 1 funcionário CLT",
+    "anchorBody": "1 salário mínimo (R$ 1.518) + encargos (FGTS, INSS, 13º, férias, vale-transporte, vale-alimentação) = aproximadamente R$ 2.500/mês por funcionário. E é só 1 pessoa, 8h/dia, 22 dias/mês.",
+    "anchorFooter": "Agora imagine 10 especialistas trabalhando em paralelo, 24/7, por uma fração desse valor.",
+    "ctaButton": "Quero minha equipe IA",
+    "items": [
+      { "n": "01", "icon": "agent",      "name": "SDR de Tráfego Pago",  "role": "Captura e responde leads do Meta e Google Ads — em segundos." },
+      { "n": "02", "icon": "check",      "name": "Qualificador",         "role": "Pontua intenção, ticket e fit antes de envolver alguém humano." },
+      { "n": "03", "icon": "workflow",   "name": "Agente de Follow-up",  "role": "Re-engaja lead frio no canal certo até responder ou sair." },
+      { "n": "04", "icon": "support",    "name": "Agente de Atendimento","role": "Responde produto, preço e política 24/7 — instantâneo." },
+      { "n": "05", "icon": "calendar",   "name": "Agente de Agendamento","role": "Marca call e visita direto na sua agenda — sem ping-pong." },
+      { "n": "06", "icon": "finance",    "name": "Agente de Cobrança",   "role": "Lembrete inteligente, recuperação de inadimplência, redução de churn." },
+      { "n": "07", "icon": "docs",       "name": "Agente de Documentos", "role": "Coleta, valida e arquiva documentos de cliente automaticamente." },
+      { "n": "08", "icon": "data",       "name": "Agente de Relatórios", "role": "KPIs diários no WhatsApp — o que tá funcionando, o que não tá." },
+      { "n": "09", "icon": "spark",      "name": "Agente de Reativação", "role": "Fluxos de win-back pra clientes antigos e leads inativos." },
+      { "n": "10", "icon": "saas",       "name": "Agente de Onboarding", "role": "Recebe cliente novo, coleta informação e leva ao primeiro resultado." }
+    ]
+  },
   "pricing": {
     "eyebrow": "Investimento",
     "title": "Comece pequeno. Escale quando se pagar.",

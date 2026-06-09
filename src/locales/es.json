@@ -326,6 +326,28 @@
     "title": "Herramientas enterprise, velocidad de agencia",
     "subtitle": "Construimos sobre la misma tecnología que mueve los mejores productos de IA del mundo."
   },
+  "agents": {
+    "eyebrow": "Tu equipo IA",
+    "title1": "10 agentes. 10 especialistas.",
+    "title2": "24/7. Sin vacaciones.",
+    "subtitle": "Cada agente es experto en una función — y la cumple sin dormir, faltar ni pedir aumento.",
+    "anchorTitle": "El costo de 1 empleado en salario mínimo",
+    "anchorBody": "Contratar a un empleado en salario mínimo — con cargas sociales, beneficios y costos extras — supera fácilmente lo que la mayoría de las empresas presupuesta para un stack completo de IA.",
+    "anchorFooter": "Ahora imagina 10 especialistas trabajando en paralelo, 24/7, por una fracción de ese valor.",
+    "ctaButton": "Quiero mi equipo IA",
+    "items": [
+      { "n": "01", "icon": "agent",      "name": "SDR de Tráfico Pago",  "role": "Captura y responde leads de Meta y Google Ads — en segundos." },
+      { "n": "02", "icon": "check",      "name": "Calificador",          "role": "Puntúa intención, presupuesto y fit antes de involucrar a un humano." },
+      { "n": "03", "icon": "workflow",   "name": "Agente de Follow-up",  "role": "Re-engancha leads fríos en el canal correcto hasta que respondan." },
+      { "n": "04", "icon": "support",    "name": "Agente de Atención",   "role": "Responde producto, precio y política 24/7 — al instante." },
+      { "n": "05", "icon": "calendar",   "name": "Agente de Agendamiento","role": "Agenda llamadas y visitas directo en tu calendario — sin idas y vueltas." },
+      { "n": "06", "icon": "finance",    "name": "Agente de Cobranza",   "role": "Recordatorios inteligentes, recuperación de morosidad, prevención de churn." },
+      { "n": "07", "icon": "docs",       "name": "Agente de Documentos", "role": "Recolecta, valida y archiva documentos del cliente automáticamente." },
+      { "n": "08", "icon": "data",       "name": "Agente de Reportes",   "role": "KPIs diarios en WhatsApp — qué funciona, qué no, qué arreglar." },
+      { "n": "09", "icon": "spark",      "name": "Agente de Reactivación","role": "Flujos de win-back para clientes antiguos y leads inactivos." },
+      { "n": "10", "icon": "saas",       "name": "Agente de Onboarding", "role": "Recibe al nuevo cliente, recoge información y lo lleva al primer resultado." }
+    ]
+  },
   "pricing": {
     "eyebrow": "Inversión",
     "title": "Empieza pequeño. Escala cuando se pague solo.",

@@ -7,6 +7,7 @@ import Services from './components/Services'
 import Process from './components/Process'
 import Work from './components/Work'
 import Stack from './components/Stack'
+import Agents from './components/Agents'
 import Pricing from './components/Pricing'
 import FAQ from './components/FAQ'
 import CTA from './components/CTA'
@@ -34,6 +35,7 @@ export default function App() {
         <Process />
         <Work />
         <Stack />
+        <Agents />
         <Pricing />
         <FAQ />
         <CTA />

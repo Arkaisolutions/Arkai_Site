@@ -235,6 +235,34 @@ export const IconFitness = (p: IconProps) => (
   </svg>
 )
 
+export const IconCalendar = (p: IconProps) => (
+  <svg {...base(p)}>
+    <rect x="3" y="5" width="18" height="16" rx="2" />
+    <path d="M3 10h18M8 3v4M16 3v4" />
+  </svg>
+)
+
+export const IconDocs = (p: IconProps) => (
+  <svg {...base(p)}>
+    <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+    <path d="M14 3v6h6M8 13h8M8 17h5" />
+  </svg>
+)
+
+/** Map of all icons usable in the agents grid. */
+export const agentIcons: Record<string, (p: IconProps) => ReactElement> = {
+  agent: IconAgent,
+  check: IconCheck,
+  workflow: IconWorkflow,
+  support: IconSupport,
+  calendar: IconCalendar,
+  finance: IconFinance,
+  docs: IconDocs,
+  data: IconData,
+  spark: IconSpark,
+  saas: IconCloud,
+}
+
 export const industryIcons: Record<string, (p: IconProps) => ReactElement> = {
   realestate: IconBuilding,
   health: IconHealth,

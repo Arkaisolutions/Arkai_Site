@@ -326,6 +326,28 @@
     "title": "Enterprise-grade tools, agency speed",
     "subtitle": "We build on the same technology powering the world's best AI products."
   },
+  "agents": {
+    "eyebrow": "Your AI team",
+    "title1": "10 agents. 10 specialists.",
+    "title2": "24/7. No vacation.",
+    "subtitle": "Each agent owns one job — and does it without sleeping, calling in sick, or asking for a raise.",
+    "anchorTitle": "The cost of 1 minimum-wage employee",
+    "anchorBody": "Hiring one minimum-wage worker — with payroll taxes, benefits and overhead — easily exceeds what most companies budget for an entire AI stack.",
+    "anchorFooter": "Now imagine 10 specialists, working in parallel, 24/7, for a fraction of that.",
+    "ctaButton": "I want my AI team",
+    "items": [
+      { "n": "01", "icon": "agent",      "name": "Paid-Traffic SDR",   "role": "Captures and replies to leads from Meta & Google Ads — within seconds." },
+      { "n": "02", "icon": "check",      "name": "Qualifier",          "role": "Scores intent, budget and fit before any human gets involved." },
+      { "n": "03", "icon": "workflow",   "name": "Follow-up Agent",    "role": "Re-engages cold leads on the right channel until they reply or opt out." },
+      { "n": "04", "icon": "support",    "name": "Support Agent",      "role": "Answers product, pricing and policy questions instantly, 24/7." },
+      { "n": "05", "icon": "calendar",   "name": "Booking Agent",      "role": "Schedules calls and visits straight into your calendar — no back-and-forth." },
+      { "n": "06", "icon": "finance",    "name": "Billing Agent",      "role": "Smart reminders, recovery of late payments, churn prevention." },
+      { "n": "07", "icon": "docs",       "name": "Documents Agent",    "role": "Collects, validates and stores client files automatically." },
+      { "n": "08", "icon": "data",       "name": "Reports Agent",      "role": "Daily KPIs on WhatsApp — what's working, what's not, what to fix." },
+      { "n": "09", "icon": "spark",      "name": "Reactivation Agent", "role": "Win-back flows for past clients and inactive prospects." },
+      { "n": "10", "icon": "saas",       "name": "Onboarding Agent",   "role": "Greets new clients, gathers info and gets them to first value fast." }
+    ]
+  },
   "pricing": {
     "eyebrow": "Investment",
     "title": "Start small. Scale when it pays off.",
