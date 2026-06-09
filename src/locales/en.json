@@ -15,8 +15,8 @@
     "ctaSecondary": "See real systems",
     "stat1Value": "24/7",
     "stat1Label": "Agents that never sleep",
-    "stat2Value": "Live",
-    "stat2Label": "Systems in production",
+    "stat2Value": "63+",
+    "stat2Label": "Workflows shipped",
     "stat3Value": "USD / EUR",
     "stat3Label": "Global delivery"
   },
@@ -328,25 +328,40 @@
   },
   "agents": {
     "eyebrow": "Your AI team",
-    "title1": "10 agents. 10 specialists.",
+    "title1": "14 agents.",
     "title2": "24/7. No vacation.",
-    "subtitle": "Each agent owns one job — and does it without sleeping, calling in sick, or asking for a raise.",
+    "subtitle": "A full sales and operations team — assembled with agents that already run in production.",
+    "guaranteeBadge": "✓ First qualified lead in 7 days, or your setup is free.",
+    "wa": {
+      "label": "WhatsApp · Front-line agents",
+      "sub": "Receive, qualify and close — connected to your CRM via Evolution API + n8n.",
+      "items": [
+        { "n": "01", "icon": "agent",    "name": "Paid-Traffic Qualifier", "role": "Receives the ad lead, identifies the profile, recommends the right plan and logs in CRM — under 30 seconds, no human." },
+        { "n": "02", "icon": "spark",    "name": "Audio-First Agent",      "role": "Customer describes the part by voice — bot transcribes and understands (Whisper)." },
+        { "n": "03", "icon": "saas",     "name": "Photo Recognition",      "role": "Customer sends a photo of the part — bot identifies and suggests similar items." },
+        { "n": "04", "icon": "workflow", "name": "Broadcast & Remarketing","role": "Re-warms cold base in parallel across multiple numbers, segmented by behavior." },
+        { "n": "05", "icon": "support",  "name": "Smart Hand-off",         "role": "Transfers to a human only when needed — discount, negotiation, complaint." },
+        { "n": "06", "icon": "check",    "name": "Autopilot CRM",          "role": "Moves the lead between pipeline stages on its own — zero typing." }
+      ]
+    },
+    "ops": {
+      "label": "Back-office · Skills that run themselves",
+      "sub": "Operational intelligence — alerts, reports and reactive decisions, on autopilot.",
+      "items": [
+        { "n": "07", "icon": "data",     "name": "Ads Intelligence",       "role": "Watches Google + Meta + GA4 — alerts when CPL or ROAS goes off track." },
+        { "n": "08", "icon": "finance",  "name": "CRM Sales Ops",          "role": "Daily sales report + instant alert for hot leads." },
+        { "n": "09", "icon": "traffic",  "name": "Marketing Ops",          "role": "Multi-channel re-engagement of cold leads." },
+        { "n": "10", "icon": "calendar", "name": "Infra Monitoring",       "role": "Servers monitored 24/7 with Telegram alerts on any anomaly." },
+        { "n": "11", "icon": "docs",     "name": "Competitive Intel",      "role": "Tracks competitor pricing, positioning and offers." },
+        { "n": "12", "icon": "support",  "name": "Content Ops",            "role": "Generates branded content across channels." },
+        { "n": "13", "icon": "spark",    "name": "Brilliant Minds",        "role": "Panel of 5 AI experts for strategic decision support." },
+        { "n": "14", "icon": "agent",    "name": "Sales Engine",           "role": "SPIN methodology to close plans and B2B field sales." }
+      ]
+    },
     "anchorTitle": "The cost of 1 minimum-wage employee",
     "anchorBody": "Hiring one minimum-wage worker — with payroll taxes, benefits and overhead — easily exceeds what most companies budget for an entire AI stack.",
-    "anchorFooter": "Now imagine 10 specialists, working in parallel, 24/7, for a fraction of that.",
-    "ctaButton": "I want my AI team",
-    "items": [
-      { "n": "01", "icon": "agent",      "name": "Paid-Traffic SDR",   "role": "Captures and replies to leads from Meta & Google Ads — within seconds." },
-      { "n": "02", "icon": "check",      "name": "Qualifier",          "role": "Scores intent, budget and fit before any human gets involved." },
-      { "n": "03", "icon": "workflow",   "name": "Follow-up Agent",    "role": "Re-engages cold leads on the right channel until they reply or opt out." },
-      { "n": "04", "icon": "support",    "name": "Support Agent",      "role": "Answers product, pricing and policy questions instantly, 24/7." },
-      { "n": "05", "icon": "calendar",   "name": "Booking Agent",      "role": "Schedules calls and visits straight into your calendar — no back-and-forth." },
-      { "n": "06", "icon": "finance",    "name": "Billing Agent",      "role": "Smart reminders, recovery of late payments, churn prevention." },
-      { "n": "07", "icon": "docs",       "name": "Documents Agent",    "role": "Collects, validates and stores client files automatically." },
-      { "n": "08", "icon": "data",       "name": "Reports Agent",      "role": "Daily KPIs on WhatsApp — what's working, what's not, what to fix." },
-      { "n": "09", "icon": "spark",      "name": "Reactivation Agent", "role": "Win-back flows for past clients and inactive prospects." },
-      { "n": "10", "icon": "saas",       "name": "Onboarding Agent",   "role": "Greets new clients, gathers info and gets them to first value fast." }
-    ]
+    "anchorFooter": "Now imagine 14 specialists, working in parallel, 24/7, for a fraction of that.",
+    "ctaButton": "I want my AI team"
   },
   "pricing": {
     "eyebrow": "Investment",

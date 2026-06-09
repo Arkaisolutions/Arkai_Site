@@ -15,8 +15,8 @@
     "ctaSecondary": "Ver sistemas reales",
     "stat1Value": "24/7",
     "stat1Label": "Agentes que nunca duermen",
-    "stat2Value": "En vivo",
-    "stat2Label": "Sistemas en producción",
+    "stat2Value": "63+",
+    "stat2Label": "Workflows entregados",
     "stat3Value": "USD / EUR",
     "stat3Label": "Entrega global"
   },
@@ -328,25 +328,40 @@
   },
   "agents": {
     "eyebrow": "Tu equipo IA",
-    "title1": "10 agentes. 10 especialistas.",
+    "title1": "14 agentes.",
     "title2": "24/7. Sin vacaciones.",
-    "subtitle": "Cada agente es experto en una función — y la cumple sin dormir, faltar ni pedir aumento.",
+    "subtitle": "Una operación completa de ventas y atención — armada con agentes que ya corren en producción.",
+    "guaranteeBadge": "✓ Primer lead calificado en 7 días, o tu setup es gratis.",
+    "wa": {
+      "label": "WhatsApp · Agentes de primera línea",
+      "sub": "Reciben, califican y cierran — conectados a tu CRM vía Evolution API + n8n.",
+      "items": [
+        { "n": "01", "icon": "agent",    "name": "Calificador de Tráfico",   "role": "Recibe el lead del anuncio, identifica el perfil, recomienda el plan y registra en CRM — en menos de 30s, sin humano." },
+        { "n": "02", "icon": "spark",    "name": "Agente Audio-First",       "role": "El cliente describe la pieza hablando — el bot transcribe y entiende (Whisper)." },
+        { "n": "03", "icon": "saas",     "name": "Reconocimiento por Foto",  "role": "El cliente manda foto de la pieza — el bot la identifica y sugiere similares." },
+        { "n": "04", "icon": "workflow", "name": "Disparos & Remarketing",   "role": "Reactiva la base fría en varios números en paralelo, segmentado por comportamiento." },
+        { "n": "05", "icon": "support",  "name": "Handoff Inteligente",      "role": "Transfiere al humano solo cuando es necesario — descuento, negociación, queja." },
+        { "n": "06", "icon": "check",    "name": "CRM Automático",           "role": "Mueve el lead entre etapas del embudo solo — cero tipeo." }
+      ]
+    },
+    "ops": {
+      "label": "Back-office · Skills que se cuidan solas",
+      "sub": "Inteligencia operacional — alertas, reportes y decisiones reactivas, en piloto automático.",
+      "items": [
+        { "n": "07", "icon": "data",     "name": "Ads Intelligence",         "role": "Vigila Google + Meta + GA4 — alerta cuando el CPL o ROAS se desvía." },
+        { "n": "08", "icon": "finance",  "name": "CRM Sales Ops",            "role": "Reporte diario de ventas + alerta instantánea de lead caliente." },
+        { "n": "09", "icon": "traffic",  "name": "Marketing Ops",            "role": "Reactivación multicanal de leads fríos." },
+        { "n": "10", "icon": "calendar", "name": "Infra Monitoring",         "role": "Servidor monitoreado 24/7 con alerta por Telegram ante cualquier anomalía." },
+        { "n": "11", "icon": "docs",     "name": "Competitive Intel",        "role": "Vigila precios, posicionamiento y ofertas de la competencia." },
+        { "n": "12", "icon": "support",  "name": "Content Ops",              "role": "Genera contenido para tus canales con tu identidad." },
+        { "n": "13", "icon": "spark",    "name": "Brilliant Minds",          "role": "Panel de 5 expertos IA para soporte estratégico de decisiones." },
+        { "n": "14", "icon": "agent",    "name": "Sales Engine",             "role": "Metodología SPIN para cerrar planes y ventas B2B presenciales." }
+      ]
+    },
     "anchorTitle": "El costo de 1 empleado en salario mínimo",
     "anchorBody": "Contratar a un empleado en salario mínimo — con cargas sociales, beneficios y costos extras — supera fácilmente lo que la mayoría de las empresas presupuesta para un stack completo de IA.",
-    "anchorFooter": "Ahora imagina 10 especialistas trabajando en paralelo, 24/7, por una fracción de ese valor.",
-    "ctaButton": "Quiero mi equipo IA",
-    "items": [
-      { "n": "01", "icon": "agent",      "name": "SDR de Tráfico Pago",  "role": "Captura y responde leads de Meta y Google Ads — en segundos." },
-      { "n": "02", "icon": "check",      "name": "Calificador",          "role": "Puntúa intención, presupuesto y fit antes de involucrar a un humano." },
-      { "n": "03", "icon": "workflow",   "name": "Agente de Follow-up",  "role": "Re-engancha leads fríos en el canal correcto hasta que respondan." },
-      { "n": "04", "icon": "support",    "name": "Agente de Atención",   "role": "Responde producto, precio y política 24/7 — al instante." },
-      { "n": "05", "icon": "calendar",   "name": "Agente de Agendamiento","role": "Agenda llamadas y visitas directo en tu calendario — sin idas y vueltas." },
-      { "n": "06", "icon": "finance",    "name": "Agente de Cobranza",   "role": "Recordatorios inteligentes, recuperación de morosidad, prevención de churn." },
-      { "n": "07", "icon": "docs",       "name": "Agente de Documentos", "role": "Recolecta, valida y archiva documentos del cliente automáticamente." },
-      { "n": "08", "icon": "data",       "name": "Agente de Reportes",   "role": "KPIs diarios en WhatsApp — qué funciona, qué no, qué arreglar." },
-      { "n": "09", "icon": "spark",      "name": "Agente de Reactivación","role": "Flujos de win-back para clientes antiguos y leads inactivos." },
-      { "n": "10", "icon": "saas",       "name": "Agente de Onboarding", "role": "Recibe al nuevo cliente, recoge información y lo lleva al primer resultado." }
-    ]
+    "anchorFooter": "Ahora imagina 14 especialistas trabajando en paralelo, 24/7, por una fracción de ese valor.",
+    "ctaButton": "Quiero mi equipo IA"
   },
   "pricing": {
     "eyebrow": "Inversión",

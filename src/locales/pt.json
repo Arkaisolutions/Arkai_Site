@@ -15,8 +15,8 @@
     "ctaSecondary": "Ver sistemas reais",
     "stat1Value": "24/7",
     "stat1Label": "Agentes que nunca dormem",
-    "stat2Value": "No ar",
-    "stat2Label": "Sistemas em produção",
+    "stat2Value": "63+",
+    "stat2Label": "Workflows entregues",
     "stat3Value": "USD / EUR",
     "stat3Label": "Entrega global"
   },
@@ -328,25 +328,40 @@
   },
   "agents": {
     "eyebrow": "Sua equipe IA",
-    "title1": "10 agentes. 10 especialistas.",
+    "title1": "14 agentes.",
     "title2": "24/7. Sem férias.",
-    "subtitle": "Cada agente é especialista em uma função — e cumpre sem dormir, faltar, ou pedir aumento.",
+    "subtitle": "Uma operação inteira de vendas e atendimento — montada com agentes que já rodam em produção.",
+    "guaranteeBadge": "✓ Primeiro lead qualificado em 7 dias, ou seu setup é gratuito.",
+    "wa": {
+      "label": "WhatsApp · Agentes de frente",
+      "sub": "Recebem, qualificam e fecham — ligados ao seu CRM via Evolution API + n8n.",
+      "items": [
+        { "n": "01", "icon": "agent",    "name": "Qualificador de Tráfego",  "role": "Recebe o lead do anúncio, identifica o perfil, recomenda o plano e registra no CRM — em menos de 30s, sem humano." },
+        { "n": "02", "icon": "spark",    "name": "Mecânico Áudio-First",     "role": "Cliente descreve a peça falando — o bot transcreve e entende (Whisper)." },
+        { "n": "03", "icon": "saas",     "name": "Leitor de Peça por Foto",  "role": "Cliente manda a foto da peça — o bot identifica e sugere similares." },
+        { "n": "04", "icon": "workflow", "name": "Disparos & Remarketing",   "role": "Reaquece base parada em vários números em paralelo, segmentado por comportamento." },
+        { "n": "05", "icon": "support",  "name": "Handoff Inteligente",      "role": "Transfere pro vendedor humano só quando precisa — desconto, negociação, reclamação." },
+        { "n": "06", "icon": "check",    "name": "CRM no Automático",        "role": "Move o lead de etapa do funil sozinho — zero digitação." }
+      ]
+    },
+    "ops": {
+      "label": "Back-office · Skills que se cuidam sozinhas",
+      "sub": "Inteligência operacional — alertas, relatórios e decisões reativas, em piloto automático.",
+      "items": [
+        { "n": "07", "icon": "data",     "name": "Ads Intelligence",         "role": "Vigia Google + Meta + GA4 — alerta quando CPL ou ROAS sai do trilho." },
+        { "n": "08", "icon": "finance",  "name": "CRM Sales Ops",            "role": "Relatório diário de vendas + alerta instantâneo de lead quente." },
+        { "n": "09", "icon": "traffic",  "name": "Marketing Ops",            "role": "Reengajamento multicanal de leads frios." },
+        { "n": "10", "icon": "calendar", "name": "Infra Monitoring",         "role": "Servidor monitorado 24/7 com alerta no Telegram em qualquer anomalia." },
+        { "n": "11", "icon": "docs",     "name": "Competitive Intel",        "role": "Espia preço, posicionamento e ofertas dos concorrentes." },
+        { "n": "12", "icon": "support",  "name": "Content Ops",              "role": "Gera conteúdo pros canais com a sua identidade." },
+        { "n": "13", "icon": "spark",    "name": "Brilliant Minds",          "role": "Conselho de 5 especialistas IA pra decisão estratégica." },
+        { "n": "14", "icon": "agent",    "name": "Sales Engine",             "role": "Método SPIN pra fechar plano e vendas B2B presenciais." }
+      ]
+    },
     "anchorTitle": "O custo real de 1 funcionário CLT",
-    "anchorBody": "1 salário mínimo (R$ 1.518) + encargos (FGTS, INSS, 13º, férias, vale-transporte, vale-alimentação) = aproximadamente R$ 2.500/mês por funcionário. E é só 1 pessoa, 8h/dia, 22 dias/mês.",
-    "anchorFooter": "Agora imagine 10 especialistas trabalhando em paralelo, 24/7, por uma fração desse valor.",
-    "ctaButton": "Quero minha equipe IA",
-    "items": [
-      { "n": "01", "icon": "agent",      "name": "SDR de Tráfego Pago",  "role": "Captura e responde leads do Meta e Google Ads — em segundos." },
-      { "n": "02", "icon": "check",      "name": "Qualificador",         "role": "Pontua intenção, ticket e fit antes de envolver alguém humano." },
-      { "n": "03", "icon": "workflow",   "name": "Agente de Follow-up",  "role": "Re-engaja lead frio no canal certo até responder ou sair." },
-      { "n": "04", "icon": "support",    "name": "Agente de Atendimento","role": "Responde produto, preço e política 24/7 — instantâneo." },
-      { "n": "05", "icon": "calendar",   "name": "Agente de Agendamento","role": "Marca call e visita direto na sua agenda — sem ping-pong." },
-      { "n": "06", "icon": "finance",    "name": "Agente de Cobrança",   "role": "Lembrete inteligente, recuperação de inadimplência, redução de churn." },
-      { "n": "07", "icon": "docs",       "name": "Agente de Documentos", "role": "Coleta, valida e arquiva documentos de cliente automaticamente." },
-      { "n": "08", "icon": "data",       "name": "Agente de Relatórios", "role": "KPIs diários no WhatsApp — o que tá funcionando, o que não tá." },
-      { "n": "09", "icon": "spark",      "name": "Agente de Reativação", "role": "Fluxos de win-back pra clientes antigos e leads inativos." },
-      { "n": "10", "icon": "saas",       "name": "Agente de Onboarding", "role": "Recebe cliente novo, coleta informação e leva ao primeiro resultado." }
-    ]
+    "anchorBody": "1 salário mínimo (R$ 1.518) + encargos (FGTS, INSS, 13º, férias, vale-transporte, vale-alimentação) ≈ R$ 2.500/mês por funcionário. E é só 1 pessoa, 8h/dia, 22 dias/mês.",
+    "anchorFooter": "Agora imagine 14 especialistas trabalhando em paralelo, 24/7, por uma fração desse valor.",
+    "ctaButton": "Quero minha equipe IA"
   },
   "pricing": {
     "eyebrow": "Investimento",
