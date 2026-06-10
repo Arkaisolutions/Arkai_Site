@@ -27,6 +27,11 @@ export const config = {
   // URL-encoded porque o path tem espaços ("Arkai - Leads - Site").
   leadWebhookUrl: 'https://nwook.futurosolaroficial.cloud/webhook/Arkai%20-%20Leads%20-%20Site',
 
+  // Meta Pixel / Dataset ID (Business Manager → Fontes de Dados).
+  // Vazio = desligado. Cole o ID de 16 dígitos aqui pra ativar o rastreio
+  // de conversão dos anúncios do Facebook/Instagram. Veja docs/tracking.md.
+  metaPixelId: '',
+
   email: 'contato@arkaisolutions.com.br',
 
   // WhatsApp em formato internacional, só números (ex.: 5521999999999).

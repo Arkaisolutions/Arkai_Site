@@ -7,6 +7,7 @@ import DiagnosticoPage from './pages/DiagnosticoPage.tsx'
 import OfertaPage from './pages/OfertaPage.tsx'
 import ThankYouPage from './pages/ThankYouPage.tsx'
 import { config } from './config.ts'
+import { initMetaPixel } from './lib/metaPixel.ts'
 
 /**
  * Router minimalista, baseado em window.location.pathname.
@@ -26,6 +27,9 @@ function pickRoot() {
   // A HOME ("/") e qualquer rota desconhecida seguem config.homeMode.
   return config.homeMode === 'agencia' ? <App /> : <OfertaPage />
 }
+
+// Meta Pixel (no-op se config.metaPixelId estiver vazio)
+initMetaPixel()
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>{pickRoot()}</StrictMode>,
