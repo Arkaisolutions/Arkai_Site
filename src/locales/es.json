@@ -164,6 +164,12 @@
       "note": "Clic → 4 preguntas → recibes diagnóstico + propuesta en 24h."
     }
   },
+  "seo": {
+    "agenciaTitle": "Arkai Solutions — Agencia de Automatización con Agentes IA",
+    "agenciaDesc": "14 agentes IA en producción para ventas, atención y operación 24/7. Automatización con IA para inmobiliario, solar, automotriz, salud, hotelería y más. Entrega global en USD/EUR.",
+    "diagDesc": "Responde 4 preguntas y recibe un diagnóstico personalizado de dónde la IA genera ingresos en tu negocio — gratis, en 24h.",
+    "thanksDesc": "Tu solicitud de diagnóstico de IA fue recibida. Nuestro equipo te contactará pronto."
+  },
   "diagPage": {
     "badge": "Diagnóstico Gratuito de IA",
     "title1": "Descubre las automatizaciones de IA",

@@ -13,9 +13,10 @@ import FAQ from './components/FAQ'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
 import FloatingWhatsApp from './components/FloatingWhatsApp'
+import { setSeo } from './lib/seo'
 
 export default function App() {
-  const { i18n } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   useEffect(() => {
     document.documentElement.lang = i18n.language.startsWith('pt')
@@ -24,6 +25,14 @@ export default function App() {
         ? 'es'
         : 'en'
   }, [i18n.language])
+
+  useEffect(() => {
+    setSeo({
+      title: t('seo.agenciaTitle'),
+      description: t('seo.agenciaDesc'),
+      canonicalPath: '/agencia',
+    })
+  }, [t])
 
   return (
     <>

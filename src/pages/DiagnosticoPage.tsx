@@ -7,6 +7,7 @@ import Reveal from '../components/Reveal'
 import { IconArrow, IconBolt, IconCheck } from '../components/icons'
 import { config } from '../config'
 import { captureAttribution, readAttribution, trackLeadSubmit, trackPageView } from '../lib/track'
+import { setSeo } from '../lib/seo'
 
 type Step = 0 | 1 | 2 | 3
 
@@ -37,7 +38,11 @@ export default function DiagnosticoPage() {
   const { t, i18n } = useTranslation()
 
   useEffect(() => {
-    document.title = t('diagPage.metaTitle')
+    setSeo({
+      title: t('diagPage.metaTitle'),
+      description: t('seo.diagDesc'),
+      canonicalPath: '/diagnostico',
+    })
     captureAttribution()
     trackPageView(window.location.pathname, t('diagPage.metaTitle'))
   }, [t])

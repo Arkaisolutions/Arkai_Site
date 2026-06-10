@@ -19,8 +19,11 @@ function pickRoot() {
   const path = window.location.pathname.replace(/\/+$/, '') || '/'
   if (path === '/diagnostico' || path === '/audit') return <DiagnosticoPage />
   if (path === '/diagnostico/obrigado' || path === '/audit/thank-you') return <ThankYouPage />
-  if (path === '/oferta' || path === '/offer') return <OfertaPage />
-  return <App />
+  // Institutional page (full agency presentation) moved to /agencia.
+  if (path === '/agencia' || path === '/agency' || path === '/servicos') return <App />
+  // Offer page is now the HOME (/). /oferta and /offer kept as aliases
+  // for existing ad links (canonical points to / to avoid dupe content).
+  return <OfertaPage />
 }
 
 createRoot(document.getElementById('root')!).render(

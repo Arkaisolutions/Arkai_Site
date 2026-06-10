@@ -2,11 +2,14 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { IconClose, IconGlobe, IconMenu } from './icons'
 
+// Links absolutos para a página institucional (/agencia). Funcionam de
+// qualquer rota: a partir de /agencia o browser só rola até a âncora;
+// a partir da home (/oferta) navega para /agencia e rola.
 const links = [
-  { id: 'services', key: 'nav.services' },
-  { id: 'process', key: 'nav.process' },
-  { id: 'work', key: 'nav.work' },
-  { id: 'pricing', key: 'nav.pricing' },
+  { href: '/agencia#services', key: 'nav.services' },
+  { href: '/agencia#process', key: 'nav.process' },
+  { href: '/agencia#work', key: 'nav.work' },
+  { href: '/agencia#pricing', key: 'nav.pricing' },
 ]
 
 export default function Navbar() {
@@ -40,7 +43,7 @@ export default function Navbar() {
       }`}
     >
       <nav className="container-content flex h-[72px] items-center justify-between">
-        <a href="#top" className="flex items-center gap-2.5 font-extrabold tracking-tight">
+        <a href="/" className="flex items-center gap-2.5 font-extrabold tracking-tight">
           <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-accent to-accent-2 text-base font-black text-white">
             A
           </span>
@@ -52,8 +55,8 @@ export default function Navbar() {
         <div className="hidden items-center gap-8 md:flex">
           {links.map((l) => (
             <a
-              key={l.id}
-              href={`#${l.id}`}
+              key={l.href}
+              href={l.href}
               className="text-sm font-medium text-muted transition-colors hover:text-ink"
             >
               {t(l.key)}
@@ -88,8 +91,8 @@ export default function Navbar() {
           <div className="container-content flex flex-col gap-1 py-4">
             {links.map((l) => (
               <a
-                key={l.id}
-                href={`#${l.id}`}
+                key={l.href}
+                href={l.href}
                 onClick={() => setOpen(false)}
                 className="rounded-lg px-3 py-3 text-sm font-medium text-muted hover:bg-surface hover:text-ink"
               >

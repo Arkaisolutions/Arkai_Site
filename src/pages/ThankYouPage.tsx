@@ -7,12 +7,17 @@ import Reveal from '../components/Reveal'
 import { IconArrow, IconCheck, IconWhatsApp } from '../components/icons'
 import { whatsappLink } from '../config'
 import { trackEvent, trackPageView } from '../lib/track'
+import { setSeo } from '../lib/seo'
 
 export default function ThankYouPage() {
   const { t } = useTranslation()
 
   useEffect(() => {
-    document.title = t('thanksPage.metaTitle')
+    setSeo({
+      title: t('thanksPage.metaTitle'),
+      description: t('seo.thanksDesc'),
+      canonicalPath: '/diagnostico/obrigado',
+    })
     trackPageView(window.location.pathname, t('thanksPage.metaTitle'))
     trackEvent('lead_thankyou', { path: window.location.pathname })
   }, [t])

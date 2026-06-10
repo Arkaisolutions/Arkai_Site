@@ -7,6 +7,7 @@ import Reveal from '../components/Reveal'
 import { IconArrow, IconBolt, IconCheck } from '../components/icons'
 import { config } from '../config'
 import { captureAttribution, trackEvent, trackPageView } from '../lib/track'
+import { setSeo } from '../lib/seo'
 
 interface Stat      { v: string; l: string }
 interface QA        { q: string; a: string }
@@ -22,7 +23,12 @@ export default function OfertaPage() {
   const { t } = useTranslation()
 
   useEffect(() => {
-    document.title = t('oferta.metaTitle')
+    // Home (/) e alias /oferta compartilham conteúdo → canonical sempre "/"
+    setSeo({
+      title: t('oferta.metaTitle'),
+      description: t('oferta.metaDesc'),
+      canonicalPath: '/',
+    })
     captureAttribution()
     trackPageView(window.location.pathname, t('oferta.metaTitle'))
     trackEvent('offer_view', {

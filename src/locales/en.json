@@ -164,6 +164,12 @@
       "note": "Click → answer 4 questions → get your diagnosis + proposal in 24h."
     }
   },
+  "seo": {
+    "agenciaTitle": "Arkai Solutions — AI Automation Agency with AI Agents",
+    "agenciaDesc": "14 AI agents in production for sales, support and operations 24/7. AI automation for real estate, solar, automotive, healthcare, hospitality and more. Global delivery in USD/EUR.",
+    "diagDesc": "Answer 4 questions and get a custom diagnosis of where AI generates revenue in your business — free, within 24h.",
+    "thanksDesc": "Your AI audit request has been received. Our team will reach out soon."
+  },
   "diagPage": {
     "badge": "Free AI Audit",
     "title1": "Find the AI automations",
