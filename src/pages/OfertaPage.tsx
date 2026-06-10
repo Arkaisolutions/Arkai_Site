@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import AuroraBg from '../components/AuroraBg'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import FloatingWhatsApp from '../components/FloatingWhatsApp'
 import Reveal from '../components/Reveal'
 import { IconArrow, IconBolt, IconCheck } from '../components/icons'
 import { config } from '../config'
@@ -342,6 +343,7 @@ export default function OfertaPage() {
       </main>
 
       <Footer />
+      <FloatingWhatsApp />
     </>
   )
 }
