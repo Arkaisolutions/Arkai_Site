@@ -45,7 +45,10 @@
   "oferta": {
     "metaTitle": "Oferta Exclusiva · Arkai Solutions",
     "metaDesc": "14 agentes IA pelo preço de 1 funcionário CLT. Apenas 10 vagas iniciais.",
-    "scarcity": "🔥 EARLY ACCESS · APENAS 10 VAGAS · SETUP GRÁTIS",
+    "scarcity": "🔥 EARLY ACCESS · {{remaining}} DE {{total}} VAGAS RESTANTES · SETUP GRÁTIS",
+    "spotsTitle": "Vagas restantes",
+    "spotsTaken": "tomadas",
+    "spotsLeft": "restantes",
     "hero": {
       "badge": "OFERTA EXCLUSIVA · LANÇAMENTO",
       "title1": "14 funcionários IA",
@@ -62,7 +65,7 @@
     "solution": {
       "eyebrow": "A solução completa",
       "title1": "Sua equipe IA. Em produção.",
-      "title2": "Em 7 dias.",
+      "title2": "Em até 30 dias.",
       "subtitle": "14 especialistas IA prontos pra rodar no seu negócio. Atendimento, qualificação, agendamento, cobrança, back-office. Tudo integrado no seu WhatsApp e CRM."
     },
     "proof": {
@@ -96,10 +99,15 @@
       "setupNow": "GRÁTIS pros primeiros 10",
       "cta": "Quero minha vaga agora"
     },
-    "guarantee": {
-      "eyebrow": "Sem risco",
-      "title": "Garantia de 7 dias",
-      "body": "Se em 7 dias o seu primeiro lead qualificado não chegar pelo bot, você não paga setup nenhum. Custo zero pra testar."
+    "timeline": {
+      "eyebrow": "Cronograma de implantação",
+      "title": "Implantação completa em até 30 dias",
+      "step1Title": "Dias 1-7 · Configuração",
+      "step1Body": "Setup da infra (n8n + Evolution + CRM), conexão dos canais, importação da sua base.",
+      "step2Title": "Dias 8-21 · Treinamento",
+      "step2Body": "Agentes treinados com seu conteúdo, produtos, tom de voz. Testes internos.",
+      "step3Title": "Dias 22-30 · Go-live + Otimização",
+      "step3Body": "Agentes no ar atendendo. Acompanhamento diário pelos primeiros 7 dias de operação."
     },
     "faq": {
       "title": "As 4 dúvidas que todo mundo tem",
@@ -118,7 +126,7 @@
         },
         {
           "q": "Quanto tempo até ver resultado?",
-          "a": "Implantação completa em 7-14 dias. O primeiro lead qualificado pelo bot costuma chegar em até 7 dias após go-live (e é exatamente isso que a garantia cobre)."
+          "a": "Implantação completa em até 30 dias (configuração + treinamento + go-live). A partir do go-live, agentes começam a operar 24/7. Volume de leads cresce conforme você acelera tráfego pago — eles ficam mais inteligentes a cada interação."
         }
       ]
     },
@@ -419,7 +427,7 @@
     "title1": "14 agentes.",
     "title2": "24/7. Sem férias.",
     "subtitle": "Uma operação inteira de vendas e atendimento — montada com agentes que já rodam em produção.",
-    "guaranteeBadge": "✓ Primeiro lead qualificado em 7 dias, ou seu setup é gratuito.",
+    "guaranteeBadge": "✓ Implantação completa em até 30 dias · Suporte mensal incluso",
     "wa": {
       "label": "WhatsApp · Agentes de frente",
       "sub": "Recebem, qualificam e fecham — ligados ao seu CRM via Evolution API + n8n.",

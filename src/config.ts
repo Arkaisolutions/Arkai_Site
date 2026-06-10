@@ -23,6 +23,16 @@ export const config = {
     instagram: 'https://www.instagram.com/arkai_solutions/',
     linkedin: '',
   },
+
+  /* ===================================================================
+     EARLY ACCESS · vagas iniciais (contador da LP /oferta)
+     ATUALIZE APENAS `remaining` quando uma venda fechar.
+     Quando chegar a 0, considere reabrir batch ou aumentar pra 20/30.
+     =================================================================== */
+  earlyAccess: {
+    total: 10,
+    remaining: 7,
+  },
 }
 
 export const whatsappLink = (text = '') =>

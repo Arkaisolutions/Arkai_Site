@@ -5,16 +5,17 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Reveal from '../components/Reveal'
 import { IconArrow, IconBolt, IconCheck } from '../components/icons'
+import { config } from '../config'
 import { captureAttribution, trackEvent, trackPageView } from '../lib/track'
 
-interface Stat   { v: string; l: string }
-interface QA     { q: string; a: string }
+interface Stat { v: string; l: string }
+interface QA   { q: string; a: string }
 
 /**
  * /oferta — Long-form sales landing for paid traffic.
- * Hormozi-style flow: scarcity → pain → solution → proof → offer →
- * guarantee → FAQ → final CTA. All CTAs route to /diagnostico (UTM
- * attribution from ads is preserved via sessionStorage).
+ * Hormozi-style: scarcity → pain → solution → proof → offer →
+ * implementation timeline → FAQ → final CTA.
+ * All CTAs route to /diagnostico (UTM attribution preserved via sessionStorage).
  */
 export default function OfertaPage() {
   const { t } = useTranslation()
@@ -23,18 +24,24 @@ export default function OfertaPage() {
     document.title = t('oferta.metaTitle')
     captureAttribution()
     trackPageView(window.location.pathname, t('oferta.metaTitle'))
-    trackEvent('offer_view', { path: window.location.pathname })
+    trackEvent('offer_view', {
+      path: window.location.pathname,
+      slots_remaining: config.earlyAccess.remaining,
+    })
   }, [t])
 
-  const stats     = t('oferta.proof.stats',  { returnObjects: true }) as Stat[]
-  const includes  = t('oferta.offer.includes', { returnObjects: true }) as string[]
-  const faqs      = t('oferta.faq.items',    { returnObjects: true }) as QA[]
+  const { remaining, total } = config.earlyAccess
+  const taken = Math.max(0, total - remaining)
+
+  const stats    = t('oferta.proof.stats',    { returnObjects: true }) as Stat[]
+  const includes = t('oferta.offer.includes', { returnObjects: true }) as string[]
+  const faqs     = t('oferta.faq.items',      { returnObjects: true }) as QA[]
 
   return (
     <>
-      {/* Scarcity bar — sticky top */}
+      {/* Scarcity bar — sticky top, dynamic counter */}
       <div className="fixed inset-x-0 top-0 z-[60] bg-gradient-to-r from-accent to-accent-2 px-4 py-2 text-center text-[12.5px] font-bold tracking-wide text-white shadow-md">
-        {t('oferta.scarcity')}
+        {t('oferta.scarcity', { remaining, total })}
       </div>
 
       <div className="h-8" />
@@ -74,6 +81,18 @@ export default function OfertaPage() {
                 </a>
               </div>
             </Reveal>
+
+            {/* Spots remaining visual — dots + counter */}
+            <Reveal delay={320}>
+              <SpotsRemaining
+                remaining={remaining}
+                total={total}
+                taken={taken}
+                spotsTitle={t('oferta.spotsTitle')}
+                takenLabel={t('oferta.spotsTaken')}
+                leftLabel={t('oferta.spotsLeft')}
+              />
+            </Reveal>
           </div>
         </section>
 
@@ -90,7 +109,7 @@ export default function OfertaPage() {
           </div>
         </section>
 
-        {/* ============ SOLUTION (title only — agents already shown on home; this is post-click intent) ============ */}
+        {/* ============ SOLUTION ============ */}
         <section className="relative py-20">
           <div className="container-content max-w-3xl text-center">
             <Reveal>
@@ -193,22 +212,29 @@ export default function OfertaPage() {
           </div>
         </section>
 
-        {/* ============ GUARANTEE ============ */}
-        <section className="relative py-16">
-          <div className="container-content max-w-3xl">
-            <Reveal>
-              <div className="relative overflow-hidden rounded-2xl border border-green-400/30 bg-green-400/5 px-7 py-8 text-center sm:px-12 sm:py-10">
-                <span className="eyebrow border-green-400/40 text-green-400">
-                  {t('oferta.guarantee.eyebrow')}
-                </span>
-                <h2 className="mt-5 text-2xl font-extrabold tracking-tight sm:text-3xl">
-                  ✓ {t('oferta.guarantee.title')}
-                </h2>
-                <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-ink/90">
-                  {t('oferta.guarantee.body')}
-                </p>
-              </div>
+        {/* ============ IMPLEMENTATION TIMELINE (replaces guarantee) ============ */}
+        <section className="relative py-20">
+          <div className="container-content max-w-4xl">
+            <Reveal className="text-center">
+              <span className="eyebrow">{t('oferta.timeline.eyebrow')}</span>
+              <h2 className="section-title mt-5">{t('oferta.timeline.title')}</h2>
             </Reveal>
+
+            <div className="mt-12 grid gap-4 md:grid-cols-3">
+              {[1, 2, 3].map((n, i) => (
+                <Reveal key={n} delay={i * 90}>
+                  <div className="h-full rounded-2xl border border-line bg-surface p-6">
+                    <span className="text-3xl font-black text-line">0{n}</span>
+                    <h3 className="mt-3 text-base font-bold leading-snug">
+                      {t(`oferta.timeline.step${n}Title`)}
+                    </h3>
+                    <p className="mt-2.5 text-sm leading-relaxed text-muted">
+                      {t(`oferta.timeline.step${n}Body`)}
+                    </p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -264,5 +290,43 @@ export default function OfertaPage() {
 
       <Footer />
     </>
+  )
+}
+
+/* ---------------- Spots remaining (dots indicator) ---------------- */
+
+function SpotsRemaining({
+  remaining, total, taken,
+  spotsTitle, takenLabel, leftLabel,
+}: {
+  remaining: number; total: number; taken: number
+  spotsTitle: string; takenLabel: string; leftLabel: string
+}) {
+  return (
+    <div className="mx-auto mt-12 max-w-md">
+      <p className="text-center text-xs font-bold uppercase tracking-[0.22em] text-muted">
+        {spotsTitle}
+      </p>
+      <div className="mt-3 flex items-center justify-center gap-1.5 sm:gap-2">
+        {Array.from({ length: total }).map((_, i) => {
+          const isTaken = i < taken
+          return (
+            <span
+              key={i}
+              className={
+                isTaken
+                  ? 'h-3 w-3 rounded-full border border-line bg-line sm:h-4 sm:w-4'
+                  : 'h-3 w-3 rounded-full bg-gradient-to-br from-accent to-accent-2 shadow-[0_0_12px_-2px_rgb(var(--accent))] sm:h-4 sm:w-4'
+              }
+            />
+          )
+        })}
+      </div>
+      <p className="mt-3 text-center text-xs text-muted">
+        <span className="text-line">{taken} {takenLabel}</span>
+        <span className="mx-2">·</span>
+        <span className="font-semibold text-accent-2">{remaining} {leftLabel}</span>
+      </p>
+    </div>
   )
 }
