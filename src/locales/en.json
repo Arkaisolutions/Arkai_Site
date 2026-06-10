@@ -76,14 +76,40 @@
         { "v": "22", "l": "Live systems now" },
         { "v": "39", "l": "AI agents in production" },
         { "v": "12", "l": "Documented skills" }
-      ]
+      ],
+      "socialLabel": "Already running in production for",
+      "socialClients": "ClickParts Brasil · Futuro Solar · Principal Automóveis · Hotel Palace · Casae Temporada · Casa Reserva Tucano"
     },
     "offer": {
       "eyebrow": "THE OFFER",
       "title": "$497/mo",
       "subtitle": "The exact cost of one minimum-wage hire with payroll taxes. Instead of 1 person 8h/day, you get 14 specialists 24/7.",
-      "compare": "1 minimum-wage hire (salary + payroll) ≈ $497/month",
-      "you": "You at Arkai: 14 AI agents = $497/month",
+      "priceBreakLabel": "Breaking down the price",
+      "priceBreakItems": [
+        { "v": "$16.50", "l": "per day" },
+        { "v": "$0.69", "l": "per hour (24/7)" },
+        { "v": "$35.50", "l": "per agent/month" },
+        { "v": "$0.02", "l": "per hour · each agent" }
+      ],
+      "compareLabel": "1 hire vs. Arkai (14 agents)",
+      "compareHeaders": ["", "1 minimum-wage hire", "Arkai (14 agents)"],
+      "compareRows": [
+        ["Work hours",       "8h/day · 22 days/month",      "24/7 · 30 days/month"],
+        ["Specialties",      "1 (e.g. support)",            "14 (SDR, qualifier, booking...)"],
+        ["Response time",    "Minutes to hours",            "Under 30 seconds"],
+        ["Takes vacation",   "Yes · 2-4 weeks/year",        "No"],
+        ["Payroll overhead", "Yes · ~30% on top",           "No"],
+        ["Time to train",    "3-6 months",                  "7 days"],
+        ["Total cost/month", "$497",                        "$497"]
+      ],
+      "notNeededLabel": "What you DON'T need:",
+      "notNeededItems": [
+        "Hire a CTO or technical team",
+        "Learn n8n, Python or any tool",
+        "Manage servers or AI infrastructure",
+        "Replace your current CRM (we integrate)",
+        "Pay extra for OpenAI/Claude API (included)"
+      ],
       "includesTitle": "What's included (and LIVE in your business):",
       "includes": [
         "All 14 agents deployed and trained",

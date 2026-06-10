@@ -76,14 +76,40 @@
         { "v": "22", "l": "Sistemas activos ahora" },
         { "v": "39", "l": "Agentes IA en producción" },
         { "v": "12", "l": "Skills documentadas" }
-      ]
+      ],
+      "socialLabel": "Ya corriendo en producción para",
+      "socialClients": "ClickParts Brasil · Futuro Solar · Principal Automóveis · Hotel Palace · Casae Temporada · Casa Reserva Tucano"
     },
     "offer": {
       "eyebrow": "LA OFERTA",
       "title": "$497/mes",
       "subtitle": "El costo exacto de 1 empleado en salario mínimo con cargas. En vez de 1 persona 8h/día, tienes 14 especialistas 24/7.",
-      "compare": "1 empleado en salario mínimo (sueldo + cargas) ≈ $497/mes",
-      "you": "Tú en Arkai: 14 agentes IA = $497/mes",
+      "priceBreakLabel": "Desglosando el precio",
+      "priceBreakItems": [
+        { "v": "$16.50", "l": "por día" },
+        { "v": "$0.69", "l": "por hora (24/7)" },
+        { "v": "$35.50", "l": "por agente/mes" },
+        { "v": "$0.02", "l": "por hora · cada agente" }
+      ],
+      "compareLabel": "1 empleado vs. Arkai (14 agentes)",
+      "compareHeaders": ["", "1 empleado salario mínimo", "Arkai (14 agentes)"],
+      "compareRows": [
+        ["Horas de trabajo",   "8h/día · 22 días/mes",    "24/7 · 30 días/mes"],
+        ["Especialidades",     "1 (ej. atención)",        "14 (SDR, calif, agendamiento...)"],
+        ["Tiempo de respuesta","Minutos a horas",         "Menos de 30 segundos"],
+        ["Toma vacaciones",    "Sí · 2-4 semanas/año",    "No"],
+        ["Cargas sociales",    "Sí · ~30% extra",         "No"],
+        ["Tiempo de capacitación", "3-6 meses",           "7 días"],
+        ["Costo total/mes",    "$497",                    "$497"]
+      ],
+      "notNeededLabel": "Lo que NO necesitas:",
+      "notNeededItems": [
+        "Contratar un CTO o equipo técnico",
+        "Aprender n8n, Python o ninguna herramienta",
+        "Gestionar servidores o infraestructura de IA",
+        "Cambiar tu CRM actual (lo integramos)",
+        "Pagar extra por API de OpenAI/Claude (incluido)"
+      ],
       "includesTitle": "Lo que está incluido (y ACTIVO en tu negocio):",
       "includes": [
         "Los 14 agentes implementados y entrenados",

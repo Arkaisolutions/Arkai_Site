@@ -76,14 +76,40 @@
         { "v": "22", "l": "Sistemas ativos agora" },
         { "v": "39", "l": "Agentes IA em produção" },
         { "v": "12", "l": "Skills documentadas" }
-      ]
+      ],
+      "socialLabel": "Já roda em produção para",
+      "socialClients": "ClickParts Brasil · Futuro Solar · Principal Automóveis · Hotel Palace · Casae Temporada · Casa Reserva Tucano"
     },
     "offer": {
       "eyebrow": "A OFERTA",
       "title": "R$ 2.500/mês",
       "subtitle": "Exato custo de 1 funcionário CLT no salário mínimo + encargos. Em vez de 1 pessoa 8h/dia, você tem 14 especialistas 24/7.",
-      "compare": "1 CLT (R$ 1.518 salário + R$ 982 encargos) ≈ R$ 2.500/mês",
-      "you": "Você na Arkai: 14 agentes IA = R$ 2.500/mês",
+      "priceBreakLabel": "Quebrando o preço",
+      "priceBreakItems": [
+        { "v": "R$ 83", "l": "por dia" },
+        { "v": "R$ 3,47", "l": "por hora (24/7)" },
+        { "v": "R$ 178", "l": "por agente/mês" },
+        { "v": "R$ 0,12", "l": "por hora · cada agente" }
+      ],
+      "compareLabel": "1 funcionário CLT vs. Arkai (14 agentes)",
+      "compareHeaders": ["", "1 CLT (salário mínimo)", "Arkai (14 agentes)"],
+      "compareRows": [
+        ["Horas de trabalho",    "8h/dia · 22 dias/mês",         "24/7 · 30 dias/mês"],
+        ["Especialidades",       "1 (ex: atendente)",            "14 (SDR, qualif, agendamento...)"],
+        ["Tempo de resposta",    "Minutos a horas",              "Menos de 30 segundos"],
+        ["Tira férias",          "Sim · 30 dias/ano",            "Não"],
+        ["Pede 13º + encargos",  "Sim · ~70% sobre salário",     "Não"],
+        ["Tempo de treinamento", "3-6 meses",                    "7 dias"],
+        ["Custo total/mês",      "R$ 2.500",                     "R$ 2.500"]
+      ],
+      "notNeededLabel": "Você NÃO precisa de:",
+      "notNeededItems": [
+        "Contratar um CTO ou time técnico",
+        "Aprender n8n, Python ou qualquer ferramenta",
+        "Gerenciar servidor ou infra de IA",
+        "Trocar seu CRM atual (a gente integra)",
+        "Pagar API da OpenAI/Claude extra (incluso)"
+      ],
       "includesTitle": "O que está incluso (e ATIVO no seu negócio):",
       "includes": [
         "Todos os 14 agentes implantados e treinados",

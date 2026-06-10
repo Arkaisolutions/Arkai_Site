@@ -8,8 +8,9 @@ import { IconArrow, IconBolt, IconCheck } from '../components/icons'
 import { config } from '../config'
 import { captureAttribution, trackEvent, trackPageView } from '../lib/track'
 
-interface Stat { v: string; l: string }
-interface QA   { q: string; a: string }
+interface Stat      { v: string; l: string }
+interface QA        { q: string; a: string }
+interface BreakItem { v: string; l: string }
 
 /**
  * /oferta — Long-form sales landing for paid traffic.
@@ -147,6 +148,18 @@ export default function OfertaPage() {
                 ))}
               </div>
             </Reveal>
+
+            {/* Social proof — clients in production */}
+            <Reveal delay={220}>
+              <div className="mt-10 text-center">
+                <p className="text-xs font-bold uppercase tracking-[0.22em] text-muted">
+                  {t('oferta.proof.socialLabel')}
+                </p>
+                <p className="mt-3 text-sm font-semibold leading-relaxed text-ink/85 sm:text-base">
+                  {t('oferta.proof.socialClients')}
+                </p>
+              </div>
+            </Reveal>
           </div>
         </section>
 
@@ -161,21 +174,55 @@ export default function OfertaPage() {
               </p>
             </Reveal>
 
-            {/* Side-by-side comparison */}
-            <Reveal delay={150}>
-              <div className="mt-10 grid gap-4 sm:grid-cols-2">
-                <div className="rounded-2xl border border-line bg-surface p-6">
-                  <p className="text-xs font-bold uppercase tracking-wider text-muted">Sem Arkai</p>
-                  <p className="mt-3 text-sm leading-relaxed text-ink/85">
-                    {t('oferta.offer.compare')}
+            {/* Price breakdown — makes R$ 2.500 feel small */}
+            <Reveal delay={120}>
+              <div className="mt-8">
+                <p className="text-center text-xs font-bold uppercase tracking-[0.22em] text-muted">
+                  {t('oferta.offer.priceBreakLabel')}
+                </p>
+                <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                  {(t('oferta.offer.priceBreakItems', { returnObjects: true }) as BreakItem[]).map((b) => (
+                    <div
+                      key={b.l}
+                      className="rounded-xl border border-line bg-surface px-3 py-4 text-center"
+                    >
+                      <div className="text-xl font-black tracking-tight text-ink sm:text-2xl">{b.v}</div>
+                      <div className="mt-1 text-[11px] leading-tight text-muted">{b.l}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </Reveal>
+
+            {/* Comparison TABLE — 1 CLT vs 14 Arkai agents */}
+            <Reveal delay={200}>
+              <div className="mt-10 overflow-hidden rounded-2xl border border-line">
+                <div className="border-b border-line bg-surface-2 px-5 py-3">
+                  <p className="text-xs font-bold uppercase tracking-wider text-muted">
+                    {t('oferta.offer.compareLabel')}
                   </p>
                 </div>
-                <div className="rounded-2xl border border-accent/60 bg-surface-2 p-6 shadow-[0_24px_60px_-30px_rgb(var(--accent))]">
-                  <p className="text-xs font-bold uppercase tracking-wider text-accent-2">Com Arkai</p>
-                  <p className="mt-3 text-sm leading-relaxed text-ink">
-                    {t('oferta.offer.you')}
-                  </p>
-                </div>
+                <ComparisonTable
+                  headers={t('oferta.offer.compareHeaders', { returnObjects: true }) as string[]}
+                  rows={t('oferta.offer.compareRows', { returnObjects: true }) as string[][]}
+                />
+              </div>
+            </Reveal>
+
+            {/* Anti-features — "You DON'T need to..." */}
+            <Reveal delay={300}>
+              <div className="mt-10 rounded-2xl border border-line bg-surface p-7 sm:p-9">
+                <h3 className="text-base font-bold sm:text-lg">{t('oferta.offer.notNeededLabel')}</h3>
+                <ul className="mt-5 grid gap-2.5 sm:grid-cols-2">
+                  {(t('oferta.offer.notNeededItems', { returnObjects: true }) as string[]).map((item) => (
+                    <li key={item} className="flex items-start gap-2.5 text-sm">
+                      <span className="mt-0.5 grid h-4 w-4 shrink-0 place-items-center rounded-full bg-red-400/15 text-[10px] font-bold text-red-300">
+                        ✗
+                      </span>
+                      <span className="text-ink/85 line-through decoration-line/60">{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </Reveal>
 
@@ -289,6 +336,91 @@ export default function OfertaPage() {
       </main>
 
       <Footer />
+    </>
+  )
+}
+
+/* ---------------- Comparison table ---------------- */
+
+function ComparisonTable({ headers, rows }: { headers: string[]; rows: string[][] }) {
+  // Last row = "Total cost" → highlight as the punchline
+  return (
+    <>
+      {/* Desktop / tablet — true table */}
+      <div className="hidden md:block">
+        <table className="w-full border-collapse">
+          <thead>
+            <tr className="bg-surface-2/60">
+              {headers.map((h, i) => (
+                <th
+                  key={i}
+                  className={`px-5 py-3 text-left text-xs font-bold uppercase tracking-wider ${
+                    i === 0
+                      ? 'w-1/3 text-muted'
+                      : i === 1
+                        ? 'text-muted'
+                        : 'text-accent-2'
+                  }`}
+                >
+                  {h}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((row, ri) => {
+              const isLast = ri === rows.length - 1
+              return (
+                <tr
+                  key={ri}
+                  className={`border-t border-line ${isLast ? 'bg-accent/5' : ''}`}
+                >
+                  {row.map((cell, ci) => (
+                    <td
+                      key={ci}
+                      className={`px-5 py-3.5 text-sm ${
+                        ci === 0
+                          ? 'font-semibold text-muted'
+                          : ci === 1
+                            ? 'text-ink/80'
+                            : 'font-semibold text-ink'
+                      } ${isLast && ci === 2 ? 'gradient-text font-black' : ''}`}
+                    >
+                      {cell}
+                    </td>
+                  ))}
+                </tr>
+              )
+            })}
+          </tbody>
+        </table>
+      </div>
+
+      {/* Mobile — stacked cards (each row becomes a 2-col mini grid) */}
+      <div className="flex flex-col divide-y divide-line md:hidden">
+        {rows.map((row, ri) => {
+          const isLast = ri === rows.length - 1
+          return (
+            <div key={ri} className={`p-4 ${isLast ? 'bg-accent/5' : ''}`}>
+              <p className="text-[10px] font-bold uppercase tracking-wider text-muted">
+                {row[0]}
+              </p>
+              <div className="mt-2 grid grid-cols-2 gap-3">
+                <div>
+                  <p className="text-[10px] uppercase tracking-wider text-muted">{headers[1]}</p>
+                  <p className="mt-0.5 text-sm text-ink/80">{row[1]}</p>
+                </div>
+                <div>
+                  <p className="text-[10px] uppercase tracking-wider text-accent-2">{headers[2]}</p>
+                  <p className={`mt-0.5 text-sm font-semibold ${isLast ? 'gradient-text font-black' : 'text-ink'}`}>
+                    {row[2]}
+                  </p>
+                </div>
+              </div>
+            </div>
+          )
+        })}
+      </div>
     </>
   )
 }
