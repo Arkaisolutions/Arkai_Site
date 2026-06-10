@@ -4,6 +4,7 @@ import './i18n'
 import './index.css'
 import App from './App.tsx'
 import DiagnosticoPage from './pages/DiagnosticoPage.tsx'
+import OfertaPage from './pages/OfertaPage.tsx'
 import ThankYouPage from './pages/ThankYouPage.tsx'
 
 /**
@@ -18,6 +19,7 @@ function pickRoot() {
   const path = window.location.pathname.replace(/\/+$/, '') || '/'
   if (path === '/diagnostico' || path === '/audit') return <DiagnosticoPage />
   if (path === '/diagnostico/obrigado' || path === '/audit/thank-you') return <ThankYouPage />
+  if (path === '/oferta' || path === '/offer') return <OfertaPage />
   return <App />
 }
 

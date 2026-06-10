@@ -42,6 +42,94 @@
     "title1": "Tu operación,",
     "title2": "corriendo con IA."
   },
+  "oferta": {
+    "metaTitle": "Oferta Exclusiva · Arkai Solutions",
+    "metaDesc": "14 agentes IA por el costo de 1 empleado en salario mínimo. Solo 10 vacantes iniciales.",
+    "scarcity": "🔥 EARLY ACCESS · SOLO 10 VACANTES · SETUP GRATIS",
+    "hero": {
+      "badge": "OFERTA EXCLUSIVA · LANZAMIENTO",
+      "title1": "14 empleados IA",
+      "title2": "por el precio de 1",
+      "subtitle": "Una operación completa de ventas y atención — armada con agentes que ya corren en producción. Trabajan 24/7, sin vacaciones, sin cargas, sin faltas.",
+      "ctaPrimary": "Quiero mi vacante",
+      "ctaSecondary": "¿Cómo funciona?"
+    },
+    "problem": {
+      "eyebrow": "El problema real",
+      "title": "Pagas el clic. Solo facturas si convierte.",
+      "body": "¿Cuánto cuesta un lead que se enfría 4 horas esperando atención? ¿Cuánto vale la venta perdida porque recepción estaba ocupada? Quemas presupuesto en Meta Ads mientras leads calientes se van a quien responde más rápido. La diferencia entre quien crece y quien estanca es el tiempo de respuesta."
+    },
+    "solution": {
+      "eyebrow": "La solución completa",
+      "title1": "Tu equipo IA. En producción.",
+      "title2": "En 7 días.",
+      "subtitle": "14 especialistas IA listos para correr en tu negocio. Ventas, calificación, agendamiento, cobranza, back-office. Todo integrado a tu WhatsApp y CRM."
+    },
+    "proof": {
+      "eyebrow": "Inventario real",
+      "title": "No es promesa. Es infraestructura entregada.",
+      "stats": [
+        { "v": "63+", "l": "Workflows entregados" },
+        { "v": "22", "l": "Sistemas activos ahora" },
+        { "v": "39", "l": "Agentes IA en producción" },
+        { "v": "12", "l": "Skills documentadas" }
+      ]
+    },
+    "offer": {
+      "eyebrow": "LA OFERTA",
+      "title": "$497/mes",
+      "subtitle": "El costo exacto de 1 empleado en salario mínimo con cargas. En vez de 1 persona 8h/día, tienes 14 especialistas 24/7.",
+      "compare": "1 empleado en salario mínimo (sueldo + cargas) ≈ $497/mes",
+      "you": "Tú en Arkai: 14 agentes IA = $497/mes",
+      "includesTitle": "Lo que está incluido (y ACTIVO en tu negocio):",
+      "includes": [
+        "Los 14 agentes implementados y entrenados",
+        "Integración WhatsApp vía Evolution API (oficial)",
+        "Conexión con tu CRM (HubSpot, Salesforce, Airtable, Sheets)",
+        "Entrenamiento con tu contenido, productos y tono",
+        "Cuenta n8n configurada en nuestra infra (sin costo extra)",
+        "Dashboard en vivo en WhatsApp (KPIs diarios)",
+        "Soporte mensual incluido + optimizaciones continuas",
+        "Onboarding completo (típicamente 30 días)"
+      ],
+      "setupOriginal": "Setup completo: $997",
+      "setupNow": "GRATIS para los primeros 10",
+      "cta": "Quiero mi vacante ahora"
+    },
+    "guarantee": {
+      "eyebrow": "Sin riesgo",
+      "title": "Garantía de 7 días",
+      "body": "Si en 7 días tu primer lead calificado no llega por el bot, no pagas el setup. Cero riesgo para probar."
+    },
+    "faq": {
+      "title": "Las 4 dudas de todo el mundo",
+      "items": [
+        {
+          "q": "¿Por qué solo 10 vacantes?",
+          "a": "Cada implementación consume ~40h reales de nuestro equipo. Para mantener calidad en la primera tanda, limitamos a 10. Después, el precio vuelve a $997/mes (plan Growth)."
+        },
+        {
+          "q": "¿Y si no tengo CRM?",
+          "a": "Sin problema. Configuramos un Notion o Airtable como CRM básico en el setup, sin costo extra. Cuando decidas migrar a HubSpot/Salesforce, lo integramos."
+        },
+        {
+          "q": "¿Atienden mi nicho?",
+          "a": "Tenemos cases en automotriz, autopartes, solar, hotelería, inmobiliario y estética. Si tu nicho aún no está en la lista, te volvemos nuestro primer case con tratamiento prioritario."
+        },
+        {
+          "q": "¿Cuánto tarda en ver resultados?",
+          "a": "Implementación completa en 7-14 días. El primer lead calificado por el bot suele llegar en hasta 7 días después del go-live (y eso es lo que la garantía cubre)."
+        }
+      ]
+    },
+    "finalCta": {
+      "title1": "10 vacantes. Setup gratis.",
+      "title2": "$497/mes.",
+      "subtitle": "No estás contratando una agencia. Estás contratando un equipo IA por el mismo costo que pagarías a 1 empleado.",
+      "button": "Asegurar mi vacante →",
+      "note": "Clic → 4 preguntas → recibes diagnóstico + propuesta en 24h."
+    }
+  },
   "diagPage": {
     "badge": "Diagnóstico Gratuito de IA",
     "title1": "Descubre las automatizaciones de IA",

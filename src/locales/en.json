@@ -42,6 +42,94 @@
     "title1": "Your operation,",
     "title2": "running on AI."
   },
+  "oferta": {
+    "metaTitle": "Exclusive Offer · Arkai Solutions",
+    "metaDesc": "14 AI agents for the cost of one minimum-wage hire. Only 10 founding spots.",
+    "scarcity": "🔥 EARLY ACCESS · 10 SPOTS ONLY · FREE SETUP",
+    "hero": {
+      "badge": "EXCLUSIVE OFFER · LAUNCH",
+      "title1": "14 AI employees",
+      "title2": "for the price of 1",
+      "subtitle": "A full sales and operations team — built with agents already running in production. Working 24/7, no vacation, no overhead, no sick days.",
+      "ctaPrimary": "Claim my spot",
+      "ctaSecondary": "How it works"
+    },
+    "problem": {
+      "eyebrow": "The real problem",
+      "title": "You pay for the click. You only profit when it converts.",
+      "body": "How much does a lead cost when it cools for 4 hours waiting for a reply? How much is the sale you lose because reception was busy? You burn ad spend while hot leads go to whoever responds faster. The gap between growth and stagnation is response time — and consistency."
+    },
+    "solution": {
+      "eyebrow": "The full solution",
+      "title1": "Your AI team. In production.",
+      "title2": "Within 7 days.",
+      "subtitle": "14 specialized AI agents ready to run in your business. Sales, qualifying, booking, billing, back-office. All integrated with your WhatsApp and CRM."
+    },
+    "proof": {
+      "eyebrow": "Real inventory",
+      "title": "Not a promise. Production infrastructure.",
+      "stats": [
+        { "v": "63+", "l": "Workflows shipped" },
+        { "v": "22", "l": "Live systems now" },
+        { "v": "39", "l": "AI agents in production" },
+        { "v": "12", "l": "Documented skills" }
+      ]
+    },
+    "offer": {
+      "eyebrow": "THE OFFER",
+      "title": "$497/mo",
+      "subtitle": "The exact cost of one minimum-wage hire with payroll taxes. Instead of 1 person 8h/day, you get 14 specialists 24/7.",
+      "compare": "1 minimum-wage hire (salary + payroll) ≈ $497/month",
+      "you": "You at Arkai: 14 AI agents = $497/month",
+      "includesTitle": "What's included (and LIVE in your business):",
+      "includes": [
+        "All 14 agents deployed and trained",
+        "WhatsApp integration via Evolution API (official)",
+        "CRM connection (HubSpot, Salesforce, Airtable, Sheets)",
+        "Training on your content, products and tone of voice",
+        "n8n account configured on our infrastructure (no extra cost)",
+        "Live dashboard on WhatsApp (daily KPIs)",
+        "Monthly support included + ongoing optimization",
+        "Complete onboarding (typically 30 days)"
+      ],
+      "setupOriginal": "Full setup: $997",
+      "setupNow": "FREE for the first 10",
+      "cta": "Claim my spot now"
+    },
+    "guarantee": {
+      "eyebrow": "Risk-free",
+      "title": "7-day guarantee",
+      "body": "If your first qualified lead doesn't arrive through the bot within 7 days, you pay no setup. Zero risk to try."
+    },
+    "faq": {
+      "title": "The 4 questions everyone asks",
+      "items": [
+        {
+          "q": "Why only 10 spots?",
+          "a": "Each implementation takes ~40 real hours from our team (configuration, training, integration). To keep quality on the first batch, we cap at 10. After that, pricing returns to $997/mo for the Growth plan."
+        },
+        {
+          "q": "What if I don't have a CRM?",
+          "a": "No problem. We set up a Notion or Airtable as a basic CRM during setup, at no extra cost. When you decide to migrate to HubSpot/Salesforce, we'll integrate."
+        },
+        {
+          "q": "Do you serve my industry?",
+          "a": "We have cases in automotive, auto parts, solar, hospitality, real estate, and aesthetics. If your industry isn't on the list yet, you become our first case and get priority treatment."
+        },
+        {
+          "q": "How long until I see results?",
+          "a": "Full implementation in 7-14 days. The first lead qualified by the bot typically arrives within 7 days of go-live (and that's exactly what the guarantee covers)."
+        }
+      ]
+    },
+    "finalCta": {
+      "title1": "10 spots. Free setup.",
+      "title2": "$497/month.",
+      "subtitle": "You're not hiring an agency. You're hiring an AI team for the same cost as one entry-level employee.",
+      "button": "Secure my spot →",
+      "note": "Click → answer 4 questions → get your diagnosis + proposal in 24h."
+    }
+  },
   "diagPage": {
     "badge": "Free AI Audit",
     "title1": "Find the AI automations",
