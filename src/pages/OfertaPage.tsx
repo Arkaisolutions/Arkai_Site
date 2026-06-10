@@ -23,11 +23,11 @@ export default function OfertaPage() {
   const { t } = useTranslation()
 
   useEffect(() => {
-    // Home (/) e alias /oferta compartilham conteúdo → canonical sempre "/"
+    // Canonical aponta pra onde a oferta "mora": "/" se é a home, senão "/oferta".
     setSeo({
       title: t('oferta.metaTitle'),
       description: t('oferta.metaDesc'),
-      canonicalPath: '/',
+      canonicalPath: config.homeMode === 'oferta' ? '/' : '/oferta',
     })
     captureAttribution()
     trackPageView(window.location.pathname, t('oferta.metaTitle'))

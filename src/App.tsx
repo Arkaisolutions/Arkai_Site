@@ -14,6 +14,7 @@ import CTA from './components/CTA'
 import Footer from './components/Footer'
 import FloatingWhatsApp from './components/FloatingWhatsApp'
 import { setSeo } from './lib/seo'
+import { config } from './config'
 
 export default function App() {
   const { t, i18n } = useTranslation()
@@ -27,10 +28,11 @@ export default function App() {
   }, [i18n.language])
 
   useEffect(() => {
+    // Canonical: "/" se o institucional é a home, senão "/agencia".
     setSeo({
       title: t('seo.agenciaTitle'),
       description: t('seo.agenciaDesc'),
-      canonicalPath: '/agencia',
+      canonicalPath: config.homeMode === 'agencia' ? '/' : '/agencia',
     })
   }, [t])
 

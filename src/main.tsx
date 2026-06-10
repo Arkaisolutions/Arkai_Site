@@ -6,6 +6,7 @@ import App from './App.tsx'
 import DiagnosticoPage from './pages/DiagnosticoPage.tsx'
 import OfertaPage from './pages/OfertaPage.tsx'
 import ThankYouPage from './pages/ThankYouPage.tsx'
+import { config } from './config.ts'
 
 /**
  * Router minimalista, baseado em window.location.pathname.
@@ -19,11 +20,11 @@ function pickRoot() {
   const path = window.location.pathname.replace(/\/+$/, '') || '/'
   if (path === '/diagnostico' || path === '/audit') return <DiagnosticoPage />
   if (path === '/diagnostico/obrigado' || path === '/audit/thank-you') return <ThankYouPage />
-  // Institutional page (full agency presentation) moved to /agencia.
+  // Rotas nomeadas SEMPRE acessíveis (independente do homeMode):
   if (path === '/agencia' || path === '/agency' || path === '/servicos') return <App />
-  // Offer page is now the HOME (/). /oferta and /offer kept as aliases
-  // for existing ad links (canonical points to / to avoid dupe content).
-  return <OfertaPage />
+  if (path === '/oferta' || path === '/offer') return <OfertaPage />
+  // A HOME ("/") e qualquer rota desconhecida seguem config.homeMode.
+  return config.homeMode === 'agencia' ? <App /> : <OfertaPage />
 }
 
 createRoot(document.getElementById('root')!).render(

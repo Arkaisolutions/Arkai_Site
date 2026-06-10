@@ -6,6 +6,19 @@ export const config = {
   brand: 'Arkai Solutions',
   domain: 'arkaisolutions.com.br',
 
+  /* ===================================================================
+     MODO DA HOME (qual página fica em "/")
+       'oferta'  → / mostra a página de OFERTA (promo early-access ativa).
+                   Institucional fica em /agencia.
+       'agencia' → / mostra o site INSTITUCIONAL (perene).
+                   Oferta fica em standby acessível só em /oferta.
+
+     COMO TROCAR (quando fechar os 10 clientes):
+       mude a linha abaixo de 'oferta' para 'agencia', commit e push.
+       Pronto — a home troca sozinha, sem mexer em mais nada.
+     =================================================================== */
+  homeMode: 'oferta' as 'oferta' | 'agencia',
+
   // Link de agendamento (Calendly, Cal.com, etc.) — usado no fallback do final do modal.
   bookingUrl: 'https://calendly.com/arkaisolutions',
 
