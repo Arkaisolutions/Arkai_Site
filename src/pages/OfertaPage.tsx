@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import FloatingWhatsApp from '../components/FloatingWhatsApp'
 import Reveal from '../components/Reveal'
-import { IconArrow, IconBolt, IconCheck } from '../components/icons'
+import { agentIcons, IconArrow, IconBolt, IconCheck } from '../components/icons'
 import { config } from '../config'
 import { captureAttribution, trackEvent, trackPageView } from '../lib/track'
 import { setSeo } from '../lib/seo'
@@ -13,6 +13,7 @@ import { setSeo } from '../lib/seo'
 interface Stat      { v: string; l: string }
 interface QA        { q: string; a: string }
 interface BreakItem { v: string; l: string }
+interface TeamRole  { icon: string; name: string; role: string; replaces: string }
 
 /**
  * /oferta — Long-form sales landing for paid traffic.
@@ -130,6 +131,43 @@ export default function OfertaPage() {
                 {t('oferta.solution.subtitle')}
               </p>
             </Reveal>
+          </div>
+        </section>
+
+        {/* ============ TEAM (cargos que substitui) ============ */}
+        <section className="relative py-20">
+          <div className="container-content">
+            <Reveal className="mx-auto max-w-2xl text-center">
+              <span className="eyebrow">{t('oferta.team.eyebrow')}</span>
+              <h2 className="section-title mt-5">
+                {t('oferta.team.title1')}{' '}
+                <span className="gradient-text">{t('oferta.team.title2')}</span>
+              </h2>
+              <p className="mt-4 text-muted">{t('oferta.team.subtitle')}</p>
+            </Reveal>
+
+            <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {(t('oferta.team.roles', { returnObjects: true }) as TeamRole[]).map((r, i) => {
+                const Icon = agentIcons[r.icon] ?? agentIcons.agent
+                return (
+                  <Reveal key={r.name} delay={i * 60}>
+                    <article className="group flex h-full flex-col rounded-2xl border border-line bg-surface p-6 transition-all duration-300 hover:border-accent/50 hover:bg-surface-2">
+                      <span className="grid h-11 w-11 place-items-center rounded-xl border border-line bg-surface-2 text-accent transition-colors group-hover:border-accent/60">
+                        <Icon width={20} height={20} />
+                      </span>
+                      <h3 className="mt-4 text-lg font-bold">{r.name}</h3>
+                      <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{r.role}</p>
+                      <p className="mt-4 border-t border-line pt-3 text-xs text-muted">
+                        <span className="font-semibold uppercase tracking-wider text-accent-2">
+                          {t('oferta.team.replaceLabel')}:
+                        </span>{' '}
+                        {r.replaces}
+                      </p>
+                    </article>
+                  </Reveal>
+                )
+              })}
+            </div>
           </div>
         </section>
 
