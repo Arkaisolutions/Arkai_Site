@@ -6,6 +6,10 @@ export const config = {
   brand: 'Arkai Solutions',
   domain: 'arkaisolutions.com.br',
 
+  // CNPJ exibido no rodapé (transmite confiança). Cole o número formatado,
+  // ex.: '12.345.678/0001-90'. Vazio = não aparece no rodapé.
+  cnpj: '67.279.923/0001-03',
+
   /* ===================================================================
      MODO DA HOME (qual página fica em "/")
        'oferta'  → / mostra a página de OFERTA (promo early-access ativa).

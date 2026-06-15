@@ -83,7 +83,8 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-3 border-t border-line pt-7 text-xs text-muted sm:flex-row">
           <span>
-            © {year} Arkai Solutions. {t('footer.rights')}
+            © {year} Arkai Solutions
+            {config.cnpj ? ` · CNPJ ${config.cnpj}` : ''}. {t('footer.rights')}
           </span>
           <span>{t('footer.built')}</span>
         </div>
