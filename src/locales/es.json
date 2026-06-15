@@ -78,7 +78,7 @@
         { "icon": "agent",    "name": "Vendedor & Atención", "role": "Responde cada lead en segundos, 24/7. Califica, atiende (hasta audio y foto), vende y agenda solo. Solo te pasa el cliente caliente.", "replaces": "vendedor + atención" },
         { "icon": "traffic",  "name": "Gestor de Tráfico",   "role": "Corre los anuncios, vigila CPL y ROAS, y entrega compradores listos — no curiosos.", "replaces": "gestor de tráfico" },
         { "icon": "workflow", "name": "Gestión Comercial", "role": "Conecta CRM, planillas y pagos, mueve el lead en el embudo y dispara remarketing. Cero copiar y pegar.", "replaces": "asistente administrativo" },
-        { "icon": "finance",  "name": "Asistente Financiero", "role": "Recuerda, cobra y recupera morosos solo — con tacto, sin que tú lo pidas.", "replaces": "asistente financiero" },
+        { "icon": "finance",  "name": "Gestión Financiera", "role": "Recuerda, cobra y recupera morosos solo — con tacto, sin que tú lo pidas.", "replaces": "asistente financiero" },
         { "icon": "data",     "name": "Analista",            "role": "Envía el reporte del día a tu WhatsApp y te avisa apenas entra un lead caliente.", "replaces": "analista / BI" },
         { "icon": "spark",    "name": "Mentes Brillantes",   "role": "Un panel de 5 expertos IA que debate tu jugada antes de arriesgar — y espía a la competencia.", "replaces": "consultoría estratégica" }
       ]

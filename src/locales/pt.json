@@ -78,7 +78,7 @@
         { "icon": "agent",    "name": "Vendedor & Atendente", "role": "Responde cada lead em segundos, 24h. Qualifica, tira dúvida (até por áudio e foto), vende e agenda sozinho. Só te passa o cliente quente.", "replaces": "vendedor + atendente" },
         { "icon": "traffic",  "name": "Gestor de Tráfego",    "role": "Roda o anúncio, vigia CPL e ROAS, e entrega comprador pronto — não lista de curioso.", "replaces": "gestor de tráfego" },
         { "icon": "workflow", "name": "Gestão Comercial", "role": "Conecta CRM, planilha e pagamento, move o lead no funil e dispara remarketing. Zero copia-e-cola.", "replaces": "assistente administrativo" },
-        { "icon": "finance",  "name": "Assistente Financeiro", "role": "Lembra, cobra e recupera inadimplente sozinho — com jeito, sem você ter que pedir.", "replaces": "assistente financeiro" },
+        { "icon": "finance",  "name": "Gestão Financeira", "role": "Lembra, cobra e recupera inadimplente sozinho — com jeito, sem você ter que pedir.", "replaces": "assistente financeiro" },
         { "icon": "data",     "name": "Analista",             "role": "Manda o relatório do dia no seu WhatsApp e te avisa na hora que entra um lead quente.", "replaces": "analista / BI" },
         { "icon": "spark",    "name": "Mentes Brilhantes",    "role": "Conselho de 5 especialistas de IA que debate sua jogada antes de você arriscar — e ainda espia os concorrentes.", "replaces": "consultoria estratégica" }
       ]

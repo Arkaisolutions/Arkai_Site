@@ -78,7 +78,7 @@
         { "icon": "agent",    "name": "Sales & Support Rep", "role": "Replies to every lead in seconds, 24/7. Qualifies, answers (even voice & photo), sells and books on its own. Only hands you the hot ones.", "replaces": "salesperson + support rep" },
         { "icon": "traffic",  "name": "Traffic Manager",     "role": "Runs the ads, watches CPL and ROAS, and delivers ready buyers — not a list of tire-kickers.", "replaces": "traffic manager" },
         { "icon": "workflow", "name": "Commercial Management", "role": "Connects CRM, sheets and payments, moves leads through the funnel and fires remarketing. Zero copy-paste.", "replaces": "admin assistant" },
-        { "icon": "finance",  "name": "Financial Assistant", "role": "Reminds, charges and recovers late payers on its own — politely, without you asking.", "replaces": "financial assistant" },
+        { "icon": "finance",  "name": "Financial Management", "role": "Reminds, charges and recovers late payers on its own — politely, without you asking.", "replaces": "financial assistant" },
         { "icon": "data",     "name": "Analyst",             "role": "Sends the day's report to your WhatsApp and pings you the moment a hot lead arrives.", "replaces": "analyst / BI" },
         { "icon": "spark",    "name": "Brilliant Minds",     "role": "A panel of 5 AI experts that debates your move before you risk it — and spies on competitors too.", "replaces": "strategy consulting" }
       ]
