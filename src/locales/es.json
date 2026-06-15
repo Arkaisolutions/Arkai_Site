@@ -70,15 +70,15 @@
     },
     "team": {
       "eyebrow": "Tu equipo IA",
-      "title1": "Ibas a contratar 6 profesionales.",
-      "title2": "Contrata 1 sistema.",
+      "title1": "Contratarías a 6 profesionales.",
+      "title2": "Contrata 1 sistema, por el precio de 1 empleado.",
       "subtitle": "Cada agente hace el trabajo de un cargo — juntos, 24/7, sin nómina, sin rotación y sin que tengas que gestionar a nadie.",
       "replaceLabel": "En lugar de",
       "roles": [
         { "icon": "agent",    "name": "Vendedor & Atención", "role": "Responde cada lead en segundos, 24/7. Califica, atiende (hasta audio y foto), vende y agenda solo. Solo te pasa el cliente caliente.", "replaces": "vendedor + atención" },
         { "icon": "traffic",  "name": "Gestor de Tráfico",   "role": "Corre los anuncios, vigila CPL y ROAS, y entrega compradores listos — no curiosos.", "replaces": "gestor de tráfico" },
-        { "icon": "workflow", "name": "Gestor de Operación", "role": "Conecta CRM, planillas y pagos, mueve el lead en el embudo y dispara remarketing. Cero copiar y pegar.", "replaces": "asistente administrativo" },
-        { "icon": "finance",  "name": "Cobrador",            "role": "Recuerda, cobra y recupera morosos solo — con tacto, sin que tú lo pidas.", "replaces": "cobranza / finanzas" },
+        { "icon": "workflow", "name": "Asistente Administrativo", "role": "Conecta CRM, planillas y pagos, mueve el lead en el embudo y dispara remarketing. Cero copiar y pegar.", "replaces": "asistente administrativo" },
+        { "icon": "finance",  "name": "Asistente Financiero", "role": "Recuerda, cobra y recupera morosos solo — con tacto, sin que tú lo pidas.", "replaces": "asistente financiero" },
         { "icon": "data",     "name": "Analista",            "role": "Envía el reporte del día a tu WhatsApp y te avisa apenas entra un lead caliente.", "replaces": "analista / BI" },
         { "icon": "spark",    "name": "Mentes Brillantes",   "role": "Un panel de 5 expertos IA que debate tu jugada antes de arriesgar — y espía a la competencia.", "replaces": "consultoría estratégica" }
       ]

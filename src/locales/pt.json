@@ -70,15 +70,15 @@
     },
     "team": {
       "eyebrow": "A sua equipe IA",
-      "title1": "Você ia contratar 6 profissionais.",
-      "title2": "Contrate 1 sistema.",
+      "title1": "Você contrataria 6 profissionais.",
+      "title2": "Contrate 1 sistema, pelo preço de 1 CLT.",
       "subtitle": "Cada agente faz o trabalho de um cargo — juntos, 24/7, sem folha de pagamento, sem rotatividade e sem você gerenciar ninguém.",
       "replaceLabel": "No lugar de",
       "roles": [
         { "icon": "agent",    "name": "Vendedor & Atendente", "role": "Responde cada lead em segundos, 24h. Qualifica, tira dúvida (até por áudio e foto), vende e agenda sozinho. Só te passa o cliente quente.", "replaces": "vendedor + atendente" },
         { "icon": "traffic",  "name": "Gestor de Tráfego",    "role": "Roda o anúncio, vigia CPL e ROAS, e entrega comprador pronto — não lista de curioso.", "replaces": "gestor de tráfego" },
-        { "icon": "workflow", "name": "Gestor de Operação",   "role": "Conecta CRM, planilha e pagamento, move o lead no funil e dispara remarketing. Zero copia-e-cola.", "replaces": "assistente administrativo" },
-        { "icon": "finance",  "name": "Cobrador",             "role": "Lembra, cobra e recupera inadimplente sozinho — com jeito, sem você ter que pedir.", "replaces": "financeiro de cobrança" },
+        { "icon": "workflow", "name": "Assistente Administrativo", "role": "Conecta CRM, planilha e pagamento, move o lead no funil e dispara remarketing. Zero copia-e-cola.", "replaces": "assistente administrativo" },
+        { "icon": "finance",  "name": "Assistente Financeiro", "role": "Lembra, cobra e recupera inadimplente sozinho — com jeito, sem você ter que pedir.", "replaces": "assistente financeiro" },
         { "icon": "data",     "name": "Analista",             "role": "Manda o relatório do dia no seu WhatsApp e te avisa na hora que entra um lead quente.", "replaces": "analista / BI" },
         { "icon": "spark",    "name": "Mentes Brilhantes",    "role": "Conselho de 5 especialistas de IA que debate sua jogada antes de você arriscar — e ainda espia os concorrentes.", "replaces": "consultoria estratégica" }
       ]
