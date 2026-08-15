@@ -53,7 +53,7 @@ export const config = {
      =================================================================== */
   earlyAccess: {
     total: 10,
-    remaining: 7,
+    remaining: 6,
   },
 }
 

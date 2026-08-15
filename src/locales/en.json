@@ -44,7 +44,7 @@
   },
   "oferta": {
     "metaTitle": "Exclusive Offer · Arkai Solutions",
-    "metaDesc": "14 AI agents for the cost of one minimum-wage hire. Only 10 founding spots.",
+    "metaDesc": "6 AI agents for the cost of one minimum-wage hire. Only 10 founding spots.",
     "scarcity": "🔥 EARLY ACCESS · {{remaining}} OF {{total}} SPOTS LEFT · FREE SETUP",
     "spotsTitle": "Spots remaining",
     "spotsTaken": "taken",
@@ -66,7 +66,7 @@
       "eyebrow": "The full solution",
       "title1": "Your AI team. In production.",
       "title2": "Within 30 days.",
-      "subtitle": "14 specialized AI agents ready to run in your business. Sales, qualifying, booking, billing, back-office. All integrated with your WhatsApp and CRM."
+      "subtitle": "6 specialized AI agents ready to run in your business. Sales, qualifying, booking, billing, back-office. All integrated with your WhatsApp and CRM."
     },
     "team": {
       "eyebrow": "Your AI team",
@@ -98,16 +98,16 @@
     "offer": {
       "eyebrow": "THE OFFER",
       "title": "$497/mo",
-      "subtitle": "The exact cost of one minimum-wage hire with payroll taxes. Instead of 1 person 8h/day, you get 14 specialists 24/7.",
+      "subtitle": "The exact cost of one minimum-wage hire with payroll taxes. Instead of 1 person 8h/day, you get 6 specialists 24/7.",
       "priceBreakLabel": "Breaking down the price",
       "priceBreakItems": [
         { "v": "$16.50", "l": "per day" },
         { "v": "$0.69", "l": "per hour (24/7)" },
-        { "v": "$35.50", "l": "per agent/month" },
-        { "v": "$0.02", "l": "per hour · each agent" }
+        { "v": "$83", "l": "per agent/month" },
+        { "v": "$0.12", "l": "per hour · each agent" }
       ],
-      "compareLabel": "1 hire vs. Arkai (14 agents)",
-      "compareHeaders": ["", "1 minimum-wage hire", "Arkai (14 agents)"],
+      "compareLabel": "1 hire vs. Arkai (6 agents)",
+      "compareHeaders": ["", "1 minimum-wage hire", "Arkai (6 agents)"],
       "compareRows": [
         ["Work hours",       "8h/day · 22 days/month",      "24/7 · 30 days/month"],
         ["Specialties",      "1 (e.g. support)",            "14 (SDR, qualifier, booking...)"],
@@ -127,7 +127,7 @@
       ],
       "includesTitle": "What's included (and LIVE in your business):",
       "includes": [
-        "All 14 agents deployed and trained",
+        "All 6 agents deployed and trained",
         "WhatsApp integration via Evolution API (official)",
         "CRM connection (HubSpot, Salesforce, Airtable, Sheets)",
         "Training on your content, products and tone of voice",

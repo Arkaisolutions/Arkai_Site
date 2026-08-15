@@ -44,7 +44,7 @@
   },
   "oferta": {
     "metaTitle": "Oferta Exclusiva · Arkai Solutions",
-    "metaDesc": "14 agentes IA por el costo de 1 empleado en salario mínimo. Solo 10 vacantes iniciales.",
+    "metaDesc": "6 agentes IA por el costo de 1 empleado en salario mínimo. Solo 10 vacantes iniciales.",
     "scarcity": "🔥 EARLY ACCESS · {{remaining}} DE {{total}} VACANTES RESTANTES · SETUP GRATIS",
     "spotsTitle": "Vacantes restantes",
     "spotsTaken": "tomadas",
@@ -66,7 +66,7 @@
       "eyebrow": "La solución completa",
       "title1": "Tu equipo IA. En producción.",
       "title2": "En hasta 30 días.",
-      "subtitle": "14 especialistas IA listos para correr en tu negocio. Ventas, calificación, agendamiento, cobranza, back-office. Todo integrado a tu WhatsApp y CRM."
+      "subtitle": "6 especialistas IA listos para correr en tu negocio. Ventas, calificación, agendamiento, cobranza, back-office. Todo integrado a tu WhatsApp y CRM."
     },
     "team": {
       "eyebrow": "Tu equipo IA",
@@ -98,16 +98,16 @@
     "offer": {
       "eyebrow": "LA OFERTA",
       "title": "$497/mes",
-      "subtitle": "El costo exacto de 1 empleado en salario mínimo con cargas. En vez de 1 persona 8h/día, tienes 14 especialistas 24/7.",
+      "subtitle": "El costo exacto de 1 empleado en salario mínimo con cargas. En vez de 1 persona 8h/día, tienes 6 especialistas 24/7.",
       "priceBreakLabel": "Desglosando el precio",
       "priceBreakItems": [
         { "v": "$16.50", "l": "por día" },
         { "v": "$0.69", "l": "por hora (24/7)" },
-        { "v": "$35.50", "l": "por agente/mes" },
-        { "v": "$0.02", "l": "por hora · cada agente" }
+        { "v": "$83", "l": "por agente/mes" },
+        { "v": "$0.12", "l": "por hora · cada agente" }
       ],
-      "compareLabel": "1 empleado vs. Arkai (14 agentes)",
-      "compareHeaders": ["", "1 empleado salario mínimo", "Arkai (14 agentes)"],
+      "compareLabel": "1 empleado vs. Arkai (6 agentes)",
+      "compareHeaders": ["", "1 empleado salario mínimo", "Arkai (6 agentes)"],
       "compareRows": [
         ["Horas de trabajo",   "8h/día · 22 días/mes",    "24/7 · 30 días/mes"],
         ["Especialidades",     "1 (ej. atención)",        "14 (SDR, calif, agendamiento...)"],
@@ -127,7 +127,7 @@
       ],
       "includesTitle": "Lo que está incluido (y ACTIVO en tu negocio):",
       "includes": [
-        "Los 14 agentes implementados y entrenados",
+        "Los 6 agentes implementados y entrenados",
         "Integración WhatsApp vía Evolution API (oficial)",
         "Conexión con tu CRM (HubSpot, Salesforce, Airtable, Sheets)",
         "Entrenamiento con tu contenido, productos y tono",

@@ -44,7 +44,7 @@
   },
   "oferta": {
     "metaTitle": "Oferta Exclusiva · Arkai Solutions",
-    "metaDesc": "14 agentes IA pelo preço de 1 funcionário CLT. Apenas 10 vagas iniciais.",
+    "metaDesc": "6 agentes IA pelo preço de 1 funcionário CLT. Apenas 10 vagas iniciais.",
     "scarcity": "🔥 EARLY ACCESS · {{remaining}} DE {{total}} VAGAS RESTANTES · SETUP GRÁTIS",
     "spotsTitle": "Vagas restantes",
     "spotsTaken": "tomadas",
@@ -66,7 +66,7 @@
       "eyebrow": "A solução completa",
       "title1": "Sua equipe IA. Em produção.",
       "title2": "Em até 30 dias.",
-      "subtitle": "14 especialistas IA prontos pra rodar no seu negócio. Atendimento, qualificação, agendamento, cobrança, back-office. Tudo integrado no seu WhatsApp e CRM."
+      "subtitle": "6 especialistas IA prontos pra rodar no seu negócio. Atendimento, qualificação, agendamento, cobrança, back-office. Tudo integrado no seu WhatsApp e CRM."
     },
     "team": {
       "eyebrow": "A sua equipe IA",
@@ -98,16 +98,16 @@
     "offer": {
       "eyebrow": "A OFERTA",
       "title": "R$ 2.500/mês",
-      "subtitle": "Exato custo de 1 funcionário CLT no salário mínimo + encargos. Em vez de 1 pessoa 8h/dia, você tem 14 especialistas 24/7.",
+      "subtitle": "Exato custo de 1 funcionário CLT no salário mínimo + encargos. Em vez de 1 pessoa 8h/dia, você tem 6 especialistas 24/7.",
       "priceBreakLabel": "Quebrando o preço",
       "priceBreakItems": [
         { "v": "R$ 83", "l": "por dia" },
         { "v": "R$ 3,47", "l": "por hora (24/7)" },
-        { "v": "R$ 178", "l": "por agente/mês" },
-        { "v": "R$ 0,12", "l": "por hora · cada agente" }
+        { "v": "R$ 417", "l": "por agente/mês" },
+        { "v": "R$ 0,58", "l": "por hora · cada agente" }
       ],
-      "compareLabel": "1 funcionário CLT vs. Arkai (14 agentes)",
-      "compareHeaders": ["", "1 CLT (salário mínimo)", "Arkai (14 agentes)"],
+      "compareLabel": "1 funcionário CLT vs. Arkai (6 agentes)",
+      "compareHeaders": ["", "1 CLT (salário mínimo)", "Arkai (6 agentes)"],
       "compareRows": [
         ["Horas de trabalho",    "8h/dia · 22 dias/mês",         "24/7 · 30 dias/mês"],
         ["Especialidades",       "1 (ex: atendente)",            "14 (SDR, qualif, agendamento...)"],
@@ -127,7 +127,7 @@
       ],
       "includesTitle": "O que está incluso (e ATIVO no seu negócio):",
       "includes": [
-        "Todos os 14 agentes implantados e treinados",
+        "Todos os 6 agentes implantados e treinados",
         "Integração WhatsApp via Evolution API (oficial)",
         "Conexão com seu CRM (HubSpot, RD, Pipedrive, planilha)",
         "Treinamento com seu conteúdo, produtos e tom de voz",
