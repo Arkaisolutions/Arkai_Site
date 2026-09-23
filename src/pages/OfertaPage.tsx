@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import FloatingWhatsApp from '../components/FloatingWhatsApp'
 import Reveal from '../components/Reveal'
-import { agentIcons, IconArrow, IconBolt, IconCheck } from '../components/icons'
+import { agentIcons, industryIcons, IconArrow, IconBolt, IconCheck } from '../components/icons'
 import { config } from '../config'
 import { captureAttribution, trackEvent, trackPageView } from '../lib/track'
 import { setSeo } from '../lib/seo'
@@ -14,6 +14,7 @@ interface Stat      { v: string; l: string }
 interface QA        { q: string; a: string }
 interface BreakItem { v: string; l: string }
 interface TeamRole  { icon: string; name: string; role: string; replaces: string }
+interface CaseItem  { icon: string; tag: string; name: string; desc: string; points: string[] }
 
 /**
  * /oferta — Long-form sales landing for paid traffic.
@@ -205,6 +206,47 @@ export default function OfertaPage() {
                 </p>
               </div>
             </Reveal>
+          </div>
+        </section>
+
+        {/* ============ CASES (projetos reais em produção) ============ */}
+        <section className="relative py-20">
+          <div className="container-content">
+            <Reveal className="mx-auto max-w-2xl text-center">
+              <span className="eyebrow">{t('oferta.cases.eyebrow')}</span>
+              <h2 className="section-title mt-5">{t('oferta.cases.title')}</h2>
+              <p className="mt-4 text-muted">{t('oferta.cases.subtitle')}</p>
+            </Reveal>
+
+            <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {(t('oferta.cases.items', { returnObjects: true }) as CaseItem[]).map((c, i) => {
+                const Icon = industryIcons[c.icon] ?? industryIcons.solar
+                return (
+                  <Reveal key={c.name} delay={i * 60}>
+                    <article className="group flex h-full flex-col rounded-2xl border border-line bg-surface p-6 transition-all duration-300 hover:border-accent/50 hover:bg-surface-2">
+                      <div className="flex items-center gap-3">
+                        <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-line bg-surface-2 text-accent transition-colors group-hover:border-accent/60">
+                          <Icon width={20} height={20} />
+                        </span>
+                        <div>
+                          <p className="text-[10px] font-semibold uppercase tracking-wider text-muted">{c.tag}</p>
+                          <h3 className="text-base font-bold leading-snug">{c.name}</h3>
+                        </div>
+                      </div>
+                      <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">{c.desc}</p>
+                      <ul className="mt-4 flex flex-col gap-2 border-t border-line pt-3.5">
+                        {c.points.map((p) => (
+                          <li key={p} className="flex items-start gap-2 text-[13px] text-ink/85">
+                            <IconCheck width={14} height={14} className="mt-0.5 shrink-0 text-accent-2" />
+                            <span>{p}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </article>
+                  </Reveal>
+                )
+              })}
+            </div>
           </div>
         </section>
 

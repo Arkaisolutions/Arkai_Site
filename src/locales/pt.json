@@ -95,6 +95,76 @@
       "socialLabel": "Já roda em produção para",
       "socialClients": "ClickParts Brasil · Futuro Solar · Principal Automóveis · Hotel Palace · Casa de Temporada · Casa Reserva Tucano"
     },
+    "cases": {
+      "eyebrow": "Projetos realizados",
+      "title": "Cases reais, rodando agora",
+      "subtitle": "Não é portfólio de promessa: são sistemas em produção, atendendo clientes de verdade todos os dias.",
+      "items": [
+        {
+          "icon": "automotive",
+          "tag": "Autopeças",
+          "name": "ClickParts Brasil",
+          "desc": "Operação de vendas e atendimento no WhatsApp integrada ao tráfego pago — o lead sai do anúncio e cai direto no funil.",
+          "points": [
+            "Atendimento e qualificação de leads 24/7",
+            "Meta Ads conectado ao funil e ao CRM",
+            "Follow-up automático de quem não fechou"
+          ]
+        },
+        {
+          "icon": "automotive",
+          "tag": "Automotivo · Carros & Motos",
+          "name": "Principal Automóveis",
+          "desc": "Atendimento IA da loja: responde na hora, qualifica o comprador e agenda a visita.",
+          "points": [
+            "Resposta imediata a cada lead",
+            "Qualificação e agendamento de visitas",
+            "Histórico organizado no CRM"
+          ]
+        },
+        {
+          "icon": "solar",
+          "tag": "Energia Solar",
+          "name": "Futuro Solar",
+          "desc": "Prospecção e funil comercial automatizados pra projetos de energia solar e hídrica.",
+          "points": [
+            "Prospecção B2B com listas segmentadas por consumo",
+            "Automações n8n do primeiro contato à proposta",
+            "Acompanhamento comercial no WhatsApp"
+          ]
+        },
+        {
+          "icon": "hospitality",
+          "tag": "Hotelaria",
+          "name": "Hotel Palace",
+          "desc": "Atendimento do hotel no WhatsApp: cotações, dúvidas e reservas conduzidas por IA.",
+          "points": [
+            "Resposta 24/7 a cotações e disponibilidade",
+            "Fluxo de reserva conduzido pelo agente"
+          ]
+        },
+        {
+          "icon": "hospitality",
+          "tag": "Hospedagem de temporada",
+          "name": "Casa de Temporada",
+          "desc": "Agente que responde interessados na hora — porque hóspede que espera fecha com o concorrente.",
+          "points": [
+            "Atendimento imediato a cada anúncio",
+            "Cotação e fechamento pelo WhatsApp"
+          ]
+        },
+        {
+          "icon": "hospitality",
+          "tag": "Hospedagem · Turismo",
+          "name": "Casa Reserva Tucano",
+          "desc": "Reservas e atendimento de hóspedes automatizados de ponta a ponta.",
+          "points": [
+            "Dúvidas e disponibilidade respondidas 24/7",
+            "Confirmação e lembretes automáticos"
+          ]
+        }
+      ]
+    },
     "offer": {
       "eyebrow": "A OFERTA",
       "title": "R$ 2.500/mês",
@@ -151,19 +221,35 @@
       "step3Body": "Agentes no ar atendendo. Acompanhamento diário pelos primeiros 7 dias de operação."
     },
     "faq": {
-      "title": "As 4 dúvidas que todo mundo tem",
+      "title": "Perguntas frequentes",
       "items": [
         {
           "q": "Por que apenas 10 vagas?",
           "a": "Cada implantação consome ~40h reais do nosso time (configuração, treinamento, integração). Pra manter qualidade na primeira leva, limitamos a 10. Depois desses 10, o preço volta a $997/mês (≈ R$ 5.400)."
         },
         {
+          "q": "O agente funciona no meu número de WhatsApp atual?",
+          "a": "Sim. Conectamos no seu número via Evolution API — seus clientes continuam falando com o mesmo contato de sempre, só que agora com resposta em segundos, 24/7."
+        },
+        {
+          "q": "E se a IA responder algo errado?",
+          "a": "O agente é treinado com seu conteúdo, produtos e tom de voz, e passa por testes internos antes do go-live. E ele conhece o próprio limite: assunto sensível ou lead quente é transferido pra um humano na hora."
+        },
+        {
           "q": "E se eu não tiver CRM?",
-          "a": "Sem problema. Configuramos um Notion ou Airtable como CRM básico no setup, sem custo extra. Quando você quiser migrar pra HubSpot/RD, a gente integra."
+          "a": "Melhor ainda: implantamos o mesmo CRM que usamos na nossa própria operação (Chatwoot), sem custo extra — com toda conversa salva em banco de dados pra análise. Já usa HubSpot, RD ou Pipedrive? A gente integra."
         },
         {
           "q": "Vocês atendem meu nicho?",
           "a": "Já temos cases em automotivo, autopeças, solar, hotelaria, imobiliário e estética. Se o seu nicho ainda não estiver na lista, vamos te tornar nosso primeiro case e você ganha tratamento prioritário."
+        },
+        {
+          "q": "Como acompanho o que os agentes estão fazendo?",
+          "a": "Dashboard ao vivo com KPIs diários direto no seu WhatsApp — e toda conversa fica registrada em banco de dados. Nada se perde, e o histórico é seu."
+        },
+        {
+          "q": "Preciso entender de tecnologia?",
+          "a": "Zero. Você não precisa aprender n8n, Python nem gerenciar servidor — a gente opera a infraestrutura inteira. Você só acompanha os resultados."
         },
         {
           "q": "Quanto tempo até ver resultado?",
