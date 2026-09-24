@@ -70,8 +70,9 @@ export default function OfertaPage() {
             </Reveal>
             <Reveal delay={80}>
               <h1 className="mx-auto mt-6 max-w-4xl text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-                {t('oferta.hero.title1')}{' '}
-                <span className="gradient-text">{t('oferta.hero.title2')}</span>
+                <span className="block">{t('oferta.hero.title1')}</span>
+                <span className="block">{t('oferta.hero.title1b')}</span>
+                <span className="gradient-text block">{t('oferta.hero.title2')}</span>
               </h1>
             </Reveal>
             <Reveal delay={160}>
@@ -140,8 +141,9 @@ export default function OfertaPage() {
             <Reveal className="mx-auto max-w-2xl text-center">
               <span className="eyebrow">{t('oferta.team.eyebrow')}</span>
               <h2 className="section-title mt-5">
-                {t('oferta.team.title1')}{' '}
-                <span className="gradient-text">{t('oferta.team.title2')}</span>
+                <span className="block">{t('oferta.team.title1')}</span>
+                <span className="gradient-text block">{t('oferta.team.title2a')}</span>
+                <span className="gradient-text block">{t('oferta.team.title2b')}</span>
               </h2>
               <p className="mt-4 text-muted">{t('oferta.team.subtitle')}</p>
             </Reveal>

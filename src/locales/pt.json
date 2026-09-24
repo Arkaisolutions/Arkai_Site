@@ -51,7 +51,8 @@
     "spotsLeft": "restantes",
     "hero": {
       "badge": "OFERTA EXCLUSIVA · LANÇAMENTO",
-      "title1": "Você contrataria 6 profissionais. Contrate 1 sistema,",
+      "title1": "Você contrataria 6 profissionais.",
+      "title1b": "Contrate 1 sistema,",
       "title2": "pelo preço de 1 CLT.",
       "subtitle": "Uma operação inteira de vendas e atendimento — montada com agentes que já rodam em produção. Trabalham 24/7, sem férias, sem 13º, sem faltas.",
       "ctaPrimary": "Quero minha vaga",
@@ -71,7 +72,8 @@
     "team": {
       "eyebrow": "A sua equipe IA",
       "title1": "Você contrataria 6 profissionais.",
-      "title2": "Contrate 1 sistema, pelo preço de 1 CLT.",
+      "title2a": "Contrate 1 sistema,",
+      "title2b": "pelo preço de 1 CLT.",
       "subtitle": "Cada agente faz o trabalho de um cargo — juntos, 24/7, sem folha de pagamento, sem rotatividade e sem você gerenciar ninguém.",
       "replaceLabel": "No lugar de",
       "roles": [
