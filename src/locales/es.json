@@ -597,5 +597,185 @@
     "contactTitle": "Contacto",
     "rights": "Todos los derechos reservados.",
     "built": "Construyendo el futuro autónomo, un negocio a la vez."
+  },
+  "inst": {
+    "metaTitle": "Arkai Solutions · Operación con IA para empresas que ya venden",
+    "metaDesc": "Seis agentes montados con la forma de atender de tu empresa, en el aire en cuatro semanas, con acompañamiento todos los días.",
+    "nav": {
+      "problema": "El problema",
+      "fazemos": "Qué hacemos",
+      "rodando": "Verlo funcionando",
+      "clientes": "Clientes",
+      "perguntas": "Preguntas",
+      "contato": "Hablar con nosotros"
+    },
+    "hero": {
+      "eyebrow": "Operación con IA para empresas que ya venden",
+      "title": "Tu empresa ya vende. El problema es lo que se pierde en el camino.",
+      "subtitle": "Contacto que llega y nadie responde a tiempo. Presupuesto que queda parado. Seguimiento que nadie hace. Arkai instala la operación que se ocupa de esto y la acompaña todos los días.",
+      "ctaPrimary": "Verlo funcionando en mi empresa",
+      "ctaSecondary": "Hablar con nosotros"
+    },
+    "problema": {
+      "title": "Ninguna de estas empresas tenía problema de demanda",
+      "subtitle": "Todas vendían. Lo que trababa venía después: el tiempo hasta responder, el presupuesto que nadie retomó y el dueño en medio de todo.",
+      "cards": [
+        { "title": "El contacto se enfría", "text": "Quien pregunta precio y no recibe respuesta en minutos compra en otro lado." },
+        { "title": "El presupuesto queda parado", "text": "Nadie vuelve a preguntar en qué quedó, y la venta muere en silencio." },
+        { "title": "Todo pasa por ti", "text": "La empresa funciona mientras tú te acuerdas. Si sales una semana, se detiene." },
+        { "title": "Crecer sale caro", "text": "Cada aumento de demanda es una contratación más y una cuenta más." }
+      ]
+    },
+    "fazemos": {
+      "title": "Seis agentes que conversan entre sí",
+      "subtitle": "No es una herramienta suelta ni un robot de respuestas prontas. Es una operación montada con la forma de atender de tu empresa, con alguien mirando todos los días.",
+      "fazLabel": "Qué hace",
+      "mudaLabel": "Qué cambia",
+      "agents": [
+        { "icon": "support", "name": "Atención", "faz": "Responde cada contacto en segundos, 24 horas, incluso audio y foto.", "muda": "Nadie espera para ser atendido." },
+        { "icon": "check", "name": "Calificación", "faz": "Entiende quién tiene perfil y quién solo está mirando.", "muda": "El vendedor recibe el contacto listo." },
+        { "icon": "spark", "name": "Marketing y tráfico", "faz": "Acompaña el anuncio y devuelve a la campaña lo que se convirtió en venta.", "muda": "El presupuesto deja de irse en curiosos." },
+        { "icon": "workflow", "name": "Gestión comercial", "faz": "Mueve el contacto por las etapas y se ocupa del seguimiento.", "muda": "Nada queda parado esperando que alguien se acuerde." },
+        { "icon": "data", "name": "Lectura de números", "faz": "Envía el resumen del día y avisa cuando algo se sale del patrón.", "muda": "Miras la operación en vez de ser la operación." },
+        { "icon": "calendar", "name": "Seguimiento", "faz": "Vigila lo que quedó abierto y empuja el cierre.", "muda": "Lo que empieza, termina." }
+      ],
+      "faixa": "Tú no montas nada. No eliges herramienta, no conectas una cosa con otra y no te vuelves el técnico de tu propia empresa."
+    },
+    "implantacao": {
+      "title": "Cuatro semanas, de cero al aire",
+      "steps": [
+        { "title": "Escuchamos.", "text": "Una reunión para entender cómo vende hoy tu empresa y dónde muere el contacto." },
+        { "title": "Montamos.", "text": "Los agentes se montan con tu forma de atender, no con respuestas prontas." },
+        { "title": "Probamos juntos.", "text": "Una semana funcionando contigo mirando, corrigiendo lo que suene raro." },
+        { "title": "Acompañamos.", "text": "Panel, alertas y ajustes cada semana." }
+      ],
+      "faixa": "La mayoría de las automatizaciones no falla en la instalación. Falla en el mes tres, cuando ya nadie está mirando."
+    },
+    "rodando": {
+      "title": "No es promesa. Se puede ver en pantalla.",
+      "pendente": "[imagen pendiente]",
+      "blocos": [
+        { "nome": "Conversación del agente", "legenda": "El agente atendiendo de verdad, respondiendo dudas y agendando." },
+        { "nome": "Panel de seguimiento", "legenda": "Qué entró, qué fue respondido, qué se cayó y qué necesitó un humano." },
+        { "nome": "Mapa de la base", "legenda": "La base de contactos organizada por etapa, del primer contacto al cierre." }
+      ],
+      "nota": "Pantallas de ambiente de demostración. No aparecen datos de clientes."
+    },
+    "clientes": {
+      "title": "Quienes ya funcionan con nosotros",
+      "subtitle": "Segmentos distintos, el mismo problema: contactos que se enfrían y el dueño dentro de la ejecución.",
+      "segmentoLabel": "Segmento",
+      "nomeLabel": "Empresa",
+      "travavaLabel": "Qué trababa",
+      "acontecerLabel": "Qué empezó a pasar",
+      "cards": [
+        { "segmento": "[segmento]", "nome": "[nombre, solo con autorización por escrito]", "travava": "[una frase]", "acontecer": "[una frase]" },
+        { "segmento": "[segmento]", "nome": "[nombre, solo con autorización por escrito]", "travava": "[una frase]", "acontecer": "[una frase]" },
+        { "segmento": "[segmento]", "nome": "[nombre, solo con autorización por escrito]", "travava": "[una frase]", "acontecer": "[una frase]" },
+        { "segmento": "[segmento]", "nome": "[nombre, solo con autorización por escrito]", "travava": "[una frase]", "acontecer": "[una frase]" }
+      ]
+    },
+    "perguntas": {
+      "title": "Lo que todo dueño pregunta antes de cerrar",
+      "items": [
+        { "q": "¿El agente va a hablarle mal a mi cliente?", "a": "En la tercera semana funciona contigo acompañando, y todo lo que suene raro se corrige antes de liberar. Después del go live, el acompañamiento sigue cada semana." },
+        { "q": "¿Quién es dueño de los datos de mi empresa?", "a": "Tú. Arkai opera la infraestructura, pero los datos son tuyos y puedes pedir exportación o eliminación en cualquier momento." },
+        { "q": "¿Ustedes leen las conversaciones de mis clientes?", "a": "Solo lo necesario para configurar y corregir la atención, con acceso restringido al equipo de implementación." },
+        { "q": "¿Y si quiero cancelar?", "a": "Avisas y lo apagamos. Los datos se entregan y los accesos se revocan." },
+        { "q": "¿Necesito cambiar mi sistema actual?", "a": "No. Nos conectamos a lo que ya usas. Si no hay ningún sistema, montamos uno básico en la implementación." },
+        { "q": "¿Necesito entender de tecnología?", "a": "No. Quien monta y quien acompaña somos nosotros." },
+        { "q": "¿Atienden mi segmento?", "a": "Ya tenemos operación funcionando en [segmentos autorizados]. Si el tuyo aún no está en la lista, conversamos antes de proponer cualquier cosa." },
+        { "q": "¿Cuánto tarda en empezar a funcionar?", "a": "La implementación toma cerca de cuatro semanas hasta el go live." }
+      ]
+    }
+  },
+  "vagas": {
+    "metaTitle": "Implementación con vacantes limitadas · Arkai Solutions",
+    "metaDesc": "Seis agentes montados con la forma de atender de tu empresa, en el aire en cuatro semanas. Mensualidad de R$ 2.500 e implementación incluida para las primeras 10 empresas.",
+    "eyebrow": "Implementación con vacantes limitadas",
+    "contador": "{{remaining}} vacantes restantes de {{total}}",
+    "hero": {
+      "title1": "Contratarías a 6 profesionales.",
+      "title1b": "Contrata 1 sistema,",
+      "title2": "por el precio de 1 empleado.",
+      "subtitle": "Atención, calificación, tráfico, gestión comercial, lectura de números y seguimiento. Montados con la forma de atender de tu empresa, en el aire en cuatro semanas, con alguien mirando todos los días.",
+      "cta": "Quiero mi vacante"
+    },
+    "problema": {
+      "title": "Pagas el clic. Solo facturas si atiendes.",
+      "body": "¿Cuánto cuesta un contacto que espera cuatro horas por una respuesta? ¿Cuánto vale la venta perdida porque todos estaban ocupados? Gastas en anuncios y el contacto caliente se va con quien responde primero."
+    },
+    "entra": {
+      "title": "Qué incluye",
+      "items": [
+        "Los seis agentes implementados y entrenados con tu contenido y tu tono de voz",
+        "Conexión con WhatsApp",
+        "Conexión con el sistema que ya usas, o montaje de uno básico si no hay",
+        "Infraestructura de automatización en nuestra cuenta, sin costo separado",
+        "Costo de uso de los modelos de IA incluido en la mensualidad",
+        "Panel de seguimiento con resumen diario",
+        "Acompañamiento y ajustes todos los meses"
+      ]
+    },
+    "naoPrecisa": {
+      "title": "Lo que no tienes que hacer",
+      "items": [
+        "Contratar equipo técnico",
+        "Aprender herramientas de automatización",
+        "Cuidar servidores",
+        "Cambiar el sistema que usas hoy",
+        "Pagar las llamadas de IA por fuera"
+      ]
+    },
+    "comparacao": {
+      "label": "1 empleado vs. Arkai",
+      "headers": ["", "1 empleado", "Arkai"],
+      "rows": [
+        ["Horas cubiertas por mes", "176 horas", "720 horas"],
+        ["Frentes atendidos", "1", "6"],
+        ["Tiempo hasta la primera respuesta", "Minutos a horas", "Segundos"],
+        ["Vacaciones, aguinaldo y cargas", "Sí", "No"],
+        ["Tiempo hasta ser productivo", "Meses", "4 semanas"],
+        ["Costo por hora cubierta", "R$ 14,20", "R$ 3,47"]
+      ]
+    },
+    "oferta": {
+      "title": "R$ 2.500/mes",
+      "subtitle": "Mensualidad de R$ 2.500. Implementación incluida para las primeras 10 empresas.",
+      "escassez": "Son 10 porque cada implementación consume cerca de 40 horas de nuestro equipo. Después de esas, la implementación pasa a cobrarse.",
+      "cta": "Quiero mi vacante",
+      "nota": "Completas el formulario y respondemos en hasta 1 día hábil con el análisis de tu operación."
+    }
+  },
+  "leadForm": {
+    "title": "Veamos dónde tu empresa está perdiendo ventas",
+    "subtitle": "Completa y nos ponemos en contacto para entender tu operación. Sin compromiso de contratación.",
+    "selos": ["Análisis gratuito de la operación", "Sin compromiso de contratación", "Respuesta en hasta 1 día hábil"],
+    "nome": "Nombre",
+    "whatsapp": "WhatsApp",
+    "empresa": "Empresa",
+    "segmento": "Segmento",
+    "trava": "¿Qué es lo que más traba hoy?",
+    "consent": "Autorizo a Arkai a contactarme sobre esta solicitud y acepto la",
+    "consentLink": "Política de Privacidad",
+    "botao": "Quiero el análisis de mi operación",
+    "enviando": "Enviando...",
+    "sucesso": "Recibido. Respondemos en hasta 1 día hábil al WhatsApp que dejaste.",
+    "erro": "No pudimos enviar ahora. Intenta de nuevo o escríbenos por WhatsApp.",
+    "obrigatorio": "Completa nombre y WhatsApp y marca la autorización."
+  },
+  "siteFooter": {
+    "links": { "fazemos": "Qué hacemos", "clientes": "Clientes", "perguntas": "Preguntas", "contato": "Contacto" },
+    "razao": "Razón social: [completar]",
+    "cnpj": "CNPJ: 67.279.923/0001-03",
+    "endereco": "Dirección: [completar]",
+    "privacidade": "Política de Privacidad",
+    "termos": "Términos de Uso",
+    "copy": "© 2026 Arkai Solutions"
+  },
+  "cookies": {
+    "texto": "Usamos medición de visitas para mejorar el sitio y los anuncios. Puedes aceptar o rechazar.",
+    "aceitar": "Aceptar",
+    "recusar": "Rechazar"
   }
 }

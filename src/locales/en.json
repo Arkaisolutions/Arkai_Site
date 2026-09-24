@@ -597,5 +597,185 @@
     "contactTitle": "Get in touch",
     "rights": "All rights reserved.",
     "built": "Building the autonomous future, one business at a time."
+  },
+  "inst": {
+    "metaTitle": "Arkai Solutions · AI operations for companies that already sell",
+    "metaDesc": "Six agents built around the way your company serves customers, live in four weeks, with someone watching every day.",
+    "nav": {
+      "problema": "The problem",
+      "fazemos": "What we do",
+      "rodando": "See it running",
+      "clientes": "Clients",
+      "perguntas": "Questions",
+      "contato": "Talk to us"
+    },
+    "hero": {
+      "eyebrow": "AI operations for companies that already sell",
+      "title": "Your company already sells. The problem is what gets lost along the way.",
+      "subtitle": "Inquiries that nobody answers in time. Quotes that sit still. Follow-ups nobody does. Arkai installs the operation that takes care of this and watches it every day.",
+      "ctaPrimary": "See it working for my company",
+      "ctaSecondary": "Talk to us"
+    },
+    "problema": {
+      "title": "None of these companies had a demand problem",
+      "subtitle": "They all sold. What held them back came after: the time to reply, the quote nobody followed up, and the owner in the middle of everything.",
+      "cards": [
+        { "title": "The contact goes cold", "text": "Whoever asks for a price and gets no answer within minutes buys from someone else." },
+        { "title": "The quote sits still", "text": "Nobody checks back on it, and the sale dies in silence." },
+        { "title": "Everything depends on you", "text": "The company runs while you remember. If you leave for a week, it stops." },
+        { "title": "Growth gets expensive", "text": "Every increase in demand means another hire and another bill." }
+      ]
+    },
+    "fazemos": {
+      "title": "Six agents that talk to each other",
+      "subtitle": "Not a loose tool or a canned-answer bot. It is an operation built around the way your company serves customers, with someone watching every day.",
+      "fazLabel": "What it does",
+      "mudaLabel": "What changes",
+      "agents": [
+        { "icon": "support", "name": "Support", "faz": "Replies to every contact in seconds, 24 hours, including voice notes and photos.", "muda": "Nobody waits to be served." },
+        { "icon": "check", "name": "Qualification", "faz": "Tells who is a fit and who is just looking.", "muda": "Your salesperson gets a ready contact." },
+        { "icon": "spark", "name": "Marketing and ads", "faz": "Watches the ads and feeds back to the campaign what turned into sales.", "muda": "Your budget stops going to the merely curious." },
+        { "icon": "workflow", "name": "Sales management", "faz": "Moves each contact through the stages and handles follow-up.", "muda": "Nothing sits waiting for someone to remember." },
+        { "icon": "data", "name": "Numbers reading", "faz": "Sends the daily summary and warns you when something is off.", "muda": "You watch the operation instead of being the operation." },
+        { "icon": "calendar", "name": "Follow-through", "faz": "Watches what is still open and pushes it to close.", "muda": "What gets started gets finished." }
+      ],
+      "faixa": "You set up nothing. You do not pick tools, wire things together or become your own company's technician."
+    },
+    "implantacao": {
+      "title": "Four weeks, from zero to live",
+      "steps": [
+        { "title": "We listen.", "text": "One meeting to understand how your company sells today and where contacts die." },
+        { "title": "We build.", "text": "The agents are built around your way of serving customers, not canned answers." },
+        { "title": "We test together.", "text": "One week running with you watching, fixing anything that sounds off." },
+        { "title": "We stay on it.", "text": "Dashboard, alerts and adjustments every week." }
+      ],
+      "faixa": "Most automations do not fail at installation. They fail in month three, when nobody is watching anymore."
+    },
+    "rodando": {
+      "title": "Not a promise. You can see it on screen.",
+      "pendente": "[image pending]",
+      "blocos": [
+        { "nome": "Agent conversation", "legenda": "The agent actually serving, answering questions and booking." },
+        { "nome": "Tracking dashboard", "legenda": "What came in, what was answered, what dropped and what needed a human." },
+        { "nome": "Contact base map", "legenda": "The contact base organized by stage, from first touch to close." }
+      ],
+      "nota": "Demo environment screens. No client data is shown."
+    },
+    "clientes": {
+      "title": "Who already runs with us",
+      "subtitle": "Different segments, the same problem: contacts going cold and the owner stuck inside the execution.",
+      "segmentoLabel": "Segment",
+      "nomeLabel": "Company",
+      "travavaLabel": "What was stuck",
+      "acontecerLabel": "What started happening",
+      "cards": [
+        { "segmento": "[segment]", "nome": "[name, only with written authorization]", "travava": "[one sentence]", "acontecer": "[one sentence]" },
+        { "segmento": "[segment]", "nome": "[name, only with written authorization]", "travava": "[one sentence]", "acontecer": "[one sentence]" },
+        { "segmento": "[segment]", "nome": "[name, only with written authorization]", "travava": "[one sentence]", "acontecer": "[one sentence]" },
+        { "segmento": "[segment]", "nome": "[name, only with written authorization]", "travava": "[one sentence]", "acontecer": "[one sentence]" }
+      ]
+    },
+    "perguntas": {
+      "title": "What every owner asks before signing",
+      "items": [
+        { "q": "Will the agent say the wrong thing to my customer?", "a": "In week three it runs with you watching, and anything that sounds off gets fixed before going live. After go live, the weekly follow-up continues." },
+        { "q": "Who owns my company's data?", "a": "You do. Arkai runs the infrastructure, but the data is yours and you can request export or deletion at any time." },
+        { "q": "Do you read my customers' conversations?", "a": "Only what is needed to configure and correct the service, with access restricted to the implementation team." },
+        { "q": "What if I want to cancel?", "a": "You tell us and we switch it off. The data is handed over and the access is revoked." },
+        { "q": "Do I need to replace my current system?", "a": "No. We connect to what you already use. If there is no system at all, we set up a basic one during implementation." },
+        { "q": "Do I need to understand technology?", "a": "No. We build it and we watch it." },
+        { "q": "Do you serve my segment?", "a": "We already have operations running in [authorized segments]. If yours is not on the list yet, we talk before proposing anything." },
+        { "q": "How long until it starts working?", "a": "Implementation takes about four weeks until go live." }
+      ]
+    }
+  },
+  "vagas": {
+    "metaTitle": "Limited implementation spots · Arkai Solutions",
+    "metaDesc": "Six agents built around the way your company serves customers, live in four weeks. R$ 2.500 per month, implementation included for the first 10 companies.",
+    "eyebrow": "Implementation with limited spots",
+    "contador": "{{remaining}} spots left out of {{total}}",
+    "hero": {
+      "title1": "You'd hire 6 professionals.",
+      "title1b": "Hire 1 system,",
+      "title2": "for the price of 1 employee.",
+      "subtitle": "Support, qualification, ads, sales management, numbers reading and follow-through. Built around the way your company serves customers, live in four weeks, with someone watching every day.",
+      "cta": "Claim my spot"
+    },
+    "problema": {
+      "title": "You pay for the click. You only earn if you answer.",
+      "body": "How much does a contact cost when it waits four hours for a reply? How much is the sale you lose because everyone was busy? You spend on ads and the hot contact goes to whoever answers first."
+    },
+    "entra": {
+      "title": "What is included",
+      "items": [
+        "The six agents implemented and trained with your content and tone of voice",
+        "WhatsApp connection",
+        "Connection to the system you already use, or a basic one set up if there is none",
+        "Automation infrastructure on our account, at no separate cost",
+        "AI model usage costs included in the monthly fee",
+        "Tracking dashboard with a daily summary",
+        "Follow-up and adjustments every month"
+      ]
+    },
+    "naoPrecisa": {
+      "title": "What you do not have to do",
+      "items": [
+        "Hire a technical team",
+        "Learn automation tools",
+        "Take care of servers",
+        "Replace the system you use today",
+        "Pay for AI calls separately"
+      ]
+    },
+    "comparacao": {
+      "label": "1 employee vs. Arkai",
+      "headers": ["", "1 employee", "Arkai"],
+      "rows": [
+        ["Hours covered per month", "176 hours", "720 hours"],
+        ["Fronts covered", "1", "6"],
+        ["Time to first reply", "Minutes to hours", "Seconds"],
+        ["Vacations, bonuses and payroll charges", "Yes", "No"],
+        ["Time until productive", "Months", "4 weeks"],
+        ["Cost per covered hour", "R$ 14,20", "R$ 3,47"]
+      ]
+    },
+    "oferta": {
+      "title": "R$ 2.500/month",
+      "subtitle": "R$ 2.500 per month. Implementation included for the first 10 companies.",
+      "escassez": "It is 10 because each implementation takes about 40 hours of our team. After those, implementation is charged.",
+      "cta": "Claim my spot",
+      "nota": "You fill it in, we reply within 1 business day with the analysis of your operation."
+    }
+  },
+  "leadForm": {
+    "title": "Let's see where your company is losing sales",
+    "subtitle": "Fill it in and we will get in touch to understand your operation. No commitment to hire.",
+    "selos": ["Free analysis of your operation", "No commitment to hire", "Reply within 1 business day"],
+    "nome": "Name",
+    "whatsapp": "WhatsApp",
+    "empresa": "Company",
+    "segmento": "Segment",
+    "trava": "What holds you back the most today?",
+    "consent": "I authorize Arkai to contact me about this request and I agree with the",
+    "consentLink": "Privacy Policy",
+    "botao": "I want the analysis of my operation",
+    "enviando": "Sending...",
+    "sucesso": "Received. We reply within 1 business day on the WhatsApp you left.",
+    "erro": "We could not send it right now. Try again or message us on WhatsApp.",
+    "obrigatorio": "Fill in name and WhatsApp and check the authorization box."
+  },
+  "siteFooter": {
+    "links": { "fazemos": "What we do", "clientes": "Clients", "perguntas": "Questions", "contato": "Contact" },
+    "razao": "Legal name: [to fill]",
+    "cnpj": "CNPJ: 67.279.923/0001-03",
+    "endereco": "Address: [to fill]",
+    "privacidade": "Privacy Policy",
+    "termos": "Terms of Use",
+    "copy": "© 2026 Arkai Solutions"
+  },
+  "cookies": {
+    "texto": "We use visit measurement to improve the site and the ads. You can accept or decline.",
+    "aceitar": "Accept",
+    "recusar": "Decline"
   }
 }
