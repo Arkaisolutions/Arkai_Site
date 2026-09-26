@@ -47,7 +47,7 @@
 
 .arkai-cases__stage {
   position: relative;
-  height: 27rem;
+  height: 21.5rem;
   margin-top: 2.75rem;
   overflow: hidden;
   outline: none;
@@ -61,7 +61,7 @@
 
 .arkai-cases__slides {
   position: absolute;
-  inset: 0.5rem 0 5.5rem;
+  inset: 0.5rem 0;
   --arkai-case-offset: clamp(14rem, 31vw, 27rem);
 }
 
@@ -207,83 +207,9 @@
   line-height: 1.5;
 }
 
-.arkai-cases__arrow {
-  display: grid;
-  width: 2.75rem;
-  height: 2.75rem;
-  place-items: center;
-  border: 1px solid #343b5e;
-  border-radius: 0.7rem;
-  background: #191d32;
-  color: #fff;
-  cursor: pointer;
-  transition: border-color 180ms ease, background-color 180ms ease;
-}
-
-.arkai-cases__arrow:hover {
-  border-color: rgb(var(--accent-2) / 0.5);
-  background: rgb(6 7 13 / 0.88);
-}
-
-.arkai-cases__arrow:focus-visible,
-.arkai-cases__dot:focus-visible,
-.arkai-cases__pause:focus-visible,
 .arkai-faq__item button:focus-visible {
   outline: 2px solid rgb(var(--accent-2));
   outline-offset: 3px;
-}
-
-.arkai-cases__arrow span {
-  margin-top: -0.2rem;
-  font-size: 2rem;
-  line-height: 1;
-}
-
-.arkai-cases__controls {
-  position: absolute;
-  z-index: 5;
-  right: 1.5rem;
-  bottom: 1.3rem;
-  left: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.25rem;
-  min-height: 2.25rem;
-}
-
-.arkai-cases__dots {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-}
-
-.arkai-cases__dot {
-  width: 0.65rem;
-  height: 0.65rem;
-  padding: 0;
-  border: 0;
-  border-radius: 999px;
-  background: #67708a;
-  cursor: pointer;
-  transition: width 180ms ease, background-color 180ms ease;
-}
-
-.arkai-cases__dot--active {
-  width: 1.65rem;
-  background: rgb(var(--accent-2));
-}
-
-.arkai-cases__pause {
-  position: absolute;
-  right: 0;
-  padding: 0.35rem 0.65rem;
-  border: 1px solid #343b5e;
-  border-radius: 999px;
-  background: #191d32;
-  color: #dce3f4;
-  cursor: pointer;
-  font-size: 0.75rem;
 }
 
 .arkai-cases__note {
@@ -365,7 +291,7 @@
 
 @media (max-width: 900px) {
   .arkai-cases__stage {
-    height: 25rem;
+    height: 20.5rem;
   }
 
   .arkai-cases__slides {
@@ -398,12 +324,12 @@
   }
 
   .arkai-cases__stage {
-    height: 23rem;
+    height: 18rem;
     margin-top: 2rem;
   }
 
   .arkai-cases__slides {
-    inset: 0.5rem 0 4.5rem;
+    inset: 0.5rem 0;
     --arkai-case-offset: 75vw;
   }
 
@@ -443,15 +369,6 @@
     font-size: 0.82rem;
   }
 
-  .arkai-cases__arrow {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .arkai-cases__arrow span {
-    font-size: 1.75rem;
-  }
-
   .arkai-faq__grid {
     grid-template-columns: minmax(0, 1fr);
     gap: 0.85rem;
@@ -470,8 +387,6 @@
 
 @media (prefers-reduced-motion: reduce) {
   .arkai-cases__card,
-  .arkai-cases__dot,
-  .arkai-cases__arrow,
   .arkai-faq__item {
     transition: none;
   }

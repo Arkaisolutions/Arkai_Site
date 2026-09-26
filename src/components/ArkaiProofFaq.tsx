@@ -338,7 +338,6 @@ export function ArkaiCases() {
   const text = copy[localeFor(i18n.resolvedLanguage || i18n.language)]
   const [activeIndex, setActiveIndex] = useState(1)
   const [focused, setFocused] = useState(false)
-  const [manuallyPaused, setManuallyPaused] = useState(false)
   const [reducedMotion, setReducedMotion] = useState(false)
   const [visible, setVisible] = useState(
     () => typeof window !== 'undefined' && !('IntersectionObserver' in window),
@@ -375,8 +374,7 @@ export function ArkaiCases() {
     return () => observer.disconnect()
   }, [])
 
-  const autoplaying =
-    visible && pageVisible && !reducedMotion && !focused && !manuallyPaused
+  const autoplaying = visible && pageVisible && !reducedMotion && !focused
 
   useEffect(() => {
     if (!autoplaying) return
@@ -468,47 +466,6 @@ export function ArkaiCases() {
             })}
           </div>
 
-          <div className="arkai-cases__controls">
-            <button
-              type="button"
-              className="arkai-cases__arrow"
-              aria-label={text.previous}
-              onClick={showPrevious}
-            >
-              <span aria-hidden="true">‹</span>
-            </button>
-            <div className="arkai-cases__dots" role="group" aria-label={text.chooseCompany}>
-              {companies.map((company, index) => (
-                <button
-                  key={company.name}
-                  type="button"
-                  className={`arkai-cases__dot${activeIndex === index ? ' arkai-cases__dot--active' : ''}`}
-                  aria-label={`${text.showCompany} ${company.name}`}
-                  aria-pressed={activeIndex === index}
-                  onClick={() => setActiveIndex(index)}
-                />
-              ))}
-            </div>
-            <button
-              type="button"
-              className="arkai-cases__arrow"
-              aria-label={text.next}
-              onClick={showNext}
-            >
-              <span aria-hidden="true">›</span>
-            </button>
-            {!reducedMotion && (
-              <button
-                type="button"
-                className="arkai-cases__pause"
-                aria-label={`${manuallyPaused ? text.play : text.pause} ${text.carouselLabel}`}
-                aria-pressed={manuallyPaused}
-                onClick={() => setManuallyPaused((paused) => !paused)}
-              >
-                {manuallyPaused ? text.play : text.pause}
-              </button>
-            )}
-          </div>
         </div>
         <div className="arkai-cases__details" aria-live={autoplaying ? 'off' : 'polite'} aria-atomic="true">
           <span className="arkai-cases__count">{String(activeIndex + 1).padStart(2, '0')} / {String(companies.length).padStart(2, '0')}</span>
