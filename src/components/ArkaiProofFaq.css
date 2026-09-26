@@ -56,8 +56,12 @@
   user-select: none;
 }
 
-.arkai-cases__stage:active {
+.arkai-cases__stage--dragging {
   cursor: grabbing;
+}
+
+.arkai-cases__stage--dragging .arkai-cases__card {
+  transition: none;
 }
 
 .arkai-cases__stage:focus-visible {
@@ -84,25 +88,25 @@
 
 .arkai-cases__card--active {
   z-index: 3;
-  transform: translate(-50%, calc(-50% + 2rem)) scale(1);
+  transform: translate(calc(-50% + var(--arkai-case-drag-x, 0px)), calc(-50% + 2rem)) scale(1);
   opacity: 1;
 }
 
 .arkai-cases__card--before {
   z-index: 1;
-  transform: translate(calc(-50% - var(--arkai-case-offset)), calc(-50% - 0.75rem)) scale(0.78);
+  transform: translate(calc(-50% - var(--arkai-case-offset) + var(--arkai-case-drag-x, 0px)), calc(-50% - 0.75rem)) scale(0.78);
   opacity: 0.72;
 }
 
 .arkai-cases__card--after {
   z-index: 1;
-  transform: translate(calc(-50% + var(--arkai-case-offset)), calc(-50% - 0.75rem)) scale(0.78);
+  transform: translate(calc(-50% + var(--arkai-case-offset) + var(--arkai-case-drag-x, 0px)), calc(-50% - 0.75rem)) scale(0.78);
   opacity: 0.72;
 }
 
 .arkai-cases__card--back {
   z-index: 0;
-  transform: translate(-50%, calc(-50% - 5.5rem)) scale(0.56);
+  transform: translate(calc(-50% + var(--arkai-case-drag-x, 0px)), calc(-50% - 5.5rem)) scale(0.56);
   opacity: 0.55;
   pointer-events: none;
 }
@@ -340,11 +344,11 @@
   }
 
   .arkai-cases__card--active {
-    transform: translate(-50%, calc(-50% + 1.5rem)) scale(1);
+    transform: translate(calc(-50% + var(--arkai-case-drag-x, 0px)), calc(-50% + 1.5rem)) scale(1);
   }
 
   .arkai-cases__card--back {
-    transform: translate(-50%, calc(-50% - 4rem)) scale(0.54);
+    transform: translate(calc(-50% + var(--arkai-case-drag-x, 0px)), calc(-50% - 4rem)) scale(0.54);
   }
 
   .arkai-cases__card {

@@ -412,10 +412,18 @@ export function ArkaiCases() {
     event.currentTarget.setPointerCapture(event.pointerId)
   }
 
+  const handlePointerMove = (event: PointerEvent<HTMLDivElement>) => {
+    const start = pointerStart.current
+    if (!start || start.id !== event.pointerId) return
+    const offset = Math.max(-220, Math.min(220, event.clientX - start.x))
+    event.currentTarget.style.setProperty('--arkai-case-drag-x', `${offset}px`)
+  }
+
   const handlePointerUp = (event: PointerEvent<HTMLDivElement>) => {
     const start = pointerStart.current
     if (!start || start.id !== event.pointerId) return
     pointerStart.current = null
+    event.currentTarget.style.removeProperty('--arkai-case-drag-x')
     setDragging(false)
     const deltaX = event.clientX - start.x
     const deltaY = event.clientY - start.y
@@ -427,6 +435,7 @@ export function ArkaiCases() {
   const handlePointerCancel = (event: PointerEvent<HTMLDivElement>) => {
     if (pointerStart.current?.id !== event.pointerId) return
     pointerStart.current = null
+    event.currentTarget.style.removeProperty('--arkai-case-drag-x')
     setDragging(false)
   }
 
@@ -441,7 +450,7 @@ export function ArkaiCases() {
 
         <div
           ref={stageRef}
-          className="arkai-cases__stage"
+          className={`arkai-cases__stage${dragging ? ' arkai-cases__stage--dragging' : ''}`}
           role="region"
           aria-roledescription={text.carouselRole}
           aria-label={text.carouselLabel}
@@ -452,6 +461,7 @@ export function ArkaiCases() {
             if (!event.currentTarget.contains(event.relatedTarget)) setFocused(false)
           }}
           onPointerDown={handlePointerDown}
+          onPointerMove={handlePointerMove}
           onPointerUp={handlePointerUp}
           onPointerCancel={handlePointerCancel}
         >
