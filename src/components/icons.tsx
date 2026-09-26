@@ -101,6 +101,7 @@ export const IconBolt = (p: IconProps) => (
   </svg>
 )
 
+// eslint-disable-next-line react-refresh/only-export-components -- static icon registry
 export const serviceIcons: Record<string, (p: IconProps) => ReactElement> = {
   agent: IconAgent,
   support: IconSupport,
@@ -250,6 +251,7 @@ export const IconDocs = (p: IconProps) => (
 )
 
 /** Map of all icons usable in the agents grid. */
+// eslint-disable-next-line react-refresh/only-export-components -- static icon registry
 export const agentIcons: Record<string, (p: IconProps) => ReactElement> = {
   agent: IconAgent,
   check: IconCheck,
@@ -263,6 +265,7 @@ export const agentIcons: Record<string, (p: IconProps) => ReactElement> = {
   saas: IconCloud,
 }
 
+// eslint-disable-next-line react-refresh/only-export-components -- static icon registry
 export const industryIcons: Record<string, (p: IconProps) => ReactElement> = {
   realestate: IconBuilding,
   health: IconHealth,

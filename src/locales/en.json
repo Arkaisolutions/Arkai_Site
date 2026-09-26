@@ -1,6 +1,10 @@
 {
   "nav": {
+    "agents": "6 agents",
     "services": "Services",
+    "industries": "Industries",
+    "cases": "Companies",
+    "faq": "FAQ",
     "process": "Process",
     "work": "Work",
     "pricing": "Pricing",
@@ -20,6 +24,23 @@
     "stat3Value": "USD / EUR",
     "stat3Label": "Global delivery"
   },
+  "audiences": {
+    "eyebrow": "Two starting points · one coordinated operation",
+    "title": "Already using AI, or ready to start?",
+    "subtitle": "For companies with monthly revenue between R$300,000 and R$1 million: Arkai's six agents work together in a plan matched to where your operation stands today.",
+    "existing": {
+      "label": "Already using AI",
+      "title": "AI is there, but the operation loses its way",
+      "body": "Disconnected tools, automations without follow-through, and scattered information? We organize what you already have and connect the six agents to your channels and processes so every stage is tracked."
+    },
+    "starting": {
+      "label": "Ready to add AI",
+      "title": "Start with direction, not disconnected tools",
+      "body": "We map your company's bottlenecks and deploy the six agents as a coordinated system, integrated with the workflows you already use. You know what each one does and how to track the operation."
+    },
+    "closing": "The starting point changes. The proposition stays the same: six agents that communicate with each other and help your team work with greater clarity.",
+    "cta": "Find the right path in a consultation"
+  },
   "trust": {
     "label": "Live in production across",
     "items": [
@@ -38,7 +59,7 @@
     ]
   },
   "command": {
-    "eyebrow": "Live Command Center",
+    "eyebrow": "Illustrative operation view",
     "title1": "Your operation,",
     "title2": "running on AI."
   },
@@ -51,9 +72,7 @@
     "spotsLeft": "left",
     "hero": {
       "badge": "EXCLUSIVE OFFER · LAUNCH",
-      "title1": "You'd hire 6 professionals.",
-      "title1b": "Hire 1 system,",
-      "title2": "for the price of 1 employee.",
+      "titleLines": ["You'd hire", "6 professionals.", "Hire 1 system,", "for the price of 1 employee."],
       "subtitle": "A full sales and operations team — built with agents already running in production. Working 24/7, no vacation, no overhead, no sick days.",
       "ctaPrimary": "Claim my spot",
       "ctaSecondary": "How it works"
@@ -72,52 +91,51 @@
     "team": {
       "eyebrow": "Your AI team",
       "title1": "You would hire 6 professionals.",
-      "title2a": "Hire 1 system,",
-      "title2b": "for the price of 1 employee.",
+      "title2": "Hire 1 system — for the price of 1 employee.",
       "subtitle": "Each agent does the job of a role — together, 24/7, with no payroll, no turnover and no one for you to manage.",
-      "replaceLabel": "Instead of",
+      "replaceLabel": "What changes",
       "roles": [
-        { "icon": "agent",    "name": "Sales & Support Rep", "role": "Replies to every lead in seconds, 24/7. Qualifies, answers (even voice & photo), sells and books on its own. Only hands you the hot ones.", "replaces": "salesperson + support rep" },
-        { "icon": "traffic",  "name": "Traffic Manager",     "role": "Runs the ads, watches CPL and ROAS, and delivers ready buyers — not a list of tire-kickers.", "replaces": "traffic manager" },
-        { "icon": "workflow", "name": "Commercial Management", "role": "Connects CRM, sheets and payments, moves leads through the funnel and fires remarketing. Zero copy-paste.", "replaces": "admin assistant" },
-        { "icon": "finance",  "name": "Financial Management", "role": "Reminds, charges and recovers late payers on its own — politely, without you asking.", "replaces": "financial assistant" },
-        { "icon": "data",     "name": "Analyst",             "role": "Sends the day's report to your WhatsApp and pings you the moment a hot lead arrives.", "replaces": "analyst / BI" },
-        { "icon": "spark",    "name": "Brilliant Minds",     "role": "A panel of 5 AI experts that debates your move before you risk it — and spies on competitors too.", "replaces": "strategy consulting" }
+        { "icon": "agent",    "name": "Customer service", "role": "Answers each inquiry in seconds, around the clock, including audio and photos.", "replaces": "No inquiry is left waiting." },
+        { "icon": "check",    "name": "Qualification", "role": "Identifies who is ready to buy and who is still exploring.", "replaces": "Sales receives better-prepared contacts." },
+        { "icon": "traffic",  "name": "Marketing and traffic", "role": "Tracks campaigns and feeds sales outcomes back into them.", "replaces": "Spend is guided by what works." },
+        { "icon": "workflow", "name": "Sales management", "role": "Moves contacts through stages and handles pending follow-ups.", "replaces": "Opportunities do not depend on someone remembering." },
+        { "icon": "data",     "name": "Numbers and insights", "role": "Summarizes the day and flags unusual changes.", "replaces": "You can see the operation more clearly." },
+        { "icon": "support",  "name": "Follow-through", "role": "Watches open items and signals the next step.", "replaces": "Work in progress stays visible until completion." }
       ]
     },
     "proof": {
       "eyebrow": "Real inventory",
       "title": "Not a promise. Production infrastructure.",
       "stats": [
-        { "v": "63+", "l": "Workflows shipped" },
-        { "v": "22", "l": "Live systems now" },
-        { "v": "39", "l": "AI agents in production" },
-        { "v": "12", "l": "Documented skills" }
+        { "v": "6", "l": "Agents in this offer" },
+        { "v": "24/7", "l": "Customer-service coverage" },
+        { "v": "4", "l": "Estimated implementation weeks" },
+        { "v": "1", "l": "Coordinated operation" }
       ],
-      "socialLabel": "Already running in production for",
-      "socialClients": "ClickParts Brasil · Futuro Solar · Principal Automóveis · Hotel Palace · Casa de Temporada · Casa Reserva Tucano"
+      "socialLabel": "Companies connected to Arkai projects",
+      "socialClients": "ClickParts · Hotel Palace · Futuro Solar · Principal Automóveis"
     },
     "offer": {
       "eyebrow": "THE OFFER",
-      "title": "$497/mo",
-      "subtitle": "The exact cost of one minimum-wage hire with payroll taxes. Instead of 1 person 8h/day, you get 6 specialists 24/7.",
+      "title": "R$ 2,500/mo",
+      "subtitle": "One monthly price for six agents and their coordinated operation. The final scope is confirmed in the proposal.",
       "priceBreakLabel": "Breaking down the price",
       "priceBreakItems": [
-        { "v": "$16.50", "l": "per day" },
-        { "v": "$0.69", "l": "per hour (24/7)" },
-        { "v": "$83", "l": "per agent/month" },
-        { "v": "$0.12", "l": "per hour · each agent" }
+        { "v": "R$ 83", "l": "per day" },
+        { "v": "R$ 3.47", "l": "per hour (24/7)" },
+        { "v": "R$ 417", "l": "per agent/month" },
+        { "v": "R$ 0.58", "l": "per hour · each agent" }
       ],
       "compareLabel": "1 hire vs. Arkai (6 agents)",
       "compareHeaders": ["", "1 minimum-wage hire", "Arkai (6 agents)"],
       "compareRows": [
         ["Work hours",       "8h/day · 22 days/month",      "24/7 · 30 days/month"],
-        ["Specialties",      "1 (e.g. support)",            "14 (SDR, qualifier, booking...)"],
+        ["Specialties",      "1 (e.g. support)",            "6 coordinated agents"],
         ["Response time",    "Minutes to hours",            "Under 30 seconds"],
         ["Takes vacation",   "Yes · 2-4 weeks/year",        "No"],
         ["Payroll overhead", "Yes · ~30% on top",           "No"],
         ["Time to train",    "3-6 months",                  "7 days"],
-        ["Total cost/month", "$497",                        "$497"]
+        ["Total cost/month", "illustrative",                "R$ 2,500"]
       ],
       "notNeededLabel": "What you DON'T need:",
       "notNeededItems": [
@@ -130,7 +148,7 @@
       "includesTitle": "What's included (and LIVE in your business):",
       "includes": [
         "All 6 agents deployed and trained",
-        "WhatsApp integration via Evolution API (official)",
+        "WhatsApp connection; the channel is defined during discovery",
         "CRM connection (HubSpot, Salesforce, Airtable, Sheets)",
         "Training on your content, products and tone of voice",
         "n8n account configured on our infrastructure (no extra cost)",
@@ -182,8 +200,8 @@
     }
   },
   "seo": {
-    "agenciaTitle": "Arkai Solutions — AI Automation Agency with AI Agents",
-    "agenciaDesc": "14 AI agents in production for sales, support and operations 24/7. AI automation for real estate, solar, automotive, healthcare, hospitality and more. Global delivery in USD/EUR.",
+    "agenciaTitle": "Arkai Solutions — Operations with six AI agents",
+    "agenciaDesc": "Six AI agents for service, qualification, marketing, sales management, reporting and follow-through, configured and monitored by Arkai.",
     "diagDesc": "Answer 4 questions and get a custom diagnosis of where AI generates revenue in your business — free, within 24h.",
     "thanksDesc": "Your AI audit request has been received. Our team will reach out soon."
   },
@@ -213,16 +231,15 @@
   },
   "terminal": {
     "lines": [
-      "→ New lead from Meta Ad campaign",
-      "  AI Agent · qualifying intent...",
-      "  Lead score: 92/100 · hot",
-      "→ Booking call for tomorrow, 14:00",
-      "  WhatsApp confirmation sent ✓",
-      "→ Lead pushed to CRM · pipeline updated",
-      "→ Daily report sent to founder ✓",
-      "  Idle · listening for the next lead..."
+      "→ Customer service replies in seconds",
+      "  Qualification identifies a suitable contact",
+      "→ Marketing records the campaign source",
+      "  Sales management organizes the next step",
+      "→ Numbers and insights summarize the day",
+      "  Follow-through flags open items",
+      "  Six-agent simulation · no client data"
     ],
-    "label": "AI Agent · Live"
+    "label": "Illustrative demo"
   },
   "modal": {
     "step": "Step {{n}} of {{total}}",
@@ -249,6 +266,8 @@
     "whatsappPh": "+1 555 123 4567",
     "companyLabel": "Company (optional)",
     "companyPh": "Acme Inc.",
+    "consentBefore": "I authorize Arkai to contact me about this request and agree to the",
+    "consentLink": "Privacy Policy",
     "successTitle": "You're in.",
     "successBody": "Your custom AI audit is on its way. Expect a WhatsApp from us within 24h with concrete next steps for your business.",
     "successBookTitle": "Want to go faster?",
@@ -335,7 +354,7 @@
       {
         "icon": "realestate",
         "tag": "Real Estate",
-        "title": "Real Estate & Rentals",
+        "title": "Real Estate Agencies",
         "desc": "Match buyers and tenants to listings in seconds — and never lose a lead in the inbox.",
         "bullets": [
           "AI agent that matches profile to listings",
@@ -346,7 +365,7 @@
       {
         "icon": "health",
         "tag": "Health · Aesthetics · Dental",
-        "title": "Clinics, Med Spas & Dental",
+        "title": "Clinics & Practices",
         "desc": "Fill the agenda with the right patients — without paying for tire-kickers on Meta Ads.",
         "bullets": [
           "AI lead qualifier before booking the first consultation",
@@ -357,7 +376,7 @@
       {
         "icon": "solar",
         "tag": "Solar & Renewable",
-        "title": "Solar Energy",
+        "title": "Solar Energy Companies",
         "desc": "Turn paid traffic into qualified solar leads — shortening the cycle from first click to signed contract.",
         "bullets": [
           "AI lead scoring (filter tire-kickers from real buyers)",
@@ -368,7 +387,7 @@
       {
         "icon": "automotive",
         "tag": "Automotive · Dealerships",
-        "title": "Cars & Motorcycles",
+        "title": "Dealerships & Consortia",
         "desc": "More test drives and visits — without growing your sales team.",
         "bullets": [
           "Capture leads from Meta & Google Ads 24/7",
@@ -379,7 +398,7 @@
       {
         "icon": "homeservices",
         "tag": "Home Services",
-        "title": "HVAC, Plumbing & Repairs",
+        "title": "Home Service Companies",
         "desc": "Be the first to answer when a homeowner has a leak — and win the job before competitors.",
         "bullets": [
           "24/7 AI agent answering emergencies on WhatsApp",
@@ -390,7 +409,7 @@
       {
         "icon": "insurance",
         "tag": "Insurance",
-        "title": "Insurance Brokers",
+        "title": "Insurance Brokerages",
         "desc": "Pre-qualify and quote insurance leads at scale — even outside business hours.",
         "bullets": [
           "AI quoting agent across auto, home and life",
@@ -401,7 +420,7 @@
       {
         "icon": "legal",
         "tag": "Legal",
-        "title": "Law Firms & Legal Services",
+        "title": "Law Firms",
         "desc": "High-value leads ($200–$800 each) deserve instant response — let AI handle intake so attorneys focus on cases.",
         "bullets": [
           "Conflict-check and case intake automation",
@@ -412,7 +431,7 @@
       {
         "icon": "finance",
         "tag": "Financial · Credit · Advisory",
-        "title": "Financial Services",
+        "title": "Financial Firms",
         "desc": "Score and route financial leads instantly — at a fraction of the cost per qualified lead.",
         "bullets": [
           "Lead scoring by profile, ticket and intent",
@@ -423,7 +442,7 @@
       {
         "icon": "ecommerce",
         "tag": "E-commerce · Retail",
-        "title": "E-commerce & Retail",
+        "title": "Retail & E-commerce Firms",
         "desc": "Recover lost revenue from inactive customers and abandoned carts — automatically.",
         "bullets": [
           "Cart recovery + smart billing reminders",
@@ -445,7 +464,7 @@
       {
         "icon": "hospitality",
         "tag": "Hospitality · Tourism",
-        "title": "Hotels, Inns & Short Stay",
+        "title": "Hotels & Inns",
         "desc": "AI concierge that lifts direct bookings — and stops draining margin to OTAs.",
         "bullets": [
           "24/7 AI concierge across WhatsApp and site",
@@ -512,6 +531,7 @@
     "eyebrow": "Investment",
     "title": "Start small. Scale when it pays off.",
     "subtitle": "Each plan combines a one-time setup with a monthly retainer. You only scale once the automation proves its return. Prices in USD — EUR on request.",
+    "sixAgentNote": "All three plans remain available for scoped projects. The coordinated six-agent solution is assessed in the consultation.",
     "perMonth": "/mo",
     "setupSuffix": "setup fee",
     "popular": "Most popular",

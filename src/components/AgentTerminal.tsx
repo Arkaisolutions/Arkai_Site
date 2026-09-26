@@ -22,10 +22,6 @@ export default function AgentTerminal() {
     const lines = t('terminal.lines', { returnObjects: true }) as string[]
     if (!Array.isArray(lines) || lines.length === 0) return
 
-    // Reset visual state for this run.
-    setPrinted([])
-    setCurrentLine('')
-
     let mounted = true
     let typeTimer: number | undefined
     let nextLineTimer: number | undefined
@@ -62,7 +58,12 @@ export default function AgentTerminal() {
       })
     }
 
-    advance()
+    nextLineTimer = window.setTimeout(() => {
+      if (!mounted) return
+      setPrinted([])
+      setCurrentLine('')
+      advance()
+    }, 0)
 
     return () => {
       mounted = false

@@ -1,19 +1,42 @@
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import AuroraBg from '../components/AuroraBg'
+import BrandAuroraBg from '../components/BrandAuroraBg'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import FloatingWhatsApp from '../components/FloatingWhatsApp'
 import Reveal from '../components/Reveal'
-import { agentIcons, IconArrow, IconBolt, IconCheck } from '../components/icons'
+import { IconArrow, IconBolt, IconCheck } from '../components/icons'
+import AgentShowcase from '../components/AgentShowcase'
+import { ArkaiCases, ArkaiFAQ } from '../components/ArkaiProofFaq'
+import TwoPaths from '../components/TwoPaths'
 import { config } from '../config'
 import { captureAttribution, trackEvent, trackPageView } from '../lib/track'
 import { setSeo } from '../lib/seo'
 
 interface Stat      { v: string; l: string }
-interface QA        { q: string; a: string }
 interface BreakItem { v: string; l: string }
 interface TeamRole  { icon: string; name: string; role: string; replaces: string }
+
+const agentArt = [
+  '/assets/agentes/animados/atendimento.gif',
+  '/assets/agentes/animados/qualificacao.gif',
+  '/assets/agentes/animados/marketing.gif',
+  '/assets/agentes/animados/gestao-comercial.gif',
+  '/assets/agentes/animados/leitura-de-numeros.gif',
+  '/assets/agentes/animados/acompanhamento.gif',
+] as const
+
+const agentStillArt = [
+  '/assets/agentes/agente-atendimento-v1.png',
+  '/assets/agentes/agente-qualificacao-v1.png',
+  '/assets/agentes/agente-marketing-v1.png',
+  '/assets/agentes/agente-gestao-comercial-v1.png',
+  '/assets/agentes/agente-analise-v1.png',
+  '/assets/agentes/agente-acompanhamento-v1.png',
+] as const
+
+const heroLineScale = ['text-[0.88em]', 'text-[0.96em]', 'text-[1em]', 'text-[1.03em]'] as const
+
 
 /**
  * /oferta — Long-form sales landing for paid traffic.
@@ -44,23 +67,16 @@ export default function OfertaPage() {
 
   const stats    = t('oferta.proof.stats',    { returnObjects: true }) as Stat[]
   const includes = t('oferta.offer.includes', { returnObjects: true }) as string[]
-  const faqs     = t('oferta.faq.items',      { returnObjects: true }) as QA[]
+  const heroLines = t('oferta.hero.titleLines', { returnObjects: true }) as string[]
 
   return (
     <>
-      {/* Scarcity bar — sticky top, dynamic counter */}
-      <div className="fixed inset-x-0 top-0 z-[60] bg-gradient-to-r from-accent to-accent-2 px-4 py-2 text-center text-[12.5px] font-bold tracking-wide text-white shadow-md">
-        {t('oferta.scarcity', { remaining, total })}
-      </div>
-
-      <div className="h-8" />
-
       <Navbar />
 
       <main className="relative">
         {/* ============ HERO ============ */}
         <section className="relative overflow-hidden pt-32 pb-20 sm:pt-36">
-          <AuroraBg />
+          <BrandAuroraBg />
           <div className="container-content relative z-10 text-center">
             <Reveal>
               <span className="eyebrow">
@@ -69,10 +85,12 @@ export default function OfertaPage() {
               </span>
             </Reveal>
             <Reveal delay={80}>
-              <h1 className="mx-auto mt-6 max-w-4xl text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-                <span className="block">{t('oferta.hero.title1')}</span>
-                <span className="block">{t('oferta.hero.title1b')}</span>
-                <span className="gradient-text block">{t('oferta.hero.title2')}</span>
+              <h1 className="mx-auto mt-6 max-w-full text-center text-[clamp(1.4rem,4.2vw,3.75rem)] font-black leading-[1.08] tracking-tight">
+                {heroLines.map((line, index) => (
+                  <span key={line} className={`mx-auto block w-fit max-w-full whitespace-nowrap ${heroLineScale[index] ?? ''} ${index === heroLines.length - 1 ? 'gradient-text' : ''}`}>
+                    {line}{index < heroLines.length - 1 ? ' ' : null}
+                  </span>
+                ))}
               </h1>
             </Reveal>
             <Reveal delay={160}>
@@ -105,6 +123,8 @@ export default function OfertaPage() {
             </Reveal>
           </div>
         </section>
+
+        <TwoPaths />
 
         {/* ============ PROBLEM ============ */}
         <section className="relative py-20">
@@ -141,35 +161,24 @@ export default function OfertaPage() {
             <Reveal className="mx-auto max-w-2xl text-center">
               <span className="eyebrow">{t('oferta.team.eyebrow')}</span>
               <h2 className="section-title mt-5">
-                <span className="block">{t('oferta.team.title1')}</span>
-                <span className="gradient-text block">{t('oferta.team.title2a')}</span>
-                <span className="gradient-text block">{t('oferta.team.title2b')}</span>
+                {t('oferta.team.title1')}{' '}
+                <span className="gradient-text">{t('oferta.team.title2')}</span>
               </h2>
               <p className="mt-4 text-muted">{t('oferta.team.subtitle')}</p>
             </Reveal>
 
-            <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {(t('oferta.team.roles', { returnObjects: true }) as TeamRole[]).map((r, i) => {
-                const Icon = agentIcons[r.icon] ?? agentIcons.agent
-                return (
-                  <Reveal key={r.name} delay={i * 60}>
-                    <article className="group flex h-full flex-col rounded-2xl border border-line bg-surface p-6 transition-all duration-300 hover:border-accent/50 hover:bg-surface-2">
-                      <span className="grid h-11 w-11 place-items-center rounded-xl border border-line bg-surface-2 text-accent transition-colors group-hover:border-accent/60">
-                        <Icon width={20} height={20} />
-                      </span>
-                      <h3 className="mt-4 text-lg font-bold">{r.name}</h3>
-                      <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{r.role}</p>
-                      <p className="mt-4 border-t border-line pt-3 text-xs text-muted">
-                        <span className="font-semibold uppercase tracking-wider text-accent-2">
-                          {t('oferta.team.replaceLabel')}:
-                        </span>{' '}
-                        {r.replaces}
-                      </p>
-                    </article>
-                  </Reveal>
-                )
-              })}
-            </div>
+            <AgentShowcase
+              items={(t('oferta.team.roles', { returnObjects: true }) as TeamRole[]).map((role, index) => ({
+                icon: role.icon,
+                image: agentArt[index],
+                stillImage: agentStillArt[index],
+                name: role.name,
+                primary: role.role,
+                secondary: role.replaces,
+              }))}
+              title={t('oferta.team.eyebrow')}
+              secondaryLabel={t('oferta.team.replaceLabel')}
+            />
           </div>
         </section>
 
@@ -332,26 +341,8 @@ export default function OfertaPage() {
           </div>
         </section>
 
-        {/* ============ FAQ ============ */}
-        <section className="relative py-16">
-          <div className="container-content max-w-3xl">
-            <Reveal>
-              <h2 className="text-center text-2xl font-extrabold tracking-tight sm:text-3xl">
-                {t('oferta.faq.title')}
-              </h2>
-            </Reveal>
-            <div className="mt-10 flex flex-col gap-3">
-              {faqs.map((item, i) => (
-                <Reveal key={item.q} delay={i * 60}>
-                  <div className="rounded-xl border border-line bg-surface p-6">
-                    <h3 className="text-sm font-bold sm:text-base">{item.q}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted">{item.a}</p>
-                  </div>
-                </Reveal>
-              ))}
-            </div>
-          </div>
-        </section>
+        <ArkaiCases />
+        <ArkaiFAQ />
 
         {/* ============ FINAL CTA ============ */}
         <section className="relative py-24">

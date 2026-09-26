@@ -1,4 +1,6 @@
+import { useCallback, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import CircularGallery from './reactbits/CircularGallery'
 import { IconArrow, IconCheck, industryIcons } from './icons'
 import Reveal from './Reveal'
 
@@ -10,9 +12,27 @@ interface IndustryItem {
   bullets: string[]
 }
 
+const industryImages = [
+  'imoveis', 'clinicas', 'energia-solar', 'carros-motos', 'reparos', 'seguros',
+  'advocacia', 'financas', 'varejo', 'saas', 'hotelaria', 'academias',
+].map((slug) => `/assets/setores/${slug}.jpg`)
+
 export default function Work() {
-  const { t } = useTranslation()
-  const items = t('work.items', { returnObjects: true }) as IndustryItem[]
+  const { t, i18n } = useTranslation()
+  const items = useMemo(() => t('work.items', { returnObjects: true }) as IndustryItem[], [t])
+  const [active, setActive] = useState(0)
+  const [reduceMotion] = useState(() =>
+    typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+  )
+  const galleryItems = useMemo(
+    () => items.map((item, index) => ({ image: industryImages[index], text: item.title })),
+    [items],
+  )
+  const onActiveChange = useCallback((index: number) => setActive(index), [])
+  const changeActive = (direction: number) => setActive((index) => (index + direction + items.length) % items.length)
+  const item = items[active] ?? items[0]
+  const Icon = industryIcons[item.icon] ?? industryIcons.solar
+  const isPt = i18n.language.startsWith('pt')
 
   return (
     <section id="work" className="relative py-24">
@@ -23,61 +43,59 @@ export default function Work() {
           <p className="mt-4 text-muted">{t('work.subtitle')}</p>
         </Reveal>
 
-        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {items.map((item, i) => {
-            const Icon = industryIcons[item.icon] ?? industryIcons.solar
-            return (
-              <Reveal key={item.title} delay={i * 70}>
-                <article className="card group relative h-full overflow-hidden">
-                  <div className="pointer-events-none absolute right-0 top-0 h-32 w-32 translate-x-10 -translate-y-10 rounded-full bg-accent/10 blur-2xl transition-opacity duration-300" />
+        <div className="relative mt-10">
+          {reduceMotion ? (
+            <div className="mx-auto max-w-xl px-5 pt-8">
+              <img src={industryImages[active]} alt={item.title} className="aspect-[4/3] w-full rounded-2xl object-cover" />
+            </div>
+          ) : (
+            <div className="relative h-[310px] sm:h-[420px] lg:h-[500px]">
+              <CircularGallery
+                items={galleryItems}
+                activeIndex={active}
+                onActiveChange={onActiveChange}
+                bend={2.2}
+                borderRadius={0.055}
+                textColor="#f3f4fb"
+                font="bold 18px Inter"
+                scrollSpeed={1.6}
+                ariaLabel={isPt ? 'Galeria de setores. Arraste ou use as setas esquerda e direita.' : 'Industry gallery. Drag or use the left and right arrow keys.'}
+              />
+            </div>
+          )}
 
-                  <div className="relative flex items-start justify-between gap-3">
-                    <div className="grid h-12 w-12 place-items-center rounded-xl border border-line bg-surface-2 text-accent transition-colors group-hover:border-accent/60">
-                      <Icon width={22} height={22} />
-                    </div>
-                    <span className="rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-accent-2">
-                      {t('work.moreTag')}
-                    </span>
-                  </div>
-
-                  <p className="relative mt-5 text-xs font-semibold uppercase tracking-wider text-muted">
-                    {item.tag}
-                  </p>
-                  <h3 className="relative mt-1 text-xl font-bold leading-snug">
-                    {item.title}
-                  </h3>
-                  <p className="relative mt-2.5 text-sm leading-relaxed text-muted">
-                    {item.desc}
-                  </p>
-
-                  <ul className="relative mt-5 flex flex-col gap-2">
-                    {item.bullets.map((b) => (
-                      <li key={b} className="flex items-start gap-2 text-sm text-ink/85">
-                        <IconCheck
-                          width={15}
-                          height={15}
-                          className="mt-0.5 shrink-0 text-accent-2"
-                        />
-                        <span>{b}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </article>
-              </Reveal>
-            )
-          })}
+          <div className="relative flex items-center justify-center gap-4 px-5 py-4">
+            <button type="button" onClick={() => changeActive(-1)} aria-label={isPt ? 'Setor anterior' : 'Previous industry'} className="grid h-10 w-10 place-items-center rounded-full border border-line bg-surface-2 text-ink transition hover:border-accent hover:text-accent-2">←</button>
+            <span className="min-w-16 text-center text-xs font-bold tracking-[0.2em] text-accent-2">{String(active + 1).padStart(2, '0')} / {String(items.length).padStart(2, '0')}</span>
+            <button type="button" onClick={() => changeActive(1)} aria-label={isPt ? 'Próximo setor' : 'Next industry'} className="grid h-10 w-10 place-items-center rounded-full border border-line bg-surface-2 text-ink transition hover:border-accent hover:text-accent-2">→</button>
+          </div>
         </div>
 
-        {/* Also serving */}
-        <Reveal delay={460}>
+        <article className="mx-auto mt-5 grid max-w-5xl gap-8 rounded-3xl border border-line bg-surface p-6 sm:p-9 lg:grid-cols-[1fr_1fr]" aria-live="polite">
+          <div>
+            <div className="mb-5 grid h-12 w-12 place-items-center rounded-xl border border-accent/40 bg-accent/10 text-accent-2"><Icon width={22} height={22} /></div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-accent-2">{item.tag}</p>
+            <h3 className="mt-2 text-2xl font-bold leading-snug sm:text-3xl">{item.title}</h3>
+            <p className="mt-4 max-w-lg text-sm leading-relaxed text-muted">{item.desc}</p>
+          </div>
+          <ul className="flex flex-col justify-center gap-4 border-t border-line pt-6 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
+            {item.bullets.map((bullet) => (
+              <li key={bullet} className="flex items-start gap-3 text-sm leading-relaxed text-ink/85">
+                <IconCheck width={16} height={16} className="mt-0.5 shrink-0 text-accent-2" />
+                <span>{bullet}</span>
+              </li>
+            ))}
+          </ul>
+        </article>
+
+        <Reveal delay={100}>
           <p className="mt-10 text-center text-sm text-muted">
             <span className="font-semibold text-ink/80">{t('work.alsoLabel')}:</span>{' '}
             {t('work.alsoList')}
           </p>
         </Reveal>
 
-        {/* Closer CTA */}
-        <Reveal delay={520}>
+        <Reveal delay={160}>
           <div className="mt-8 flex flex-col items-center justify-between gap-5 rounded-2xl border border-line bg-surface px-7 py-6 sm:flex-row sm:gap-8 sm:px-9">
             <div>
               <h4 className="text-lg font-bold">{t('work.ctaLabel')}</h4>

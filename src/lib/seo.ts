@@ -14,6 +14,7 @@ interface SeoInput {
   description: string
   /** Path canônico (sem domínio). Default: pathname atual. */
   canonicalPath?: string
+  robots?: string
 }
 
 function upsertMeta(selector: string, attr: 'name' | 'property', key: string, content: string) {
@@ -36,12 +37,13 @@ function upsertCanonical(href: string) {
   el.setAttribute('href', href)
 }
 
-export function setSeo({ title, description, canonicalPath }: SeoInput) {
+export function setSeo({ title, description, canonicalPath, robots }: SeoInput) {
   if (typeof document === 'undefined') return
 
   document.title = title
 
   upsertMeta('meta[name="description"]', 'name', 'description', description)
+  if (robots) upsertMeta('meta[name="robots"]', 'name', 'robots', robots)
   upsertMeta('meta[property="og:title"]', 'property', 'og:title', title)
   upsertMeta('meta[property="og:description"]', 'property', 'og:description', description)
   upsertMeta('meta[name="twitter:title"]', 'name', 'twitter:title', title)

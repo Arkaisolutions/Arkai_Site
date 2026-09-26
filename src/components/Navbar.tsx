@@ -2,10 +2,8 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { IconClose, IconGlobe, IconMenu } from './icons'
 
-// Links absolutos para a página institucional (/agencia). Funcionam de
-// qualquer rota: a partir de /agencia o browser só rola até a âncora;
-// a partir da home (/oferta) navega para /agencia e rola.
-const links = [
+// Links absolutos para a página institucional. Funcionam de qualquer rota.
+const baseLinks = [
   { href: '/agencia#services', key: 'nav.services' },
   { href: '/agencia#process', key: 'nav.process' },
   { href: '/agencia#work', key: 'nav.work' },
@@ -16,6 +14,10 @@ export default function Navbar() {
   const { t, i18n } = useTranslation()
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const currentPath = window.location.pathname.replace(/\/+$/, '') || '/'
+  const offerPaths = ['/', '/vagas', '/oferta', '/offer']
+  const faqHref = offerPaths.includes(currentPath) ? '/#faq' : '/agencia#faq'
+  const links = [...baseLinks, { href: faqHref, key: 'nav.faq' }]
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)

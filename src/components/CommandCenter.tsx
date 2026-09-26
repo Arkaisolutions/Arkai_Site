@@ -3,7 +3,7 @@ import CommandCenterMockup from './CommandCenterMockup'
 import { ContainerScroll } from './ContainerScroll'
 
 export default function CommandCenter() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   return (
     <section id="command" className="relative">
@@ -20,6 +20,9 @@ export default function CommandCenter() {
       >
         <CommandCenterMockup />
       </ContainerScroll>
+      <p className="container-content -mt-10 pb-10 text-center text-xs text-muted">
+        {i18n.language.startsWith('en') ? 'Illustrative interface. Real product screenshots will be added after validation.' : i18n.language.startsWith('es') ? 'Interfaz ilustrativa. Las capturas reales se añadirán después de la validación.' : 'Interface ilustrativa. Capturas reais do produto serão adicionadas após validação.'}
+      </p>
     </section>
   )
 }

@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import AgentTerminal from './AgentTerminal'
-import AuroraBg from './AuroraBg'
+import BrandAuroraBg from './BrandAuroraBg'
 import { IconArrow, IconBolt } from './icons'
 import LogosMarquee from './LogosMarquee'
 import Reveal from './Reveal'
@@ -16,7 +16,7 @@ export default function Hero() {
 
   return (
     <section id="top" className="relative overflow-hidden pt-32 pb-20 sm:pt-36">
-      <AuroraBg />
+      <BrandAuroraBg />
 
       <div className="container-content relative z-10">
         {/* Top: split text + terminal */}

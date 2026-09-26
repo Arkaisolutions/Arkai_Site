@@ -11,13 +11,14 @@ const navLinks = [
 export default function Footer() {
   const { t } = useTranslation()
   const year = new Date().getFullYear()
+  const onAgency = window.location.pathname.replace(/\/+$/, '') === '/agencia'
 
   return (
     <footer className="border-t border-line bg-surface/40">
       <div className="container-content py-16">
         <div className="grid gap-10 md:grid-cols-[1.5fr_1fr_1fr]">
           <div>
-            <a href="#top" className="flex items-center gap-2.5 font-extrabold tracking-tight">
+            <a href={onAgency ? '#top' : '/agencia'} className="flex items-center gap-2.5 font-extrabold tracking-tight">
               <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-accent to-accent-2 text-base font-black text-white">
                 A
               </span>
@@ -36,7 +37,7 @@ export default function Footer() {
               {navLinks.map((l) => (
                 <li key={l.id}>
                   <a
-                    href={`#${l.id}`}
+                    href={onAgency ? `#${l.id}` : `/agencia#${l.id}`}
                     className="text-sm text-muted transition-colors hover:text-ink"
                   >
                     {t(l.key)}

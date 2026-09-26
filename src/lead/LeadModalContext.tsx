@@ -29,6 +29,7 @@ export function LeadModalProvider({ children }: { children: ReactNode }) {
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>
 }
 
+// eslint-disable-next-line react-refresh/only-export-components -- hook shares its provider's context
 export function useLeadModal(): LeadModalState {
   const ctx = useContext(Ctx)
   if (!ctx) throw new Error('useLeadModal must be used inside <LeadModalProvider>')

@@ -1,8 +1,9 @@
 /**
- * Tracking helpers — captura UTM/click IDs e dispara eventos no dataLayer.
- * Usado APENAS pelas páginas /diagnostico e /diagnostico/obrigado.
- * A home (App.tsx) não usa nada disso — fica intocada.
+ * Tracking helpers — captura UTM/click IDs somente após aceite de medição
+ * e registra eventos locais no dataLayer. O Pixel é instalado separadamente.
  */
+
+import { readAnalyticsConsent } from './consent'
 
 const STORAGE_KEY = 'arkai_attribution'
 
@@ -31,7 +32,7 @@ declare global {
 }
 
 export function captureAttribution(): Attribution {
-  if (typeof window === 'undefined') return {}
+  if (typeof window === 'undefined' || readAnalyticsConsent() !== 'accepted') return {}
   const stored = readAttribution()
   const url = new URL(window.location.href)
   const fromUrl: Attribution = {}
@@ -55,7 +56,7 @@ export function captureAttribution(): Attribution {
 }
 
 export function readAttribution(): Attribution {
-  if (typeof window === 'undefined') return {}
+  if (typeof window === 'undefined' || readAnalyticsConsent() !== 'accepted') return {}
   try {
     const raw = sessionStorage.getItem(STORAGE_KEY)
     return raw ? (JSON.parse(raw) as Attribution) : {}

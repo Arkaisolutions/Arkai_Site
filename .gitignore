@@ -25,3 +25,6 @@ dist-ssr
 
 # Claude / local tooling
 .claude
+
+# Downloaded component references (not part of the deployable site)
+references/react-bits/

@@ -1,18 +1,17 @@
 /**
  * Meta Pixel (Facebook/Instagram Ads) — inicialização condicional.
  *
- * Só carrega se config.metaPixelId estiver preenchido (vazio = no-op).
+ * Só carrega após consentimento explícito e com metaPixelId preenchido.
  * Mapeia os eventos que já empurramos pro window.dataLayer para os
  * eventos padrão do Meta, sem precisar instrumentar cada página de novo:
  *
- *   virtualPageview → PageView
  *   offer_view      → ViewContent
  *   lead_submitted  → Lead          (configure como conversão no Ads)
- *   lead_thankyou   → CompleteRegistration
  *
  * Como ativar: cole o ID do Pixel em config.metaPixelId, commit + push.
  */
 import { config } from '../config'
+import { readAnalyticsConsent } from './consent'
 
 type Fbq = ((...args: unknown[]) => void) & { queue?: unknown[]; loaded?: boolean; version?: string; callMethod?: (...a: unknown[]) => void }
 
@@ -24,15 +23,16 @@ declare global {
 }
 
 const EVENT_MAP: Record<string, string> = {
-  virtualPageview: 'PageView',
   offer_view: 'ViewContent',
   lead_submitted: 'Lead',
-  lead_thankyou: 'CompleteRegistration',
 }
+
+let initialized = false
 
 export function initMetaPixel(): void {
   const id = config.metaPixelId?.trim()
-  if (!id || typeof window === 'undefined') return
+  if (!id || typeof window === 'undefined' || initialized || readAnalyticsConsent() !== 'accepted') return
+  initialized = true
 
   // --- Base code oficial do Meta ---
   /* eslint-disable */
@@ -66,8 +66,7 @@ export function initMetaPixel(): void {
       const evt = entry?.event as string | undefined
       if (!evt) return
       const mapped = EVENT_MAP[evt]
-      // PageView inicial já foi disparado acima; evita duplicar no 1º load.
-      if (mapped && !(evt === 'virtualPageview' && window.location.pathname === '/')) {
+      if (mapped) {
         window.fbq?.('track', mapped)
       }
     })

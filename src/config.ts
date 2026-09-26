@@ -6,22 +6,13 @@ export const config = {
   brand: 'Arkai Solutions',
   domain: 'arkaisolutions.com.br',
 
+  // Mantido para a página de oferta original; confirmar disponibilidade antes de publicar.
+  homeMode: 'oferta' as 'oferta' | 'agencia',
+  earlyAccess: { total: 10, remaining: 7 },
+
   // CNPJ exibido no rodapé (transmite confiança). Cole o número formatado,
   // ex.: '12.345.678/0001-90'. Vazio = não aparece no rodapé.
   cnpj: '67.279.923/0001-03',
-
-  /* ===================================================================
-     MODO DA HOME (qual página fica em "/")
-       'oferta'  → / mostra a página de OFERTA (promo early-access ativa).
-                   Institucional fica em /agencia.
-       'agencia' → / mostra o site INSTITUCIONAL (perene).
-                   Oferta fica em standby acessível só em /oferta.
-
-     COMO TROCAR (quando fechar os 10 clientes):
-       mude a linha abaixo de 'oferta' para 'agencia', commit e push.
-       Pronto — a home troca sozinha, sem mexer em mais nada.
-     =================================================================== */
-  homeMode: 'oferta' as 'oferta' | 'agencia',
 
   // Link de agendamento (Calendly, Cal.com, etc.) — usado no fallback do final do modal.
   bookingUrl: 'https://calendly.com/arkaisolutions',
@@ -46,15 +37,6 @@ export const config = {
     linkedin: '',
   },
 
-  /* ===================================================================
-     EARLY ACCESS · vagas iniciais (contador da LP /oferta)
-     ATUALIZE APENAS `remaining` quando uma venda fechar.
-     Quando chegar a 0, considere reabrir batch ou aumentar pra 20/30.
-     =================================================================== */
-  earlyAccess: {
-    total: 10,
-    remaining: 6,
-  },
 }
 
 export const whatsappLink = (text = '') =>

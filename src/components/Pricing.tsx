@@ -33,6 +33,7 @@ export default function Pricing() {
           <span className="eyebrow">{t('pricing.eyebrow')}</span>
           <h2 className="section-title mt-5">{t('pricing.title')}</h2>
           <p className="mt-4 text-muted">{t('pricing.subtitle')}</p>
+          <p className="mt-3 text-sm leading-relaxed text-muted">{t('pricing.sixAgentNote')}</p>
         </Reveal>
 
         <div className="mt-14 grid gap-5 lg:grid-cols-3">

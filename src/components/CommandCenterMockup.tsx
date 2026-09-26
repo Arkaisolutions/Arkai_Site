@@ -18,11 +18,11 @@ export default function CommandCenterMockup() {
     lang === 'pt' ? pt : lang === 'es' ? es : en
 
   const leads = [
-    { name: 'João Silva',  city: 'São Paulo',     status: 'hot',    score: 94, time: '2m'  },
-    { name: 'Maria Costa', city: tr('Rio de Janeiro', 'Rio', 'Río'),  status: 'qual',   score: 81, time: '7m'  },
-    { name: 'Carlos R.',   city: tr('Belo Horizonte', 'Belo H.', 'Belo H.'), status: 'booked', score: 88, time: '14m' },
-    { name: 'Ana Pereira', city: 'Curitiba',      status: 'hot',    score: 91, time: '21m' },
-    { name: 'Diego Lima',  city: tr('Porto Alegre', 'P. Alegre', 'P. Alegre'),  status: 'qual',   score: 76, time: '38m' },
+    { name: tr('Contato 01', 'Contact 01', 'Contacto 01'), city: 'São Paulo', status: 'hot', score: 94, time: '2m' },
+    { name: tr('Contato 02', 'Contact 02', 'Contacto 02'), city: tr('Rio de Janeiro', 'Rio', 'Río'), status: 'qual', score: 81, time: '7m' },
+    { name: tr('Contato 03', 'Contact 03', 'Contacto 03'), city: tr('Belo Horizonte', 'Belo H.', 'Belo H.'), status: 'booked', score: 88, time: '14m' },
+    { name: tr('Contato 04', 'Contact 04', 'Contacto 04'), city: 'Curitiba', status: 'hot', score: 91, time: '21m' },
+    { name: tr('Contato 05', 'Contact 05', 'Contacto 05'), city: tr('Porto Alegre', 'P. Alegre', 'P. Alegre'), status: 'qual', score: 76, time: '38m' },
   ]
 
   const activity = [
@@ -48,7 +48,7 @@ export default function CommandCenterMockup() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-60" />
               <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-green-400" />
             </span>
-            LIVE
+            DEMO
           </span>
         </div>
         <div className="hidden items-center gap-2 text-[11px] text-muted sm:flex">
@@ -63,10 +63,10 @@ export default function CommandCenterMockup() {
         <section className="hidden flex-col bg-surface p-4 md:flex">
           <div className="mb-3 flex items-center justify-between">
             <h4 className="text-[11px] font-bold uppercase tracking-wider text-muted">
-              {tr('Leads ao vivo', 'Live leads', 'Leads en vivo')}
+              {tr('Contatos de exemplo', 'Sample contacts', 'Contactos de ejemplo')}
             </h4>
             <span className="rounded-full bg-accent/15 px-2 py-0.5 text-[10px] font-bold text-accent-2">
-              +24 {tr('hoje', 'today', 'hoy')}
+              {tr('simulação', 'simulation', 'simulación')}
             </span>
           </div>
           <ul className="flex flex-col gap-2">
@@ -121,11 +121,11 @@ export default function CommandCenterMockup() {
           {/* Revenue */}
           <div className="mt-4 rounded-lg border border-line bg-surface-2/60 p-3">
             <p className="text-[10px] font-semibold uppercase tracking-wider text-muted">
-              {tr('Receita gerada hoje', 'Revenue captured today', 'Ingresos generados hoy')}
+              {tr('Receita ilustrativa', 'Illustrative revenue', 'Ingresos ilustrativos')}
             </p>
             <p className="mt-1 flex items-baseline gap-2">
-              <span className="gradient-text text-2xl font-black">$ 4,720</span>
-              <span className="text-xs font-semibold text-green-400">▲ 38%</span>
+              <span className="gradient-text text-2xl font-black">R$ 4.720</span>
+              <span className="text-xs font-semibold text-green-400">DEMO</span>
             </p>
           </div>
         </section>
@@ -134,7 +134,7 @@ export default function CommandCenterMockup() {
         <section className="flex flex-col bg-surface p-4">
           <div className="mb-3 flex items-center justify-between">
             <h4 className="text-[11px] font-bold uppercase tracking-wider text-muted">
-              {tr('Agente IA · ao vivo', 'AI Agent · live', 'Agente IA · en vivo')}
+              {tr('Agente IA · exemplo', 'AI Agent · sample', 'Agente IA · ejemplo')}
             </h4>
             <span className="text-[10px] font-medium text-muted">WhatsApp</span>
           </div>

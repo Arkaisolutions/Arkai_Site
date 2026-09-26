@@ -2,19 +2,19 @@ import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import TwoPaths from './components/TwoPaths'
 import CommandCenter from './components/CommandCenter'
 import Services from './components/Services'
 import Process from './components/Process'
 import Work from './components/Work'
 import Stack from './components/Stack'
-import Agents from './components/Agents'
+import SixAgents from './components/SixAgents'
 import Pricing from './components/Pricing'
-import FAQ from './components/FAQ'
+import { ArkaiCases, ArkaiFAQ } from './components/ArkaiProofFaq'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
 import FloatingWhatsApp from './components/FloatingWhatsApp'
 import { setSeo } from './lib/seo'
-import { config } from './config'
 
 export default function App() {
   const { t, i18n } = useTranslation()
@@ -28,11 +28,10 @@ export default function App() {
   }, [i18n.language])
 
   useEffect(() => {
-    // Canonical: "/" se o institucional é a home, senão "/agencia".
     setSeo({
       title: t('seo.agenciaTitle'),
       description: t('seo.agenciaDesc'),
-      canonicalPath: config.homeMode === 'agencia' ? '/' : '/agencia',
+      canonicalPath: '/agencia',
     })
   }, [t])
 
@@ -41,14 +40,16 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        <TwoPaths />
         <CommandCenter />
         <Services />
         <Process />
         <Work />
         <Stack />
-        <Agents />
+        <SixAgents />
         <Pricing />
-        <FAQ />
+        <ArkaiCases />
+        <ArkaiFAQ />
         <CTA />
       </main>
       <Footer />

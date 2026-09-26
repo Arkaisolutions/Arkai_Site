@@ -7,6 +7,7 @@ import Reveal from '../components/Reveal'
 import { IconArrow, IconBolt, IconCheck } from '../components/icons'
 import { config } from '../config'
 import { captureAttribution, readAttribution, trackLeadSubmit, trackPageView } from '../lib/track'
+import { readAnalyticsConsent } from '../lib/consent'
 import { setSeo } from '../lib/seo'
 
 type Step = 0 | 1 | 2 | 3
@@ -25,6 +26,8 @@ interface LeadPayload {
   referrer: string
   timestamp: string
   attribution: ReturnType<typeof readAttribution>
+  consentGivenAt: string
+  privacyPolicyUrl: string
 }
 
 /**
@@ -55,8 +58,10 @@ export default function DiagnosticoPage() {
   const [email, setEmail] = useState('')
   const [whatsapp, setWhatsapp] = useState('')
   const [company, setCompany] = useState('')
+  const [consent, setConsent] = useState(false)
   const [submitting, setSubmitting] = useState(false)
   const [errored, setErrored] = useState(false)
+  const [previewed, setPreviewed] = useState(false)
 
   const sectorOptions = t('modal.q1Options', { returnObjects: true }) as string[]
   const bottleneckOptions = t('modal.q2Options', { returnObjects: true }) as string[]
@@ -70,12 +75,18 @@ export default function DiagnosticoPage() {
       return (
         name.trim().length > 1 &&
         /\S+@\S+\.\S+/.test(email) &&
-        whatsapp.replace(/\D/g, '').length >= 8
+        whatsapp.replace(/\D/g, '').length >= 8 &&
+        consent
       )
     return false
-  }, [step, sector, bottleneck, revenue, name, email, whatsapp])
+  }, [step, sector, bottleneck, revenue, name, email, whatsapp, consent])
 
   const submit = async () => {
+    if (!canNext || submitting) return
+    if (['localhost', '127.0.0.1', '::1'].includes(window.location.hostname)) {
+      setPreviewed(true)
+      return
+    }
     setSubmitting(true)
     setErrored(false)
 
@@ -93,10 +104,12 @@ export default function DiagnosticoPage() {
           ? 'es'
           : 'en',
       source: 'arkaisolutions.com.br',
-      pageUrl: window.location.href,
-      referrer: document.referrer,
+      pageUrl: readAnalyticsConsent() === 'accepted' ? window.location.href : `${window.location.origin}${window.location.pathname}`,
+      referrer: readAnalyticsConsent() === 'accepted' ? document.referrer : '',
       timestamp: new Date().toISOString(),
       attribution: readAttribution(),
+      consentGivenAt: new Date().toISOString(),
+      privacyPolicyUrl: `${window.location.origin}/privacidade`,
     }
 
     try {
@@ -177,7 +190,13 @@ export default function DiagnosticoPage() {
                 </div>
 
                 <div className="p-7 sm:p-10">
-                  {errored ? (
+                  {previewed ? (
+                    <div className="py-8 text-center" role="status">
+                      <h2 className="text-2xl font-extrabold">Prévia local</h2>
+                      <p className="mt-3 text-sm text-muted">As quatro etapas funcionaram. Nenhuma informação foi enviada.</p>
+                      <button type="button" className="btn-ghost mt-6" onClick={() => setPreviewed(false)}>Voltar às respostas</button>
+                    </div>
+                  ) : errored ? (
                     <ErrorView onRetry={() => setErrored(false)} />
                   ) : (
                     <>
@@ -218,6 +237,7 @@ export default function DiagnosticoPage() {
                           email={email} setEmail={setEmail}
                           whatsapp={whatsapp} setWhatsapp={setWhatsapp}
                           company={company} setCompany={setCompany}
+                          consent={consent} setConsent={setConsent}
                         />
                       )}
 
@@ -312,12 +332,13 @@ function QuestionStep({
 }
 
 function ContactStep({
-  name, setName, email, setEmail, whatsapp, setWhatsapp, company, setCompany,
+  name, setName, email, setEmail, whatsapp, setWhatsapp, company, setCompany, consent, setConsent,
 }: {
   name: string; setName: (v: string) => void
   email: string; setEmail: (v: string) => void
   whatsapp: string; setWhatsapp: (v: string) => void
   company: string; setCompany: (v: string) => void
+  consent: boolean; setConsent: (v: boolean) => void
 }) {
   const { t } = useTranslation()
   return (
@@ -330,6 +351,10 @@ function ContactStep({
         <Field label={t('modal.emailLabel')} type="email" value={email} onChange={setEmail} placeholder={t('modal.emailPh')} />
         <Field label={t('modal.whatsappLabel')} type="tel" value={whatsapp} onChange={setWhatsapp} placeholder={t('modal.whatsappPh')} />
         <Field label={t('modal.companyLabel')} value={company} onChange={setCompany} placeholder={t('modal.companyPh')} />
+        <label className="flex items-start gap-3 text-xs leading-relaxed text-muted">
+          <input type="checkbox" checked={consent} onChange={(event) => setConsent(event.target.checked)} className="mt-1 h-4 w-4 shrink-0 accent-[rgb(var(--accent))]" />
+          <span>{t('modal.consentBefore')} <a href="/privacidade" target="_blank" rel="noopener noreferrer" className="text-accent underline underline-offset-2">{t('modal.consentLink')}</a>.</span>
+        </label>
       </div>
     </div>
   )

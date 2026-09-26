@@ -1,6 +1,10 @@
 {
   "nav": {
+    "agents": "6 agentes",
     "services": "Servicios",
+    "industries": "Sectores",
+    "cases": "Empresas",
+    "faq": "FAQ",
     "process": "Proceso",
     "work": "Casos",
     "pricing": "Planes",
@@ -20,6 +24,23 @@
     "stat3Value": "USD / EUR",
     "stat3Label": "Entrega global"
   },
+  "audiences": {
+    "eyebrow": "Dos puntos de partida · una operación coordinada",
+    "title": "¿Tu empresa ya usa IA o quiere empezar ahora?",
+    "subtitle": "Para empresas que facturan entre R$ 300 mil y R$ 1 millón al mes: los seis agentes de Arkai trabajan juntos en un plan adaptado a la etapa actual de tu operación.",
+    "existing": {
+      "label": "Ya usa IA",
+      "title": "La IA está presente, pero la operación se pierde",
+      "body": "¿Herramientas aisladas, automatizaciones sin continuidad e información dispersa? Organizamos lo que ya tienes y conectamos los seis agentes a tus canales y procesos para dar seguimiento a cada etapa."
+    },
+    "starting": {
+      "label": "Quiere incorporar IA",
+      "title": "Empieza con dirección, no con herramientas sueltas",
+      "body": "Identificamos los cuellos de botella de tu empresa e implantamos los seis agentes como un sistema coordinado, integrado a los flujos que ya utilizas. Sabes qué hace cada uno y cómo seguir la operación."
+    },
+    "closing": "El punto de partida cambia. La propuesta es la misma: seis agentes que se comunican entre sí y ayudan a tu equipo a trabajar con mayor claridad.",
+    "cta": "Descubrir el mejor camino en el diagnóstico"
+  },
   "trust": {
     "label": "En producción en",
     "items": [
@@ -38,7 +59,7 @@
     ]
   },
   "command": {
-    "eyebrow": "Centro de comando en vivo",
+    "eyebrow": "Vista ilustrativa de la operación",
     "title1": "Tu operación,",
     "title2": "corriendo con IA."
   },
@@ -51,9 +72,7 @@
     "spotsLeft": "restantes",
     "hero": {
       "badge": "OFERTA EXCLUSIVA · LANZAMIENTO",
-      "title1": "Contratarías a 6 profesionales.",
-      "title1b": "Contrata 1 sistema,",
-      "title2": "por el precio de 1 empleado.",
+      "titleLines": ["Contratarías", "a 6 profesionales.", "Contrata 1 sistema,", "por el precio de 1 empleado."],
       "subtitle": "Una operación completa de ventas y atención — armada con agentes que ya corren en producción. Trabajan 24/7, sin vacaciones, sin cargas, sin faltas.",
       "ctaPrimary": "Quiero mi vacante",
       "ctaSecondary": "¿Cómo funciona?"
@@ -72,52 +91,51 @@
     "team": {
       "eyebrow": "Tu equipo IA",
       "title1": "Contratarías a 6 profesionales.",
-      "title2a": "Contrata 1 sistema,",
-      "title2b": "por el precio de 1 empleado.",
+      "title2": "Contrata 1 sistema, por el precio de 1 empleado.",
       "subtitle": "Cada agente hace el trabajo de un cargo — juntos, 24/7, sin nómina, sin rotación y sin que tengas que gestionar a nadie.",
-      "replaceLabel": "En lugar de",
+      "replaceLabel": "Qué cambia",
       "roles": [
-        { "icon": "agent",    "name": "Vendedor & Atención", "role": "Responde cada lead en segundos, 24/7. Califica, atiende (hasta audio y foto), vende y agenda solo. Solo te pasa el cliente caliente.", "replaces": "vendedor + atención" },
-        { "icon": "traffic",  "name": "Gestor de Tráfico",   "role": "Corre los anuncios, vigila CPL y ROAS, y entrega compradores listos — no curiosos.", "replaces": "gestor de tráfico" },
-        { "icon": "workflow", "name": "Gestión Comercial", "role": "Conecta CRM, planillas y pagos, mueve el lead en el embudo y dispara remarketing. Cero copiar y pegar.", "replaces": "asistente administrativo" },
-        { "icon": "finance",  "name": "Gestión Financiera", "role": "Recuerda, cobra y recupera morosos solo — con tacto, sin que tú lo pidas.", "replaces": "asistente financiero" },
-        { "icon": "data",     "name": "Analista",            "role": "Envía el reporte del día a tu WhatsApp y te avisa apenas entra un lead caliente.", "replaces": "analista / BI" },
-        { "icon": "spark",    "name": "Mentes Brillantes",   "role": "Un panel de 5 expertos IA que debate tu jugada antes de arriesgar — y espía a la competencia.", "replaces": "consultoría estratégica" }
+        { "icon": "agent",    "name": "Atención", "role": "Responde cada consulta en segundos, a cualquier hora, incluso audio y fotos.", "replaces": "Nadie queda esperando una respuesta." },
+        { "icon": "check",    "name": "Calificación", "role": "Distingue quién tiene perfil de compra y quién todavía explora.", "replaces": "Ventas recibe contactos mejor preparados." },
+        { "icon": "traffic",  "name": "Marketing y tráfico", "role": "Sigue las campañas y les devuelve lo que avanzó hasta la venta.", "replaces": "La inversión se orienta a lo que funciona." },
+        { "icon": "workflow", "name": "Gestión comercial", "role": "Mueve contactos por etapas y atiende los seguimientos pendientes.", "replaces": "Nada queda parado por falta de recordatorio." },
+        { "icon": "data",     "name": "Lectura de datos", "role": "Resume el día y avisa cuando algo sale de lo normal.", "replaces": "Ves la operación con más claridad." },
+        { "icon": "support",  "name": "Seguimiento", "role": "Vigila lo que sigue abierto y señala el próximo paso.", "replaces": "Cada proceso permanece visible hasta cerrarse." }
       ]
     },
     "proof": {
       "eyebrow": "Inventario real",
       "title": "No es promesa. Es infraestructura entregada.",
       "stats": [
-        { "v": "63+", "l": "Workflows entregados" },
-        { "v": "22", "l": "Sistemas activos ahora" },
-        { "v": "39", "l": "Agentes IA en producción" },
-        { "v": "12", "l": "Skills documentadas" }
+        { "v": "6", "l": "Agentes en esta oferta" },
+        { "v": "24/7", "l": "Cobertura de atención" },
+        { "v": "4", "l": "Semanas estimadas de implementación" },
+        { "v": "1", "l": "Operación coordinada" }
       ],
-      "socialLabel": "Ya corriendo en producción para",
-      "socialClients": "ClickParts Brasil · Futuro Solar · Principal Automóveis · Hotel Palace · Casa de Temporada · Casa Reserva Tucano"
+      "socialLabel": "Empresas vinculadas a proyectos Arkai",
+      "socialClients": "ClickParts · Hotel Palace · Futuro Solar · Principal Automóveis"
     },
     "offer": {
       "eyebrow": "LA OFERTA",
-      "title": "$497/mes",
-      "subtitle": "El costo exacto de 1 empleado en salario mínimo con cargas. En vez de 1 persona 8h/día, tienes 6 especialistas 24/7.",
+      "title": "R$ 2.500/mes",
+      "subtitle": "Un precio mensual para seis agentes y su operación coordinada. El alcance final se confirma en la propuesta.",
       "priceBreakLabel": "Desglosando el precio",
       "priceBreakItems": [
-        { "v": "$16.50", "l": "por día" },
-        { "v": "$0.69", "l": "por hora (24/7)" },
-        { "v": "$83", "l": "por agente/mes" },
-        { "v": "$0.12", "l": "por hora · cada agente" }
+        { "v": "R$ 83", "l": "por día" },
+        { "v": "R$ 3,47", "l": "por hora (24/7)" },
+        { "v": "R$ 417", "l": "por agente/mes" },
+        { "v": "R$ 0,58", "l": "por hora · cada agente" }
       ],
       "compareLabel": "1 empleado vs. Arkai (6 agentes)",
       "compareHeaders": ["", "1 empleado salario mínimo", "Arkai (6 agentes)"],
       "compareRows": [
         ["Horas de trabajo",   "8h/día · 22 días/mes",    "24/7 · 30 días/mes"],
-        ["Especialidades",     "1 (ej. atención)",        "14 (SDR, calif, agendamiento...)"],
+        ["Especialidades",     "1 (ej. atención)",        "6 agentes coordinados"],
         ["Tiempo de respuesta","Minutos a horas",         "Menos de 30 segundos"],
         ["Toma vacaciones",    "Sí · 2-4 semanas/año",    "No"],
         ["Cargas sociales",    "Sí · ~30% extra",         "No"],
         ["Tiempo de capacitación", "3-6 meses",           "7 días"],
-        ["Costo total/mes",    "$497",                    "$497"]
+        ["Costo total/mes",    "ilustrativo",             "R$ 2.500"]
       ],
       "notNeededLabel": "Lo que NO necesitas:",
       "notNeededItems": [
@@ -130,7 +148,7 @@
       "includesTitle": "Lo que está incluido (y ACTIVO en tu negocio):",
       "includes": [
         "Los 6 agentes implementados y entrenados",
-        "Integración WhatsApp vía Evolution API (oficial)",
+        "Conexión con WhatsApp; el canal se define en el diagnóstico",
         "Conexión con tu CRM (HubSpot, Salesforce, Airtable, Sheets)",
         "Entrenamiento con tu contenido, productos y tono",
         "Cuenta n8n configurada en nuestra infra (sin costo extra)",
@@ -182,8 +200,8 @@
     }
   },
   "seo": {
-    "agenciaTitle": "Arkai Solutions — Agencia de Automatización con Agentes IA",
-    "agenciaDesc": "14 agentes IA en producción para ventas, atención y operación 24/7. Automatización con IA para inmobiliario, solar, automotriz, salud, hotelería y más. Entrega global en USD/EUR.",
+    "agenciaTitle": "Arkai Solutions — Operación con seis agentes de IA",
+    "agenciaDesc": "Seis agentes de IA para atención, calificación, marketing, gestión comercial, lectura de datos y seguimiento, configurados y supervisados por Arkai.",
     "diagDesc": "Responde 4 preguntas y recibe un diagnóstico personalizado de dónde la IA genera ingresos en tu negocio — gratis, en 24h.",
     "thanksDesc": "Tu solicitud de diagnóstico de IA fue recibida. Nuestro equipo te contactará pronto."
   },
@@ -213,16 +231,15 @@
   },
   "terminal": {
     "lines": [
-      "→ Nuevo lead de campaña en Meta Ads",
-      "  Agente IA · calificando intención...",
-      "  Lead score: 92/100 · caliente",
-      "→ Agendando reunión mañana, 14:00",
-      "  Confirmación enviada por WhatsApp ✓",
-      "→ Lead guardado en CRM · pipeline actualizado",
-      "→ Reporte diario enviado al founder ✓",
-      "  Inactivo · esperando el próximo lead..."
+      "→ Atención responde en segundos",
+      "  Calificación identifica el perfil del contacto",
+      "→ Marketing registra el origen de la campaña",
+      "  Gestión comercial organiza el próximo paso",
+      "→ Lectura de datos resume el día",
+      "  Seguimiento señala asuntos pendientes",
+      "  Simulación de seis agentes · sin datos de clientes"
     ],
-    "label": "Agente IA · En vivo"
+    "label": "Demo ilustrativa"
   },
   "modal": {
     "step": "Paso {{n}} de {{total}}",
@@ -249,6 +266,8 @@
     "whatsappPh": "+52 55 1234 5678",
     "companyLabel": "Empresa (opcional)",
     "companyPh": "Acme S.A.",
+    "consentBefore": "Autorizo a Arkai a contactarme sobre esta solicitud y acepto la",
+    "consentLink": "Política de Privacidad",
     "successTitle": "¡Listo!",
     "successBody": "Tu diagnóstico personalizado está en camino. Espera un WhatsApp nuestro en 24h con los próximos pasos concretos para tu negocio.",
     "successBookTitle": "¿Quieres ir más rápido?",
@@ -512,6 +531,7 @@
     "eyebrow": "Inversión",
     "title": "Empieza pequeño. Escala cuando se pague solo.",
     "subtitle": "Cada plan combina un setup único con una mensualidad recurrente. Solo escalas cuando la automatización prueba el retorno. Precios en USD — EUR a pedido.",
+    "sixAgentNote": "Los tres planes siguen disponibles para proyectos por alcance. La solución coordinada de seis agentes se evalúa en el diagnóstico.",
     "perMonth": "/mes",
     "setupSuffix": "de setup",
     "popular": "Más elegido",

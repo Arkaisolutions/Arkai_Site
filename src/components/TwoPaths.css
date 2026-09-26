@@ -1,0 +1,51 @@
+.two-paths {
+  overflow: hidden;
+  background-image: radial-gradient(circle at 18% 40%, rgb(var(--accent) / 0.08), transparent 38%),
+    radial-gradient(circle at 83% 65%, rgb(var(--accent-2) / 0.06), transparent 35%);
+}
+
+.two-paths__grid > .reveal {
+  height: 100%;
+}
+
+.two-paths__card {
+  position: relative;
+  min-height: 15.5rem;
+  overflow: hidden;
+  border-color: #38405f;
+  background: linear-gradient(145deg, #191b32, #101726);
+  box-shadow: 0 20px 45px rgb(0 0 0 / 0.14);
+  transition: border-color 240ms ease, transform 240ms ease, box-shadow 240ms ease;
+}
+
+.two-paths__card--starting {
+  background: linear-gradient(145deg, #122432, #101726);
+}
+
+.two-paths__card::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: linear-gradient(rgb(var(--accent)), rgb(var(--accent-2)));
+  content: '';
+}
+
+.two-paths__card:hover {
+  border-color: rgb(var(--accent-2) / 0.55);
+  box-shadow: 0 25px 50px rgb(0 0 0 / 0.24);
+  transform: translateY(-4px);
+}
+
+.two-paths__number {
+  display: block;
+  margin-bottom: 1.5rem;
+  color: rgb(var(--accent-2) / 0.72);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .two-paths__card { transition: none; }
+}
