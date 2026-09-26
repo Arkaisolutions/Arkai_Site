@@ -52,6 +52,12 @@
   overflow: hidden;
   outline: none;
   touch-action: pan-y;
+  cursor: grab;
+  user-select: none;
+}
+
+.arkai-cases__stage:active {
+  cursor: grabbing;
 }
 
 .arkai-cases__stage:focus-visible {

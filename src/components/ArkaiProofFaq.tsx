@@ -1,4 +1,4 @@
-import { useEffect, useId, useRef, useState, type KeyboardEvent, type TouchEvent } from 'react'
+import { useEffect, useId, useRef, useState, type KeyboardEvent, type PointerEvent } from 'react'
 import { useTranslation } from 'react-i18next'
 import './ArkaiProofFaq.css'
 
@@ -338,13 +338,14 @@ export function ArkaiCases() {
   const text = copy[localeFor(i18n.resolvedLanguage || i18n.language)]
   const [activeIndex, setActiveIndex] = useState(1)
   const [focused, setFocused] = useState(false)
+  const [dragging, setDragging] = useState(false)
   const [reducedMotion, setReducedMotion] = useState(false)
   const [visible, setVisible] = useState(
     () => typeof window !== 'undefined' && !('IntersectionObserver' in window),
   )
   const [pageVisible, setPageVisible] = useState(true)
   const stageRef = useRef<HTMLDivElement>(null)
-  const touchStart = useRef<{ x: number; y: number } | null>(null)
+  const pointerStart = useRef<{ id: number; x: number; y: number } | null>(null)
   const titleId = useId()
 
   useEffect(() => {
@@ -374,13 +375,13 @@ export function ArkaiCases() {
     return () => observer.disconnect()
   }, [])
 
-  const autoplaying = visible && pageVisible && !reducedMotion && !focused
+  const autoplaying = visible && pageVisible && !reducedMotion && !focused && !dragging
 
   useEffect(() => {
     if (!autoplaying) return
     const timeout = window.setTimeout(() => {
       setActiveIndex((current) => (current + 1) % companies.length)
-    }, 6500)
+    }, 3500)
     return () => window.clearTimeout(timeout)
   }, [activeIndex, autoplaying])
 
@@ -404,21 +405,29 @@ export function ArkaiCases() {
     }
   }
 
-  const handleTouchStart = (event: TouchEvent<HTMLDivElement>) => {
-    const touch = event.changedTouches[0]
-    touchStart.current = { x: touch.clientX, y: touch.clientY }
+  const handlePointerDown = (event: PointerEvent<HTMLDivElement>) => {
+    if (event.pointerType === 'mouse' && event.button !== 0) return
+    pointerStart.current = { id: event.pointerId, x: event.clientX, y: event.clientY }
+    setDragging(true)
+    event.currentTarget.setPointerCapture(event.pointerId)
   }
 
-  const handleTouchEnd = (event: TouchEvent<HTMLDivElement>) => {
-    const start = touchStart.current
-    touchStart.current = null
-    if (!start) return
-    const touch = event.changedTouches[0]
-    const deltaX = touch.clientX - start.x
-    const deltaY = touch.clientY - start.y
-    if (Math.abs(deltaX) < 40 || Math.abs(deltaX) <= Math.abs(deltaY)) return
+  const handlePointerUp = (event: PointerEvent<HTMLDivElement>) => {
+    const start = pointerStart.current
+    if (!start || start.id !== event.pointerId) return
+    pointerStart.current = null
+    setDragging(false)
+    const deltaX = event.clientX - start.x
+    const deltaY = event.clientY - start.y
+    if (Math.abs(deltaX) < 35 || Math.abs(deltaX) <= Math.abs(deltaY)) return
     if (deltaX > 0) showPrevious()
     else showNext()
+  }
+
+  const handlePointerCancel = (event: PointerEvent<HTMLDivElement>) => {
+    if (pointerStart.current?.id !== event.pointerId) return
+    pointerStart.current = null
+    setDragging(false)
   }
 
   return (
@@ -442,8 +451,9 @@ export function ArkaiCases() {
           onBlurCapture={(event) => {
             if (!event.currentTarget.contains(event.relatedTarget)) setFocused(false)
           }}
-          onTouchStart={handleTouchStart}
-          onTouchEnd={handleTouchEnd}
+          onPointerDown={handlePointerDown}
+          onPointerUp={handlePointerUp}
+          onPointerCancel={handlePointerCancel}
         >
           <div className="arkai-cases__slides">
             {companies.map((company, index) => {
@@ -459,7 +469,7 @@ export function ArkaiCases() {
                   aria-current={position === 'active' ? 'true' : undefined}
                 >
                   <div className={`arkai-cases__media${company.mediaVariant ? ` arkai-cases__media--${company.mediaVariant}` : ''}`}>
-                    <img src={company.image} alt={meta.imageAlt} loading="lazy" />
+                    <img src={company.image} alt={meta.imageAlt} loading="lazy" draggable={false} />
                   </div>
                 </article>
               )
