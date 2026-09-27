@@ -35,7 +35,7 @@ const agentStillArt = [
   '/assets/agentes/agente-acompanhamento-v1.png',
 ] as const
 
-const heroLineScale = ['text-[0.88em]', 'text-[0.96em]', 'text-[1em]', 'text-[1.03em]'] as const
+const heroLineScale = ['text-[1.2em]', 'text-[1.1em]', 'text-[1.04em]', 'text-[1em]'] as const
 
 
 /**
@@ -85,16 +85,16 @@ export default function OfertaPage() {
               </span>
             </Reveal>
             <Reveal delay={80}>
-              <h1 className="mx-auto mt-6 max-w-full text-center text-[clamp(1.4rem,4.2vw,3.75rem)] font-black leading-[1.08] tracking-tight">
+              <h1 className="mx-auto mt-6 max-w-full text-center text-[clamp(2rem,6vw,3.75rem)] font-black leading-[1.08] tracking-tight max-[365px]:text-[1.7rem]">
                 {heroLines.map((line, index) => (
-                  <span key={line} className={`mx-auto block w-fit max-w-full whitespace-nowrap ${heroLineScale[index] ?? ''} ${index === heroLines.length - 1 ? 'gradient-text' : ''}`}>
+                  <span key={line} className={`mx-auto block w-fit max-w-full sm:whitespace-nowrap ${heroLineScale[index] ?? ''} ${index === heroLines.length - 1 ? 'gradient-text' : ''}`}>
                     {line}{index < heroLines.length - 1 ? ' ' : null}
                   </span>
                 ))}
               </h1>
             </Reveal>
             <Reveal delay={160}>
-              <p className="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
+              <p className="mx-auto mt-7 max-w-2xl text-lg leading-[1.6] text-muted">
                 {t('oferta.hero.subtitle')}
               </p>
             </Reveal>
