@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import BrandAuroraBg from '../components/BrandAuroraBg'
 import Footer from '../components/Footer'
@@ -18,24 +18,25 @@ interface BreakItem { v: string; l: string }
 interface TeamRole  { icon: string; name: string; role: string; replaces: string }
 
 const agentArt = [
-  '/assets/agentes/animados/atendimento.gif',
-  '/assets/agentes/animados/qualificacao.gif',
-  '/assets/agentes/animados/marketing.gif',
-  '/assets/agentes/animados/gestao-comercial.gif',
-  '/assets/agentes/animados/leitura-de-numeros.gif',
-  '/assets/agentes/animados/acompanhamento.gif',
+  '/assets/agentes/pinguins/atendimento.gif',
+  '/assets/agentes/pinguins/qualificacao.gif',
+  '/assets/agentes/pinguins/marketing.gif',
+  '/assets/agentes/pinguins/gestao-comercial.gif',
+  '/assets/agentes/pinguins/leitura-de-numeros.gif',
+  '/assets/agentes/pinguins/acompanhamento.gif',
 ] as const
 
 const agentStillArt = [
-  '/assets/agentes/agente-atendimento-v1.png',
-  '/assets/agentes/agente-qualificacao-v1.png',
-  '/assets/agentes/agente-marketing-v1.png',
-  '/assets/agentes/agente-gestao-comercial-v1.png',
-  '/assets/agentes/agente-analise-v1.png',
-  '/assets/agentes/agente-acompanhamento-v1.png',
+  '/assets/agentes/pinguins/atendimento.png',
+  '/assets/agentes/pinguins/qualificacao.png',
+  '/assets/agentes/pinguins/marketing.png',
+  '/assets/agentes/pinguins/gestao-comercial.png',
+  '/assets/agentes/pinguins/leitura-de-numeros.png',
+  '/assets/agentes/pinguins/acompanhamento.png',
 ] as const
 
 const heroLineScale = ['text-[1.2em]', 'text-[1.1em]', 'text-[1.04em]', 'text-[1em]'] as const
+const heroAlternateScale = ['text-[1em]', 'text-[1.1em]', 'text-[1em]', 'text-[1.1em]'] as const
 
 
 /**
@@ -46,6 +47,17 @@ const heroLineScale = ['text-[1.2em]', 'text-[1.1em]', 'text-[1.04em]', 'text-[1
  */
 export default function OfertaPage() {
   const { t } = useTranslation()
+  const [heroSlide, setHeroSlide] = useState(0)
+
+  useEffect(() => {
+    const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)')
+    if (motionPreference.matches) return
+
+    const timer = window.setInterval(() => {
+      if (!document.hidden) setHeroSlide((current) => (current + 1) % 2)
+    }, 6500)
+    return () => window.clearInterval(timer)
+  }, [])
 
   useEffect(() => {
     // Canonical aponta pra onde a oferta "mora": "/" se é a home, senão "/oferta".
@@ -68,6 +80,8 @@ export default function OfertaPage() {
   const stats    = t('oferta.proof.stats',    { returnObjects: true }) as Stat[]
   const includes = t('oferta.offer.includes', { returnObjects: true }) as string[]
   const heroLines = t('oferta.hero.titleLines', { returnObjects: true }) as string[]
+  const alternateHeroLines = t('oferta.hero.alternateTitleLines', { returnObjects: true }) as string[]
+  const alternateHeroMobileLines = t('oferta.hero.alternateMobileTitleLines', { returnObjects: true }) as string[]
 
   return (
     <>
@@ -85,13 +99,32 @@ export default function OfertaPage() {
               </span>
             </Reveal>
             <Reveal delay={80}>
-              <h1 className="mx-auto mt-6 max-w-full text-center text-[clamp(2rem,6vw,3.75rem)] font-black leading-[1.08] tracking-tight max-[365px]:text-[1.7rem]">
-                {heroLines.map((line, index) => (
-                  <span key={line} className={`mx-auto block w-fit max-w-full sm:whitespace-nowrap ${heroLineScale[index] ?? ''} ${index === heroLines.length - 1 ? 'gradient-text' : ''}`}>
-                    {line}{index < heroLines.length - 1 ? ' ' : null}
-                  </span>
+              <div className="arkai-hero-headlines mx-auto mt-6" aria-live="off">
+                {[heroLines, alternateHeroLines].map((lines, slide) => (
+                  <h1
+                    key={slide}
+                    aria-hidden={heroSlide !== slide}
+                    className={`arkai-hero-headline mx-auto max-w-full text-center text-[clamp(2rem,6vw,3.75rem)] font-black leading-[1.08] tracking-tight max-[365px]:text-[1.7rem]${heroSlide === slide ? ' arkai-hero-headline--active' : ''}`}
+                  >
+                    <span className={slide === 1 ? 'hidden sm:block' : 'block'}>
+                      {lines.map((line, index) => (
+                        <span key={`${slide}-${index}`} className={`mx-auto block w-fit max-w-full sm:whitespace-nowrap ${(slide === 0 ? heroLineScale : heroAlternateScale)[index] ?? ''} ${index === lines.length - 1 ? 'gradient-text' : ''}`}>
+                          {line}
+                        </span>
+                      ))}
+                    </span>
+                    {slide === 1 && (
+                      <span className="block sm:hidden">
+                        {alternateHeroMobileLines.map((line, index) => (
+                          <span key={`mobile-${index}`} className={`mx-auto block w-fit max-w-full whitespace-nowrap ${index === alternateHeroMobileLines.length - 1 ? 'gradient-text' : ''}`}>
+                            {line}
+                          </span>
+                        ))}
+                      </span>
+                    )}
+                  </h1>
                 ))}
-              </h1>
+              </div>
             </Reveal>
             <Reveal delay={160}>
               <p className="mx-auto mt-7 max-w-2xl text-lg leading-[1.6] text-muted">
@@ -205,19 +238,11 @@ export default function OfertaPage() {
               </div>
             </Reveal>
 
-            {/* Social proof — clients in production */}
-            <Reveal delay={220}>
-              <div className="mt-10 text-center">
-                <p className="text-xs font-bold uppercase tracking-[0.22em] text-muted">
-                  {t('oferta.proof.socialLabel')}
-                </p>
-                <p className="mt-3 text-sm font-semibold leading-relaxed text-ink/85 sm:text-base">
-                  {t('oferta.proof.socialClients')}
-                </p>
-              </div>
-            </Reveal>
           </div>
         </section>
+
+        {/* Empresas atendidas: prova social antes da oferta. */}
+        <ArkaiCases />
 
         {/* ============ THE OFFER ============ */}
         <section id="offer" className="relative py-24">
@@ -341,7 +366,6 @@ export default function OfertaPage() {
           </div>
         </section>
 
-        <ArkaiCases />
         <ArkaiFAQ />
 
         {/* ============ FINAL CTA ============ */}
@@ -378,7 +402,6 @@ export default function OfertaPage() {
     </>
   )
 }
-
 /* ---------------- Comparison table ---------------- */
 
 function ComparisonTable({ headers, rows }: { headers: string[]; rows: string[][] }) {

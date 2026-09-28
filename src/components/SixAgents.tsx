@@ -13,21 +13,21 @@ type Agent = {
 }
 
 const agentArt = [
-  '/assets/agentes/animados/atendimento.gif',
-  '/assets/agentes/animados/qualificacao.gif',
-  '/assets/agentes/animados/marketing.gif',
-  '/assets/agentes/animados/gestao-comercial.gif',
-  '/assets/agentes/animados/leitura-de-numeros.gif',
-  '/assets/agentes/animados/acompanhamento.gif',
+  '/assets/agentes/pinguins/atendimento.gif',
+  '/assets/agentes/pinguins/qualificacao.gif',
+  '/assets/agentes/pinguins/marketing.gif',
+  '/assets/agentes/pinguins/gestao-comercial.gif',
+  '/assets/agentes/pinguins/leitura-de-numeros.gif',
+  '/assets/agentes/pinguins/acompanhamento.gif',
 ] as const
 
 const agentStillArt = [
-  '/assets/agentes/agente-atendimento-v1.png',
-  '/assets/agentes/agente-qualificacao-v1.png',
-  '/assets/agentes/agente-marketing-v1.png',
-  '/assets/agentes/agente-gestao-comercial-v1.png',
-  '/assets/agentes/agente-analise-v1.png',
-  '/assets/agentes/agente-acompanhamento-v1.png',
+  '/assets/agentes/pinguins/atendimento.png',
+  '/assets/agentes/pinguins/qualificacao.png',
+  '/assets/agentes/pinguins/marketing.png',
+  '/assets/agentes/pinguins/gestao-comercial.png',
+  '/assets/agentes/pinguins/leitura-de-numeros.png',
+  '/assets/agentes/pinguins/acompanhamento.png',
 ] as const
 
 const copy: Record<Locale, {

@@ -47,8 +47,8 @@ export default function App() {
         <Work />
         <Stack />
         <SixAgents />
-        <Pricing />
         <ArkaiCases />
+        <Pricing />
         <ArkaiFAQ />
         <CTA />
       </main>

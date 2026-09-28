@@ -73,6 +73,8 @@
     "hero": {
       "badge": "EXCLUSIVE OFFER · LAUNCH",
       "titleLines": ["You'd hire", "6 professionals.", "Hire 1 system,", "for the price of 1 employee."],
+      "alternateTitleLines": ["You don't have to", "adapt to a system.", "The system adapts", "to you."],
+      "alternateMobileTitleLines": ["You don't have", "to adapt to", "a system.", "The system", "adapts to you."],
       "subtitle": "A full sales and operations team — built with agents already running in production. Working 24/7, no vacation, no overhead, no sick days.",
       "ctaPrimary": "Claim my spot",
       "ctaSecondary": "How it works"
@@ -280,36 +282,48 @@
     "eyebrow": "What we build",
     "title": "Automation that pays for itself",
     "subtitle": "Every system we ship is built to remove manual work, capture more revenue and run on its own.",
+    "carouselLabel": "Arkai services",
+    "cardCategory": "Applied solution",
+    "flowLabel": "How it works",
+    "interactionHint": "Swipe, click or use the arrows to explore services",
+    "previous": "Previous service",
+    "next": "Next service",
     "items": [
       {
         "icon": "agent",
         "title": "AI Sales Agents (SDR)",
-        "desc": "Autonomous agents that qualify leads, follow up, and book meetings 24/7 across WhatsApp, email and web."
+        "desc": "Autonomous agents that qualify leads, follow up, and book meetings 24/7 across WhatsApp, email and web.",
+        "flow": ["Lead received", "Profile qualified", "Meeting booked"]
       },
       {
         "icon": "support",
         "title": "AI Support Agents",
-        "desc": "Conversational agents that answer customers instantly, resolve tickets and escalate only what matters."
+        "desc": "Conversational agents that answer customers instantly, resolve tickets and escalate only what matters.",
+        "flow": ["Message received", "Instant answer", "Case escalated"]
       },
       {
         "icon": "workflow",
         "title": "Workflow Automation",
-        "desc": "End-to-end pipelines that connect your CRM, spreadsheets, payments and tools — no copy-paste ever again."
+        "desc": "End-to-end pipelines that connect your CRM, spreadsheets, payments and tools — no copy-paste ever again.",
+        "flow": ["Event detected", "Data synchronized", "Step completed"]
       },
       {
         "icon": "saas",
         "title": "Custom AI SaaS",
-        "desc": "Niche software products built for your market: real estate, hospitality, agribusiness, automotive and more."
+        "desc": "Niche software products built for your market: real estate, hospitality, agribusiness, automotive and more.",
+        "flow": ["Needs mapped", "Platform built", "Operation monitored"]
       },
       {
         "icon": "traffic",
         "title": "Lead Generation & Traffic",
-        "desc": "Paid traffic engines wired to automated capture, scoring and nurturing — a predictable pipeline of buyers."
+        "desc": "Paid traffic engines wired to automated capture, scoring and nurturing — a predictable pipeline of buyers.",
+        "flow": ["Campaign launched", "Lead captured", "Nurturing started"]
       },
       {
         "icon": "data",
         "title": "Dashboards & Reporting",
-        "desc": "Live dashboards and automated reports so you always know what's working — without building a single sheet."
+        "desc": "Live dashboards and automated reports so you always know what's working — without building a single sheet.",
+        "flow": ["Data connected", "Metrics updated", "Decision informed"]
       }
     ]
   },

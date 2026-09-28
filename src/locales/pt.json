@@ -73,6 +73,8 @@
     "hero": {
       "badge": "OFERTA EXCLUSIVA · LANÇAMENTO",
       "titleLines": ["Você contrataria", "6 profissionais.", "Contrate 1 sistema,", "pelo preço de 1 CLT."],
+      "alternateTitleLines": ["Não é você que", "se molda ao sistema.", "É o sistema que", "se molda a você."],
+      "alternateMobileTitleLines": ["Não é você", "que se molda", "ao sistema.", "É o sistema", "que se molda", "a você."],
       "subtitle": "Uma operação inteira de vendas e atendimento — montada com agentes que já rodam em produção. Trabalham 24/7, sem férias, sem 13º, sem faltas.",
       "ctaPrimary": "Quero minha vaga",
       "ctaSecondary": "Como funciona?"
@@ -280,36 +282,48 @@
     "eyebrow": "O que construímos",
     "title": "Automação que se paga sozinha",
     "subtitle": "Cada sistema que entregamos é feito para eliminar trabalho manual, capturar mais receita e rodar sozinho.",
+    "carouselLabel": "Serviços da Arkai",
+    "cardCategory": "Solução aplicada",
+    "flowLabel": "Como funciona",
+    "interactionHint": "Deslize, clique ou use as setas para explorar os serviços",
+    "previous": "Serviço anterior",
+    "next": "Próximo serviço",
     "items": [
       {
         "icon": "agent",
         "title": "Agentes de Vendas IA (SDR)",
-        "desc": "Agentes autônomos que qualificam leads, fazem follow-up e agendam reuniões 24/7 no WhatsApp, e-mail e site."
+        "desc": "Agentes autônomos que qualificam leads, fazem follow-up e agendam reuniões 24/7 no WhatsApp, e-mail e site.",
+        "flow": ["Lead recebido", "Perfil qualificado", "Reunião agendada"]
       },
       {
         "icon": "support",
         "title": "Agentes de Atendimento IA",
-        "desc": "Agentes conversacionais que respondem o cliente na hora, resolvem chamados e encaminham só o que importa."
+        "desc": "Agentes conversacionais que respondem o cliente na hora, resolvem chamados e encaminham só o que importa.",
+        "flow": ["Mensagem recebida", "Resposta imediata", "Caso encaminhado"]
       },
       {
         "icon": "workflow",
         "title": "Automação de Processos",
-        "desc": "Fluxos ponta a ponta que conectam seu CRM, planilhas, pagamentos e ferramentas — nunca mais copiar e colar."
+        "desc": "Fluxos ponta a ponta que conectam seu CRM, planilhas, pagamentos e ferramentas — nunca mais copiar e colar.",
+        "flow": ["Evento detectado", "Dados sincronizados", "Etapa concluída"]
       },
       {
         "icon": "saas",
         "title": "SaaS de IA Sob Medida",
-        "desc": "Produtos de software para o seu nicho: imobiliário, hotelaria, agronegócio, automotivo e muito mais."
+        "desc": "Produtos de software para o seu nicho: imobiliário, hotelaria, agronegócio, automotivo e muito mais.",
+        "flow": ["Necessidade mapeada", "Plataforma criada", "Operação acompanhada"]
       },
       {
         "icon": "traffic",
         "title": "Geração de Leads & Tráfego",
-        "desc": "Tráfego pago integrado a captura, qualificação e nutrição automáticas — um fluxo previsível de compradores."
+        "desc": "Tráfego pago integrado a captura, qualificação e nutrição automáticas — um fluxo previsível de compradores.",
+        "flow": ["Campanha ativada", "Lead capturado", "Nutrição iniciada"]
       },
       {
         "icon": "data",
         "title": "Dashboards & Relatórios",
-        "desc": "Painéis ao vivo e relatórios automáticos para você saber o que funciona — sem montar uma única planilha."
+        "desc": "Painéis ao vivo e relatórios automáticos para você saber o que funciona — sem montar uma única planilha.",
+        "flow": ["Dados conectados", "Indicadores atualizados", "Decisão orientada"]
       }
     ]
   },

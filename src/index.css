@@ -4,6 +4,31 @@
 @tailwind components;
 @tailwind utilities;
 
+.arkai-hero-headlines {
+  display: grid;
+  align-items: center;
+  min-height: 4.4em;
+}
+
+.arkai-hero-headline {
+  grid-area: 1 / 1;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0.5rem);
+  transition: opacity 550ms ease, transform 550ms ease, visibility 550ms;
+}
+
+.arkai-hero-headline--active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arkai-hero-headline { transition: none; }
+}
+
 /* ===================================================================
    ARKAI SOLUTIONS — BRAND TOKENS
    Cores em canais RGB ("R G B") para suportar opacidade no Tailwind.

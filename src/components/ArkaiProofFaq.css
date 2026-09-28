@@ -107,7 +107,7 @@
 .arkai-cases__card--back {
   z-index: 0;
   transform: translate(calc(-50% + var(--arkai-case-drag-x, 0px)), calc(-50% - 5.5rem)) scale(0.56);
-  opacity: 0.55;
+  opacity: 0;
   pointer-events: none;
 }
 
@@ -376,7 +376,7 @@
 
   .arkai-cases__segment,
   .arkai-cases__relationship {
-    font-size: 0.82rem;
+    font-size: 0.9rem;
   }
 
   .arkai-faq__grid {

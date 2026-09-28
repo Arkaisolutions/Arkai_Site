@@ -336,15 +336,14 @@ function getPosition(index: number, activeIndex: number): 'before' | 'active' | 
 export function ArkaiCases() {
   const { i18n } = useTranslation()
   const text = copy[localeFor(i18n.resolvedLanguage || i18n.language)]
-  const [activeIndex, setActiveIndex] = useState(1)
-  const [focused, setFocused] = useState(false)
+  const [activeIndex, setActiveIndex] = useState(0)
   const [dragging, setDragging] = useState(false)
   const [reducedMotion, setReducedMotion] = useState(false)
   const [visible, setVisible] = useState(
     () => typeof window !== 'undefined' && !('IntersectionObserver' in window),
   )
   const [pageVisible, setPageVisible] = useState(true)
-  const stageRef = useRef<HTMLDivElement>(null)
+  const sectionRef = useRef<HTMLElement>(null)
   const pointerStart = useRef<{ id: number; x: number; y: number } | null>(null)
   const titleId = useId()
 
@@ -364,24 +363,24 @@ export function ArkaiCases() {
   }, [])
 
   useEffect(() => {
-    const element = stageRef.current
+    const element = sectionRef.current
     if (!element) return
     if (!('IntersectionObserver' in window)) return
     const observer = new IntersectionObserver(
       ([entry]) => setVisible(entry.isIntersecting),
-      { threshold: 0.2 },
+      { threshold: 0.08 },
     )
     observer.observe(element)
     return () => observer.disconnect()
   }, [])
 
-  const autoplaying = visible && pageVisible && !reducedMotion && !focused && !dragging
+  const autoplaying = visible && pageVisible && !reducedMotion && !dragging
 
   useEffect(() => {
     if (!autoplaying) return
     const timeout = window.setTimeout(() => {
       setActiveIndex((current) => (current + 1) % companies.length)
-    }, 3500)
+    }, 3200)
     return () => window.clearTimeout(timeout)
   }, [activeIndex, autoplaying])
 
@@ -440,7 +439,7 @@ export function ArkaiCases() {
   }
 
   return (
-    <section id="cases" className="arkai-cases" aria-labelledby={titleId}>
+    <section id="cases" ref={sectionRef} className="arkai-cases" aria-labelledby={titleId}>
       <div className="container-content">
         <div className="arkai-cases__heading">
           <span className="arkai-proof__eyebrow">{text.casesEyebrow}</span>
@@ -449,17 +448,12 @@ export function ArkaiCases() {
         </div>
 
         <div
-          ref={stageRef}
           className={`arkai-cases__stage${dragging ? ' arkai-cases__stage--dragging' : ''}`}
           role="region"
           aria-roledescription={text.carouselRole}
           aria-label={text.carouselLabel}
           tabIndex={0}
           onKeyDown={handleKeyDown}
-          onFocusCapture={(event) => setFocused(event.target.matches(':focus-visible'))}
-          onBlurCapture={(event) => {
-            if (!event.currentTarget.contains(event.relatedTarget)) setFocused(false)
-          }}
           onPointerDown={handlePointerDown}
           onPointerMove={handlePointerMove}
           onPointerUp={handlePointerUp}
@@ -479,7 +473,7 @@ export function ArkaiCases() {
                   aria-current={position === 'active' ? 'true' : undefined}
                 >
                   <div className={`arkai-cases__media${company.mediaVariant ? ` arkai-cases__media--${company.mediaVariant}` : ''}`}>
-                    <img src={company.image} alt={meta.imageAlt} loading="lazy" draggable={false} />
+                    <img src={company.image} alt={meta.imageAlt} loading="eager" decoding="async" draggable={false} />
                   </div>
                 </article>
               )
