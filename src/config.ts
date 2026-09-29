@@ -19,8 +19,8 @@ export const config = {
 
   // Webhook que recebe os leads do funil (n8n / Make / Airtable Automations).
   // Deixe vazio em dev — leads cairão no console. Veja docs/lead-webhook.md.
-  // URL-encoded porque o path tem espaços ("Arkai - Leads - Site").
-  leadWebhookUrl: 'https://nwook.futurosolaroficial.cloud/webhook/Arkai%20-%20Leads%20-%20Site',
+  // Endpoint de produção do fluxo de leads validado no n8n.
+  leadWebhookUrl: 'https://nwook.futurosolaroficial.cloud/webhook/arkai-site-leads-v2',
 
   // Meta Pixel / Dataset ID (Business Manager → Fontes de Dados).
   // Vazio = desligado. Cole o ID de 16 dígitos aqui pra ativar o rastreio
