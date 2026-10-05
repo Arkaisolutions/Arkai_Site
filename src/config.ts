@@ -25,7 +25,7 @@ export const config = {
   // Meta Pixel / Dataset ID (Business Manager → Fontes de Dados).
   // Vazio = desligado. Cole o ID de 16 dígitos aqui pra ativar o rastreio
   // de conversão dos anúncios do Facebook/Instagram. Veja docs/tracking.md.
-  metaPixelId: '',
+  metaPixelId: '1448481406600125',
 
   email: 'contato@arkaisolutions.com.br',
 
