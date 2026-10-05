@@ -36,4 +36,9 @@ Atualizado em 05/10/2026 (America/Sao_Paulo). Este arquivo é um resumo operacio
 - Validação: revisar o diff desses quatro arquivos, executar `git diff --check`, confirmar que nenhum trabalho local não relacionado entrou no commit e verificar o push em `main`. O identificador do commit desta entrega está no histórico Git do arquivo.
 - Pendência anterior: testar o recebimento efetivo dos eventos na conta Meta, se o usuário solicitar.
 
-**Assunto em andamento:** nenhum após a publicação desta entrega.
+## Assunto em andamento: acesso ao Chatwoot
+
+- Em 05/10/2026, o usuário mostrou uma tela com `Finish Setup`, nome, empresa, e-mail e senha, além de erro de validação de senha/confirmação. A tela corresponde ao **onboarding inicial do Chatwoot**, não ao login nem a uma página deste repositório Arkai.
+- Pedido: simplificar o acesso para e-mail e senha, com opção de entrar pelo Google. A busca no projeto Arkai não encontrou implementação de autenticação ou dessa tela; nenhuma mudança no site foi feita. O Chatwoot já dispõe de login por e-mail/senha e opção Google OAuth quando configurada na instância.
+- Bloqueio: falta o URL exato da tela e a identificação da instalação/hospedagem ou do repositório Chatwoot controlado pelo usuário. Sem isso, não alterar o código do site Arkai nem prometer que uma mudança nele consertará o Chatwoot. Não pedir nem publicar senhas, client secrets ou outros tokens.
+- Próximo passo: confirmar com o usuário a URL e onde o Chatwoot está hospedado/gerenciado; depois diagnosticar a falha de senha, completar o primeiro administrador sem contornar a validação e configurar o Google OAuth na instalação apropriada, se houver acesso e autorização.
