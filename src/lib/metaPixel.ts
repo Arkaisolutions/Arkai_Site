@@ -72,7 +72,7 @@ export function initMetaPixel(): void {
   // leads ou outros eventos anteriores ao consentimento.
   const path = window.location.pathname.replace(/\/+$/, '') || '/'
   const offerPaths = ['/', '/vagas', '/oferta', '/offer']
-  if (offerPaths.includes(path) && dl.some((entry) => entry.event === 'offer_view')) {
+  if (offerPaths.includes(path)) {
     sendMappedEvent('offer_view')
   }
   const originalPush = dl.push.bind(dl)
