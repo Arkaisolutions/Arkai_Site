@@ -11,7 +11,7 @@ Atualizado em 05/10/2026 (America/Sao_Paulo). Este arquivo é um resumo operacio
 - Estado inicial deste checkout: clone limpo de `main`, com consentimento, Meta Pixel e eventos locais já implementados. Google Ads e GA4 ainda não configurados/validados neste trabalho.
 - Integração concluída no código: GTM condicionado ao aceite; eventos de medição bloqueados antes do aceite/recusa; `whatsapp_click` sem número/mensagem e com `after_form`; envio do formulário aguarda callback/timeout do GTM antes da navegação. Preservado o Meta Pixel.
 - Verificações locais aprovadas: `npm run build`, `npm run lint`, `node scripts/test-google-tracking.cjs` (ausência/recusa de consentimento, carga única, clique pós-formulário, callback e fallback). Não enviado lead de teste à produção.
-- Publicação: commit/push pendentes no momento deste registro; conferir histórico e resultado do push. O push de `main` aciona Vercel; o deploy e o recebimento de conversões ainda não foram verificados.
+- Publicação: push de `d511b81` em `main` confirmado. Foram incorporadas as atualizações concorrentes do outro chat, preservando o Meta Pixel `1573100370780259`. O push aciona Vercel; a inspeção imediatamente após o push ainda não confirmou o novo bundle no site. Deploy e recebimento de conversões seguem pendentes.
 - Pendências: configurar propriedade/fluxo GA4 e ações Google Ads com IDs reais; criar/publicar tags no GTM; validar Tag Assistant e recebimento. Não iniciar tráfego assumindo que somente instalar o contêiner conclui essas etapas.
 
 - Repositório: `Arkaisolutions/Arkai_Site`, branch `main`. O push em `main` aciona o deploy automático na Vercel. Site público: `https://www.arkaisolutions.com.br/`; o domínio sem `www` também serviu o mesmo bundle na última verificação.
