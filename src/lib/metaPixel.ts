@@ -60,16 +60,29 @@ export function initMetaPixel(): void {
   // --- Espelha eventos do dataLayer para o Pixel ---
   window.dataLayer = window.dataLayer ?? []
   const dl = window.dataLayer
+  let viewContentSent = false
+  const sendMappedEvent = (event: string) => {
+    if (readAnalyticsConsent() !== 'accepted') return
+    const mapped = EVENT_MAP[event]
+    if (!mapped || (mapped === 'ViewContent' && viewContentSent)) return
+    if (mapped === 'ViewContent') viewContentSent = true
+    window.fbq?.('track', mapped)
+  }
+  // O aceite tardio registra a visualização atual da oferta, sem reenviar
+  // leads ou outros eventos anteriores ao consentimento.
+  const path = window.location.pathname.replace(/\/+$/, '') || '/'
+  const offerPaths = ['/', '/vagas', '/oferta', '/offer']
+  if (offerPaths.includes(path) && dl.some((entry) => entry.event === 'offer_view')) {
+    sendMappedEvent('offer_view')
+  }
   const originalPush = dl.push.bind(dl)
   dl.push = function (...entries: Array<Record<string, unknown>>) {
     entries.forEach((entry) => {
       const evt = entry?.event as string | undefined
       if (!evt) return
-      const mapped = EVENT_MAP[evt]
-      if (mapped) {
-        window.fbq?.('track', mapped)
-      }
+      sendMappedEvent(evt)
     })
     return originalPush(...entries)
   }
 }
+
