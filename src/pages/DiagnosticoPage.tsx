@@ -124,7 +124,7 @@ export default function DiagnosticoPage() {
         })
         if (!res.ok) throw new Error(`Webhook responded ${res.status}`)
       }
-      trackLeadSubmit({
+      await trackLeadSubmit({
         sector,
         bottleneck,
         revenue,

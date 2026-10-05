@@ -128,7 +128,7 @@ export default function ContactForm({ onDelivered }: ContactFormProps) {
         body: JSON.stringify(payload),
       })
       if (!response.ok) throw new Error(`Lead webhook: ${response.status}`)
-      trackLeadSubmit({ origin: window.location.pathname, sector: fields.sector })
+      await trackLeadSubmit({ origin: window.location.pathname, sector: fields.sector })
       setDelivery('sent')
       onDelivered?.()
     } catch (error) {

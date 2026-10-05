@@ -66,7 +66,7 @@ export function readAttribution(): Attribution {
 }
 
 export function trackEvent(event: string, data: Record<string, unknown> = {}): void {
-  if (typeof window === 'undefined') return
+  if (typeof window === 'undefined' || readAnalyticsConsent() !== 'accepted') return
   window.dataLayer = window.dataLayer ?? []
   window.dataLayer.push({ event, ...data })
 }
@@ -78,6 +78,16 @@ export function trackPageView(path: string, title?: string): void {
   })
 }
 
-export function trackLeadSubmit(payload: Record<string, unknown>): void {
-  trackEvent('lead_submitted', payload)
+export function trackLeadSubmit(payload: Record<string, unknown>): Promise<void> {
+  if (typeof window === 'undefined' || readAnalyticsConsent() !== 'accepted') return Promise.resolve()
+  return new Promise((resolve) => {
+    // GTM chama o callback ao terminar as tags. O limite também funciona
+    // com bloqueadores ou contêiner sem tags e nunca impede o fluxo do lead.
+    const timer = window.setTimeout(resolve, 2000)
+    trackEvent('lead_submitted', {
+      ...payload,
+      eventCallback: () => { window.clearTimeout(timer); resolve() },
+      eventTimeout: 2000,
+    })
+  })
 }

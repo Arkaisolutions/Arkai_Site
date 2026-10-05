@@ -26,6 +26,8 @@ export const config = {
   // Vazio = desligado. Cole o ID de 16 dígitos aqui pra ativar o rastreio
   // de conversão dos anúncios do Facebook/Instagram. Veja docs/tracking.md.
   metaPixelId: '1573100370780259',
+  // Carregado somente após o aceite de medição.
+  googleTagManagerId: 'GTM-5SNX33LF',
 
   email: 'contato@arkaisolutions.com.br',
 

@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import { initMetaPixel } from '../lib/metaPixel'
+import { initGoogleTagManager } from '../lib/googleTagManager'
 import { readAnalyticsConsent, saveAnalyticsConsent, type AnalyticsConsent } from '../lib/consent'
-import { captureAttribution } from '../lib/track'
+import { captureAttribution, trackPageView } from '../lib/track'
 
 export default function CookieConsent() {
   const [choice, setChoice] = useState<AnalyticsConsent>(readAnalyticsConsent)
@@ -9,11 +10,18 @@ export default function CookieConsent() {
   useEffect(() => {
     if (choice !== 'accepted') return
     initMetaPixel()
+    initGoogleTagManager()
     captureAttribution()
   }, [choice])
 
   const choose = (value: Exclude<AnalyticsConsent, null>) => {
     saveAnalyticsConsent(value)
+    if (value === 'accepted' && readAnalyticsConsent() === 'accepted') {
+      initMetaPixel()
+      initGoogleTagManager()
+      captureAttribution()
+      trackPageView(window.location.pathname)
+    }
     setChoice(value)
   }
 
