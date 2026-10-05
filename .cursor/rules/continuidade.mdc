@@ -1,0 +1,11 @@
+---
+description: Manter um handoff verificável para continuidade do site Arkai por outros agentes.
+alwaysApply: true
+---
+
+# Handoff obrigatório
+
+Leia `AGENTS.md` e `docs/CONTINUIDADE.md` ao iniciar trabalho neste repositório.
+Registre o novo assunto ao começar e atualize resultado, testes, pendências e publicação antes de encerrar.
+Publique o documento no mesmo repositório quando possível, mantendo fora do commit alterações locais de outros assuntos e qualquer dado sensível.
+Não use o handoff como substituto da inspeção do código e do estado atual do Git.

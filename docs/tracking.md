@@ -16,33 +16,34 @@ Como ligar Meta Pixel e medir conversão dos anúncios.
 | (envio do form) | `lead_submitted` ← **conversão** |
 | `/diagnostico/obrigado` | `lead_thankyou` |
 
-UTMs (`utm_source`, `utm_campaign`, `gclid`, `fbclid`...) são capturados em
-sessionStorage e enviados no payload do webhook do lead (campo `attribution`).
+Após o aceite de medição, UTMs (`utm_source`, `utm_campaign`, `gclid`,
+`fbclid`...) são capturados em sessionStorage e enviados no payload do webhook
+do lead (campo `attribution`).
 
 ---
 
-## 🔧 Meta Pixel — JÁ ESTÁ INSTALADO (só falta o ID)
+## 🔧 Meta Pixel — configurado no site
 
-O código do Pixel já está no site (`src/lib/metaPixel.ts`), **desligado** até
-você colar o ID. Não precisa editar HTML.
+O ID `1448481406600125` está em `src/config.ts`. O código de
+`src/lib/metaPixel.ts` é carregado **somente após aceite de medição**. Quem
+recusa ou não escolhe não é rastreado pelo Meta Pixel; o Gerenciador de
+Eventos não altera essa escolha do site.
 
-1. Meta Business Manager (https://business.facebook.com) → Configurações do
-   Negócio → Fontes de Dados → Conjuntos de Dados → **Criar**
-2. Conecta ao site `arkaisolutions.com.br`, copia o **ID do Pixel** (16 dígitos)
-3. Em `src/config.ts`, cola na linha `metaPixelId`:
-   ```ts
-   metaPixelId: '1234567890123456',
-   ```
-4. commit + push → Vercel rebuilda → Pixel ativo
-
-**Eventos mapeados automaticamente** (só precisa do ID):
+Ao iniciar, o Pixel envia `PageView`. O `window.dataLayer` também espelha:
 
 | dataLayer | Evento Meta |
 |-----------|-------------|
-| `virtualPageview` | PageView |
 | `offer_view` | ViewContent |
 | `lead_submitted` | **Lead** ← marque como conversão |
-| `lead_thankyou` | CompleteRegistration |
+
+`virtualPageview` e `lead_thankyou` existem no `dataLayer`, mas **não** estão
+mapeados para eventos Meta em `src/lib/metaPixel.ts`. Não afirmar que geram
+eventos Meta sem implementar e verificar essa ligação.
+
+Para conferir: abra o site em um navegador sem bloqueador, aceite a medição e
+use **Testar eventos** no Gerenciador de Eventos para verificar `PageView`.
+Um `Lead` requer envio bem-sucedido do formulário; combine qualquer teste em
+produção antes de criar uma linha de teste no n8n/planilha.
 
 No Gerenciador de Eventos do Meta → marque **Lead** como conversão (ou crie
 Custom Conversion por URL contendo `/diagnostico/obrigado`).
