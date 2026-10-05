@@ -52,3 +52,9 @@ Atualizado em 05/10/2026 (America/Sao_Paulo). Este arquivo é um resumo operacio
 - Pedido: simplificar o acesso para e-mail e senha, com opção de entrar pelo Google. A busca no projeto Arkai não encontrou implementação de autenticação ou dessa tela; nenhuma mudança no site foi feita. O Chatwoot já dispõe de login por e-mail/senha e opção Google OAuth quando configurada na instância.
 - Bloqueio: falta o URL exato da tela e a identificação da instalação/hospedagem ou do repositório Chatwoot controlado pelo usuário. Sem isso, não alterar o código do site Arkai nem prometer que uma mudança nele consertará o Chatwoot. Não pedir nem publicar senhas, client secrets ou outros tokens.
 - Próximo passo: confirmar com o usuário a URL e onde o Chatwoot está hospedado/gerenciado; depois diagnosticar a falha de senha, completar o primeiro administrador sem contornar a validação e configurar o Google OAuth na instalação apropriada, se houver acesso e autorização.
+
+
+### Ajuste após atualização paralela
+
+- Bundle público apresentou nova proteção de consentimento em trackEvent e alterações relacionadas a GTM. Preservadas. Como eventos pré-aceite não ficam mais no dataLayer, ajuste de ViewContent foi refinado em `379bee1ea7a56b66e355785b753723152a15c522`: visualização atual das rotas de oferta após aceite, sem depender de histórico. Teste isolado confirmou dataLayer vazio e ausência de duplicação; recusa e escolha indefinida continuam bloqueadas.
+- Usuário informou que abrirá n8n no navegador para configurar CAPI. Token e fluxo ainda não inspecionados/configurados. Deploy do último ajuste precisa ser confirmado.
